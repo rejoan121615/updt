@@ -1,72 +1,212 @@
-// import modules 
-@import '_fonts';
+// import modules
+@import "_fonts";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: ECMedium;
 }
 
-
-// color code 
-$yellow: #FFCD00;
+// color code
+$yellow: #ffcd00;
 $blue: #352878;
 $half-blue: #286678;
-$green: #4B7828;
+$green: #4b7828;
 $zinzar: #602878;
-$half-pink: #FFF5CC;
-$half-black: #D1D1D1;
-$little-red: #FF0000;
+$half-pink: #fff5cc;
+$half-black: #d1d1d1;
+$little-red: #ff0000;
 
-// responsive break points 
- $sm: 576px;
- $md: 768px;
- $lg: 992px;
- $xl: 1200px;
- $xxl: 1400px;
- $mxl: 1800px;
+// color class
 
+// auto responsive creator
+// responsive break points
+$xs: 425px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$mxl: 1800px;
 
-
-// mixing section 
-@mixin resp ($width) {
+// mixing section
+@mixin resp($width) {
     @media only screen and (min-width: $width) {
         @content;
     }
 }
+// max responsive 
+@mixin mxResp($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
 
+// font size and line height 
+@mixin fsizeHeight ($f, $h) {
+    font-size: $f;
+    line-height: $h;
+}
 
+// normal style ------------------------------
+// container modification
+.container {
+    @include mxResp($xs) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    @include mxResp($sm) {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    @include resp ($mxl) {
+        max-width: 1650px;
+    }
+}
 
-// header and main section wrapper 
-#main__sec__wrapper {
-    background: url('../img/background/main-bg-desktop.png') no-repeat center center;
-    background-size: cover;
+// button component 
+.cus__btn {
+    border-radius: 1px;
+    background-color: $yellow;
+    color: black!important;
+    display: inline-block;
+    padding: 10px 15px!important;
+    @include resp ($lg) {
+        padding: 12px 20px !important;
+    }
 }
 
 
-// border top section 
+
+// header and main section wrapper
+#main__sec__wrapper {
+    background: url("../img/background/main-bg-desktop.png") no-repeat center
+        center;
+    background-size: cover;
+}
+
+// border top section
 #border__top {
     width: 100%;
     height: 3px;
-    background: url('../img/border/top_border.png') no-repeat center center;
+    background: url("../img/border/top_border.png") no-repeat center center;
     background-size: 100% 100%;
-    @include resp ($sm) {
+    @include resp($sm) {
         height: 4px;
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         font-size: 5px;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         height: 7px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         height: 6px;
     }
-    @include resp ($mxl) {
+    @include resp($mxl) {
         height: 8px;
     }
 }
 
+// navbar
+.navbar {
+    background-color: transparent !important;
+    // brand
+    .navbar-brand {
+        img {
+            width: 105px;
+            margin-right: 2px;
+            @include resp($xs) {
+                width: 115px;
+                margin-right: 4px;
+            }
+            @include resp ($lg) {
+                width: 155px;
+            }
+            @include resp ($xxl) {
+                width: 170px;
+            }
+            @include resp ($mxl) {
+                width: 190px;
+            }
+        }
+        .text__wrap {
+            margin-top: 3px;
+            @include resp ($lg) {
+                margin-top: 5px;
+            }
+            @include resp ($xl) {
+                margin-top: 3px;
+            }
+            @include resp ($mxl) {
+                margin-top: 4px;
+            }
+            p {
+                font-size: 9px;
+                line-height: 8px;
+                color: $yellow;
+                @include resp($xs) {
+                    font-size: 10px;
+                }
+                @include resp ($lg) {
+                    color: black!important;
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+                @include resp ($xl) {
+                    @include fsizeHeight( 12px, 11px);
+                }
+                @include resp ($xxl) {
+                    @include fsizeHeight( 13px, 12px);
+                }
+                @include resp ($mxl) {
+                    @include fsizeHeight(14px, 13px);
+                }
+            }
+        }
+    }
+    // toggle button
+    .navbar-toggler {
+        padding: 0px !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        // focus
+        &:focus {
+            box-shadow: none !important;
+        }
+        .navbar-icon {
+            img {
+                width: 22px;
+            }
+        }
+    }
+    // navbar list
+    .navbar-nav {
+        //  main wrapper / collapse
+        @include resp($lg) {
+            background-color: transparent !important;
+        }
 
-
-
+        .nav-item {
+            .nav-link {
+                text-transform: capitalize !important;
+                padding-top: 0px;
+                font-size: 1rem;
+                color: black!important;
+                @include resp ($md) {
+                    font-size: 17px;
+                }
+                @include resp ($lg) {
+                    font-size: 1rem;
+                }
+                @include resp ($xl) {
+                    font-size: 16.5px;
+                }
+                @include resp ($xxl) {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

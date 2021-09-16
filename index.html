@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrapCustom.width.css">
     <!-- custom style  -->
     <link rel="stylesheet" href="./css/app.css">
 </head>
@@ -16,24 +18,53 @@
         <!-- header section  -->
         <header>
             <!-- navbar  -->
-            <div class="container">
-                <!-- left brand  -->
-                <a href="" class="brand d-flex justify-content-between">
-                    <div class="img__wrap">
-                        <img src="./img/brand-logo.svg" alt="">
-                    </div>
-                    <div class="texts">
-                        <p>Smarter</p>
-                        <p>Safet IT</p>
-                    </div>
-                </a>
-                <!-- menu icon  -->
-                <div class="menu"></div>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container py-4">
+                        <a class="navbar-brand d-flex" href="#">
+                            <img src="./img/brand.svg" alt="brand icon">
+                            <div class="text__wrap d-flex flex-column">
+                                <p class="para mb-0">Smarter</p>
+                                <p class="para mb-0">Safer IT</p>
+                            </div>
+                        </a>
+                        <!-- toggle button  -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="navbar-icon">
+                                <img src="./img/icon/dots-menu.png" alt="dot menu">
+                            </div>
+                        </button>
+                        <!-- navbar list  -->
+                        <div class="collapse navbar-collapse justify-content-end flex-grow-0 w-lg-65 w-xl-60 w-xxl-55" id="topNavbar">
+                            <ul class="navbar-nav me-auto mb-lg-0 p-4 bg-white rounded p-lg-0 flex-fill align-items-lg-center">
+                                <!-- nav link  -->
+                                <li class="nav-item flex-lg-fill text-center">
+                                    <a href="" class="nav-link text-center pt-lg-2">services</a>
+                                </li>
+                                <!-- nav link  -->
+                                <li class="nav-item flex-lg-fill text-center">
+                                    <a href="" class="nav-link text-center pt-lg-2">pricing</a>
+                                </li>
+                                <!-- nav link  -->
+                                <li class="nav-item flex-lg-fill text-center">
+                                    <a href="" class="nav-link text-center pt-lg-2">about</a>
+                                </li>
+                                <!-- nav link  -->
+                                <li class="nav-item flex-lg-fill text-center">
+                                    <a href="" class="nav-link text-center pt-lg-2">coreers</a>
+                                </li>
+                                <!-- nav link  -->
+                                <li class="nav-item text-center">
+                                    <a href="" class="nav-link text-center pt-lg-2 cus__btn">book a free assessment</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
         </header>
     </div>
 
 
     <!-- js file  -->
+    <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
