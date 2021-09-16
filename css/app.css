@@ -1,3 +1,84 @@
+@font-face {
+  font-family: "ECBold";
+  src: url("../fonts/Euclid Circular A Bold.ttf");
+}
+.ECBold {
+  font-family: ECBold;
+}
 
+@font-face {
+  font-family: "ECLight";
+  src: url("../fonts/Euclid Circular A Light.ttf");
+}
+.ECLight {
+  font-family: ECLight;
+}
+
+@font-face {
+  font-family: "ECMedium";
+  src: url("../fonts/Euclid Circular A Medium.ttf");
+}
+.ECMedium {
+  font-family: ECMedium;
+}
+
+@font-face {
+  font-family: "ECRegular";
+  src: url("../fonts/Euclid Circular A Regular.ttf");
+}
+.ECRegular {
+  font-family: ECRegular;
+}
+
+@font-face {
+  font-family: "ECSemiBold";
+  src: url("../fonts/Euclid Circular A SemiBold.ttf");
+}
+.ECSemiBold {
+  font-family: ECSemiBold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main__sec__wrapper {
+  background: url("../img/background/main-bg-desktop.png") no-repeat center center;
+  background-size: cover;
+}
+
+#border__top {
+  width: 100%;
+  height: 3px;
+  background: url("../img/border/top_border.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+@media only screen and (min-width: 576px) {
+  #border__top {
+    height: 4px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #border__top {
+    font-size: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #border__top {
+    height: 7px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #border__top {
+    height: 6px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #border__top {
+    height: 8px;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

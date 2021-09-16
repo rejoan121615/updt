@@ -1,0 +1,12 @@
+$fonts-list: ("ECBold": "Euclid Circular A Bold.ttf", "ECLight": "Euclid Circular A Light.ttf", "ECMedium": "Euclid Circular A Medium.ttf", "ECRegular": "Euclid Circular A Regular.ttf", "ECSemiBold": "Euclid Circular A SemiBold.ttf");
+
+@each $name, $url in $fonts-list {
+    @font-face {
+        font-family: $name;
+        src: url("../fonts/#{$url}");
+    }
+    .#{$name} {
+        font-family: #{$name};
+    }
+}
+
