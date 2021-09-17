@@ -198,24 +198,50 @@ body {
   }
 }
 
-.s_head_ti {
+.s_head_ti, .big_s_head_ti {
   color: white;
   display: inline-block;
   padding: 5px 6px;
   background-color: #352878;
   text-transform: uppercase;
+  font-family: ECSemiBold;
 }
-.s_head_ti {
+.s_head_ti, .big_s_head_ti {
   font-size: 9.8px;
 }
 @media screen and (min-width: 310px) {
-  .s_head_ti {
+  .s_head_ti, .big_s_head_ti {
     font-size: calc( 9.8px + 6.2 * ( (100vw - 310px) / 682 ) );
   }
 }
 @media screen and (min-width: 992px) {
-  .s_head_ti {
+  .s_head_ti, .big_s_head_ti {
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .big_s_head_ti {
+    font-size: 17px;
+    padding: 7px 6px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .big_s_head_ti {
+    font-size: 18px;
+    padding: 8px 7px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .big_s_head_ti {
+    font-size: 19px;
+    padding: 9px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .big_s_head_ti {
+    font-size: 20px;
+    padding: 10px;
   }
 }
 
@@ -249,6 +275,13 @@ body {
     padding: 25px 35px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .cus_card {
+    height: 120px;
+    display: grid;
+    align-content: center;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .cus_card {
     margin-bottom: 25px;
@@ -258,6 +291,13 @@ body {
   .cus_card {
     padding: 30px;
     margin-bottom: 30px;
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .cus_card {
+    padding: 40px;
+    height: 145px;
   }
 }
 .cus_card:hover {
@@ -285,6 +325,11 @@ body {
 @media only screen and (min-width: 1400px) {
   .cus_card h5 {
     font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .cus_card h5 {
+    font-size: 21px;
   }
 }
 .cus_card .para {
@@ -315,6 +360,11 @@ body {
 @media only screen and (min-width: 1400px) {
   .cus_card .para {
     font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .cus_card .para {
+    font-size: 18.5px;
   }
 }
 
@@ -371,7 +421,12 @@ body {
 }
 @media only screen and (min-width: 1400px) {
   .quotes .texts .quote_text {
-    font-size: 30px;
+    font-size: 31px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .quotes .texts .quote_text {
+    font-size: 36.5px;
   }
 }
 .quotes .quotes_owner {
@@ -412,6 +467,12 @@ body {
   .quotes .quotes_owner {
     font-size: 28px;
     margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .quotes .quotes_owner {
+    font-size: 31px;
+    margin-top: 60px;
   }
 }
 
@@ -526,9 +587,9 @@ body {
     margin-top: 49px !important;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1800px) {
   .section_heading {
-    font-size: 82px !important;
+    font-size: 80px !important;
   }
 }
 
@@ -556,6 +617,11 @@ body {
 @media only screen and (min-width: 1400px) {
   .section_description span {
     font-size: 35px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .section_description span {
+    font-size: 48px !important;
   }
 }
 
@@ -772,22 +838,22 @@ h6 {
   }
 }
 @media only screen and (min-width: 992px) {
-  main #mainContainer .s_head_ti {
+  main #mainContainer .s_head_ti, main #mainContainer .big_s_head_ti {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  main #mainContainer .s_head_ti {
+  main #mainContainer .s_head_ti, main #mainContainer .big_s_head_ti {
     font-size: 17px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  main #mainContainer .s_head_ti {
+  main #mainContainer .s_head_ti, main #mainContainer .big_s_head_ti {
     font-size: 18.5px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  main #mainContainer .s_head_ti {
+  main #mainContainer .s_head_ti, main #mainContainer .big_s_head_ti {
     font-size: 20px;
   }
 }
@@ -1093,7 +1159,12 @@ main #mainContainer .card__element:nth-child(4) {
 }
 @media only screen and (min-width: 1400px) {
   #miniAttacks .container {
-    grid-gap: 55px 30px;
+    grid-gap: 80px 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #miniAttacks .container {
+    grid-gap: 110px 30px;
   }
 }
 #miniAttacks .container .main_heading {

@@ -194,8 +194,29 @@ body {
     padding: 5px 6px;
     background-color: $blue;
     text-transform: uppercase;
+    font-family: $semibold;
 }
 
+// small heading quotes
+.big_s_head_ti {
+    @extend .s_head_ti;
+    @include resp($lg) {
+        font-size: 17px;
+        padding: 7px 6px;
+    }
+    @include resp($xl) {
+        font-size: 18px;
+        padding: 8px 7px;
+    }
+    @include resp ($xxl) {
+        font-size: 19px;
+        padding: 9px;
+    }
+    @include resp ($mxl) {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
 // section heading lg
 .s_h_l {
     font-family: $bold;
@@ -222,18 +243,28 @@ body {
     @include resp($md) {
         padding: 25px 35px;
     }
-    @include resp ($xl) {
+    @include resp ($lg) {
+        height: 120px;
+        display: grid;
+        align-content: center;
+    }
+    @include resp($xl) {
         margin-bottom: 25px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         padding: 30px;
         margin-bottom: 30px;
+        height: 130px;
+    }
+    @include resp($mxl) {
+        padding: 40px;
+        height: 145px;
     }
 
     &:hover {
         box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
         transform: scale(1.05);
-        @include resp ($lg) {
+        @include resp($lg) {
             transform: scale(1.025);
         }
     }
@@ -242,13 +273,15 @@ body {
         @include resp($md) {
             font-size: 18px;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             font-size: 19px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             font-size: 20px;
         }
-        
+        @include resp ($mxl) {
+            font-size: 21px;
+        }
     }
     // paragraph
     .para {
@@ -261,14 +294,17 @@ body {
         @include resp($md) {
             font-size: 17px;
         }
-        @include resp ($lg) {
+        @include resp($lg) {
             font-size: 16px;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             font-size: 17px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             font-size: 18px;
+        }
+        @include resp ($mxl) {
+            font-size: 18.5px;
         }
     }
 }
@@ -282,7 +318,7 @@ body {
 
 // quote section
 .quotes {
-    // texts 
+    // texts
     .texts {
         line-height: 120%;
         .quote_text {
@@ -294,7 +330,7 @@ body {
             }
             @include resp($sm) {
                 font-size: 22px;
-                text-align: right!important;
+                text-align: right !important;
             }
             @include resp($md) {
                 font-size: 24px;
@@ -302,33 +338,40 @@ body {
             @include resp($lg) {
                 font-size: 22px;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 font-size: 26.5px;
             }
-            @include resp ($xxl) {
-                font-size: 30px;
+            @include resp($xxl) {
+                font-size: 31px;
+            }
+            @include resp ($mxl) {
+                font-size: 36.5px;
             }
         }
     }
-    // quotes owner 
+    // quotes owner
     .quotes_owner {
         font-size: 14px;
         margin-top: 10px;
         margin-bottom: 0px;
-        @include resp ($sm) {
-            text-align: right!important;
+        @include resp($sm) {
+            text-align: right !important;
         }
-        @include resp ($lg) {
+        @include resp($lg) {
             margin-top: 31px;
         }
         @include fSmallToLarge(14px, 22px);
-        @include resp ($xl) {
+        @include resp($xl) {
             margin-top: 25px;
             font-size: 25px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             font-size: 28px;
             margin-top: 40px;
+        }
+        @include resp ($mxl) {
+            font-size: 31px;
+            margin-top: 60px;
         }
     }
 }
@@ -382,18 +425,18 @@ body {
     font-family: $bold;
     // font-size: 25px;
     @include fSmallToLarge(25px, 55px);
-    @include resp ($lg) {
-        margin-top: 25px!important;
+    @include resp($lg) {
+        margin-top: 25px !important;
     }
-    @include resp ($xl) {
-        margin-top: 30px!important;
+    @include resp($xl) {
+        margin-top: 30px !important;
     }
-    @include resp ($xxl) {
-        font-size: 60px!important;
-        margin-top: 49px!important;
+    @include resp($xxl) {
+        font-size: 60px !important;
+        margin-top: 49px !important;
     }
-    @include resp ($xxl) {
-        font-size: 82px!important;
+    @include resp($mxl) {
+        font-size: 80px!important;
     }
 }
 
@@ -403,14 +446,16 @@ body {
     span {
         // font-size: 17px;
         @include fSmallToLarge(17px, 35px);
-        @include resp ($xl) {
-            font-size: 30px!important;
+        @include resp($xl) {
+            font-size: 30px !important;
         }
-        @include resp ($xxl) {
-            font-size: 35px!important;
+        @include resp($xxl) {
+            font-size: 35px !important;
+        }
+        @include resp ($mxl) {
+            font-size: 48px!important;
         }
     }
-
 }
 
 p,
@@ -564,7 +609,7 @@ main {
             grid-template-rows: repeat(6, 1fr);
             align-items: flex-start;
             margin-top: 45px;
-            padding-bottom: 50px!important;
+            padding-bottom: 50px !important;
         }
         @include resp($xl) {
             margin-top: 65px;
@@ -814,15 +859,18 @@ main {
             grid-template-rows: 1fr 3.25fr;
             grid-template-areas: initial;
             grid-gap: 45px 20px;
-            // padding 
-            padding-top: 130px!important;
-            padding-bottom: 50px!important;
+            // padding
+            padding-top: 130px !important;
+            padding-bottom: 50px !important;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             grid-gap: 55px 25px;
         }
         @include resp($xxl) {
-            grid-gap: 55px 30px;
+            grid-gap: 80px 30px;
+        }
+        @include resp ($mxl) {
+            grid-gap: 110px 30px;
         }
         // main heading ------------------
         .main_heading {
@@ -870,7 +918,6 @@ main {
                 @include resp($sm) {
                     max-width: initial;
                 }
-                
             }
         }
         // sec list
