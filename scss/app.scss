@@ -16,6 +16,7 @@ $zinzar: #602878;
 $half-pink: #fff5cc;
 $half-black: #d1d1d1;
 $little-red: #ff0000;
+$bgWhite: #f6f6f6;
 
 // fonts variable
 $bold: ECBold;
@@ -51,6 +52,7 @@ $color-list: (
     "half-pink": $half-pink,
     "half-black": $half-black,
     "little-red": $little-red,
+    "lateWhite": $bgWhite,
 );
 
 @each $name, $color in $color-list {
@@ -63,7 +65,6 @@ $color-list: (
 }
 // color class
 
-// auto responsive creator
 // responsive break points
 $msm: 310px;
 $xs: 425px;
@@ -86,6 +87,17 @@ $mxl: 1800px;
         @content;
     }
 }
+
+// auto responsive write
+$breakPointLists: 0px, 425px, 576px, 768px, 992px, 1200px, 1400px, 1800px;
+@mixin respLists($propertyName, $propertyValue) {
+    @for $i from 1 to 9 {
+        @include resp(nth($list: $breakPointLists, $n: $i)) {
+            #{$propertyName}: nth($list: $propertyValue, $n: $i);
+        }
+    }
+}
+
 
 // fluid fonts
 @function strip-unit($value) {
@@ -133,9 +145,12 @@ $mxl: 1800px;
     @include font-size($lg, $mxl, $font-small, $font-large);
 }
 
-// responsive list property  applyer 
+// responsive list property  applyer
 
-// normal style ------------------------------
+// global common style ------------------------------
+body {
+    background-color: $bgWhite;
+}
 // container modification
 .container {
     transition: all 0.5s;
@@ -161,13 +176,13 @@ $mxl: 1800px;
     display: inline-block;
     padding: 10px 15px !important;
     @include font-size($msm, $lg, 10px, 16px);
-    @include resp ($lg) {
-        font-size: 16px
+    @include resp($lg) {
+        font-size: 16px;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         font-size: 17px;
     }
-    @include resp ($mxl) {
+    @include resp($mxl) {
         font-size: 18px;
     }
 }
@@ -182,23 +197,74 @@ $mxl: 1800px;
     text-transform: uppercase;
 }
 
+// section heading lg
+.s_h_l {
+    font-family: $bold;
+    font-size: 26px;
+}
+
+// custom card container
+
+.cus_card {
+    padding: 15px;
+    border: none !important;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 10px #e3e3e3, 0px 0px 10px #e3e3e3;
+    @include resp($sm) {
+        padding: 25px 5px 25px 15px;
+    }
+    &:hover {
+        box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
+        transform: scale(1.05);
+    }
+    h5 {
+        font-size: 14.5px;
+    }
+    // paragraph
+    .para {
+        margin-top: 3px;
+        font-size: 12.5px;
+    }
+}
+
+// para grpah
+
+.para {
+    font-size: 14.5px;
+    line-height: 110%;
+}
+
+// quote section
+.quotes {
+    .texts {
+        .quote_text {
+            font-family: 14px;
+            display: inline-block;
+        }
+    }
+}
+
 // most larger headering
 .m_head_wrap {
     h1 {
         font-family: $bold;
         @include fsizeHeight(28px, 112%);
-        @include font-size($msm, $lg, 28px, 70px);
+        @include font-size($msm, $lg, 26px, 70px);
         @include resp($lg) {
             color: black !important;
             font-size: 57px;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             font-size: 62px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             font-size: 75px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             font-size: 95px;
         }
     }
@@ -214,15 +280,31 @@ $mxl: 1800px;
             // @include fLargeToExtraLarge(36px, 62px);
             font-size: 36px;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             font-size: 38px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             font-size: 48px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             font-size: 60px;
         }
+    }
+}
+
+// section heading
+.section_heading {
+    font-family: $bold;
+    // font-size: 25px;
+    @include fSmallToLarge(25px, 55px);
+}
+
+// section description
+.section_description {
+    font-family: $medium;
+    span {
+        // font-size: 17px;
+        @include fSmallToLarge(17px, 35px);
     }
 }
 
@@ -255,6 +337,7 @@ h6 {
     @include resp($xxl) {
         background: url("../img/background/1920px/main-bg-desktop.png")
             no-repeat center center;
+        background-size: 100% 100%;
     }
 }
 
@@ -357,16 +440,16 @@ h6 {
                 }
             }
             .nav-link.cus__btn {
-                @include resp ($mxl) {
-                    padding-left: 27px!important;
-                    padding-right: 27px!important;
+                @include resp($mxl) {
+                    padding-left: 27px !important;
+                    padding-right: 27px !important;
                 }
             }
         }
     }
 }
 
-// main section ---------------------------------------------
+// ------------------------ main section style ---------------------------------------------
 main {
     // heading and form
     #mainContainer {
@@ -377,14 +460,29 @@ main {
             align-items: flex-start;
             margin-top: 45px;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             margin-top: 65px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             margin-top: 80px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             margin-top: 110px;
+        }
+        // s heading
+        .s_head_ti {
+            @include resp($lg) {
+                font-size: 16px;
+            }
+            @include resp($xl) {
+                font-size: 17px;
+            }
+            @include resp($xxl) {
+                font-size: 18.5px;
+            }
+            @include resp($mxl) {
+                font-size: 20px;
+            }
         }
         // heading form
         .heading_form {
@@ -405,6 +503,12 @@ main {
                 flex-basis: 100%;
                 border: none !important;
                 border-radius: 0 !important;
+                @include resp($xxl) {
+                    flex-basis: 45%;
+                }
+                @include resp($mxl) {
+                    flex-basis: 35%;
+                }
             }
             // input
             input {
@@ -417,24 +521,21 @@ main {
                 @include resp($md) {
                     font-size: 18px;
                 }
-                @include resp ($lg) {
+                @include resp($lg) {
                     @include fLargeToExtraLarge(15px, 18px);
                     padding: 13px;
                     // font-size: 15px!important;
                 }
                 @include resp($xl) {
-                    padding: 14px!important;
+                    padding: 14px !important;
                 }
-                @include resp ($xxl) {
-                    padding: 17px!important;
+                @include resp($xxl) {
+                    padding: 17px !important;
+                    flex-basis: 65%;
                 }
-                @include resp ($mxl) {
-                    padding: 20px!important;
+                @include resp($mxl) {
+                    padding: 20px !important;
                 }
-            }
-            // button
-            button {
-                // font-size: 10px;
             }
         }
         // bottom slogan
@@ -449,13 +550,13 @@ main {
                     // @include fLargeToExtraLarge(16px, 21px);
                     font-size: 19px;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     font-size: 20.5px;
                 }
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     font-size: 25.5px;
                 }
-                @include resp ($mxl) {
+                @include resp($mxl) {
                     font-size: 32px;
                 }
             }
@@ -464,38 +565,35 @@ main {
         // card container ----------------------------
         #card__wrap {
             display: none;
-            @include resp ($lg) {
-
+            @include resp($lg) {
                 grid-row: 1/7;
                 grid-column: 4/7;
-                // grid items 
+                // grid items
                 display: grid;
                 grid-template-rows: repeat(3, 1fr);
                 grid-template-columns: repeat(8, 1fr);
-                grid-template-areas: 
-                ". . . . item1 item1 item1 item1"
-                ". . . item2 item2 item2 item2 ."
-                "item3 item3 item3 item3 item4 item4 item4 item4"
-                ;
+                grid-template-areas:
+                    ". . . . item1 item1 item1 item1"
+                    ". . . item2 item2 item2 item2 ."
+                    "item3 item3 item3 item3 item4 item4 item4 item4";
                 grid-row-gap: 30px;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 grid-column: 3/7;
                 grid-template-columns: repeat(3, 200px);
                 grid-template-rows: repeat(3, 190px);
-                grid-template-areas: 
+                grid-template-areas:
                     ". . item1"
                     ". item2 ."
-                    "item3 . item4"
-                ;
+                    "item3 . item4";
                 grid-row-gap: 0px;
                 justify-self: flex-end;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 grid-template-columns: repeat(3, 235px);
                 grid-template-rows: repeat(3, 235px);
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 grid-template-columns: repeat(3, 260px);
                 grid-template-rows: repeat(3, 260px);
             }
@@ -506,28 +604,28 @@ main {
             width: 215px;
             padding: 28px 30px;
             border-radius: 1px;
-            @include resp ($lg) {
+            @include resp($lg) {
                 justify-self: flex-end;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 width: 200px;
                 padding-top: 30px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 padding-top: 35px;
                 width: 235px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 width: 260px;
                 padding: 50px 25px 40px 42px;
             }
             .icon_wrap {
                 img {
                     width: 20px;
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         width: 23px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         width: 26px;
                     }
                 }
@@ -536,10 +634,10 @@ main {
             .heading {
                 h6 {
                     @include fLargeToExtraLarge(14px, 17.5px);
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         font-size: 15px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         font-size: 17px;
                     }
                     @include resp($mxl) {
@@ -549,7 +647,7 @@ main {
             }
             // paragraph
             .para_wrap {
-                @include resp ($xl) {
+                @include resp($xl) {
                     margin-top: 8px;
                 }
                 p {
@@ -557,7 +655,7 @@ main {
                     line-height: 130%;
                     color: #ffffffd1 !important;
                     font-size: 12px;
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         font-size: 14px;
                         line-height: 140%;
                     }
@@ -578,12 +676,62 @@ main {
             &:nth-child(3) {
                 background-color: $zinzar;
                 grid-area: item4;
-                justify-self: flex-start;
+                justify-self: flex-end;
             }
             &:nth-child(4) {
                 background-color: $green;
                 grid-area: item3;
             }
+        }
+    }
+}
+
+// ---------------------------- mini attacks -----------------------------
+#miniAttacks {
+    background: url("../img/background/curves-1.png") no-repeat top right;
+    background-size: 95% 100%;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1.1fr auto 1.1fr;
+        grid-template-areas:
+            "mainHeading"
+            "firstLists"
+            "quotes"
+            "secLists";
+        // @include resp ($sm) {
+        //     grid-tem
+        // }
+        @include resp($lg) {
+            grid-template-columns: 1fr repeat(3, 0.33fr) 1fr;
+            grid-template-rows: 1fr 3.25fr;
+        }
+        // main heading ------------------
+        .main_heading {
+            grid-area: mainHeading;
+            // smb
+            .s_head_ti {
+            }
+            // section highlight
+            .section_highlight {
+            }
+            // tittle description
+            .tittle_description {
+                font-size: 18px;
+            }
+        }
+        // first lists
+        .first_card_list {
+            grid-area: firstLists;
+        }
+        // secound list
+        .quotes {
+            grid-area: quotes;
+            max-width: 400px;
+        }
+        // sec list
+        .sec_card_list {
+            grid-area: secLists;
         }
     }
 }

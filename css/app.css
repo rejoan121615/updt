@@ -128,6 +128,18 @@
   background-color: #ff0000 !important;
 }
 
+.lateWhite {
+  color: #f6f6f6 !important;
+}
+
+.bg-lateWhite {
+  background-color: #f6f6f6 !important;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
 .container {
   transition: all 0.5s;
 }
@@ -207,17 +219,59 @@
   }
 }
 
+.s_h_l {
+  font-family: ECBold;
+  font-size: 26px;
+}
+
+.cus_card {
+  padding: 15px;
+  border: none !important;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px #e3e3e3, 0px 0px 10px #e3e3e3;
+}
+@media only screen and (min-width: 576px) {
+  .cus_card {
+    padding: 25px 5px 25px 15px;
+  }
+}
+.cus_card:hover {
+  box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
+  transform: scale(1.05);
+}
+.cus_card h5 {
+  font-size: 14.5px;
+}
+.cus_card .para {
+  margin-top: 3px;
+  font-size: 12.5px;
+}
+
+.para {
+  font-size: 14.5px;
+  line-height: 110%;
+}
+
+.quotes .texts .quote_text {
+  font-family: 14px;
+  display: inline-block;
+}
+
 .m_head_wrap h1 {
   font-family: ECBold;
   font-size: 28px;
   line-height: 112%;
 }
 .m_head_wrap h1 {
-  font-size: 28px;
+  font-size: 26px;
 }
 @media screen and (min-width: 310px) {
   .m_head_wrap h1 {
-    font-size: calc( 28px + 42 * ( (100vw - 310px) / 682 ) );
+    font-size: calc( 26px + 44 * ( (100vw - 310px) / 682 ) );
   }
 }
 @media screen and (min-width: 992px) {
@@ -286,6 +340,40 @@
   }
 }
 
+.section_heading {
+  font-family: ECBold;
+}
+.section_heading {
+  font-size: 25px;
+}
+@media screen and (min-width: 310px) {
+  .section_heading {
+    font-size: calc( 25px + 30 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  .section_heading {
+    font-size: 55px;
+  }
+}
+
+.section_description {
+  font-family: ECMedium;
+}
+.section_description span {
+  font-size: 17px;
+}
+@media screen and (min-width: 310px) {
+  .section_description span {
+    font-size: calc( 17px + 18 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  .section_description span {
+    font-size: 35px;
+  }
+}
+
 p,
 a {
   font-family: ECMedium;
@@ -313,6 +401,7 @@ h6 {
 @media only screen and (min-width: 1400px) {
   #main__sec__wrapper {
     background: url("../img/background/1920px/main-bg-desktop.png") no-repeat center center;
+    background-size: 100% 100%;
   }
 }
 
@@ -496,6 +585,26 @@ h6 {
     margin-top: 110px;
   }
 }
+@media only screen and (min-width: 992px) {
+  main #mainContainer .s_head_ti {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main #mainContainer .s_head_ti {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main #mainContainer .s_head_ti {
+    font-size: 18.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main #mainContainer .s_head_ti {
+    font-size: 20px;
+  }
+}
 @media only screen and (min-width: 425px) {
   main #mainContainer .heading_form {
     margin-top: 15px;
@@ -514,6 +623,18 @@ main #mainContainer .email__form button {
   flex-basis: 100%;
   border: none !important;
   border-radius: 0 !important;
+}
+@media only screen and (min-width: 1400px) {
+  main #mainContainer .email__form input,
+main #mainContainer .email__form button {
+    flex-basis: 45%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main #mainContainer .email__form input,
+main #mainContainer .email__form button {
+    flex-basis: 35%;
+  }
 }
 main #mainContainer .email__form input {
   padding: 10px !important;
@@ -568,6 +689,7 @@ main #mainContainer .email__form input {
 @media only screen and (min-width: 1400px) {
   main #mainContainer .email__form input {
     padding: 17px !important;
+    flex-basis: 65%;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -750,11 +872,44 @@ main #mainContainer .card__element:nth-child(2) {
 main #mainContainer .card__element:nth-child(3) {
   background-color: #602878;
   grid-area: item4;
-  justify-self: flex-start;
+  justify-self: flex-end;
 }
 main #mainContainer .card__element:nth-child(4) {
   background-color: #4b7828;
   grid-area: item3;
+}
+
+#miniAttacks {
+  background: url("../img/background/curves-1.png") no-repeat top right;
+  background-size: 95% 100%;
+}
+#miniAttacks .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1.1fr auto 1.1fr;
+  grid-template-areas: "mainHeading" "firstLists" "quotes" "secLists";
+}
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container {
+    grid-template-columns: 1fr repeat(3, 0.33fr) 1fr;
+    grid-template-rows: 1fr 3.25fr;
+  }
+}
+#miniAttacks .container .main_heading {
+  grid-area: mainHeading;
+}
+#miniAttacks .container .main_heading .tittle_description {
+  font-size: 18px;
+}
+#miniAttacks .container .first_card_list {
+  grid-area: firstLists;
+}
+#miniAttacks .container .quotes {
+  grid-area: quotes;
+  max-width: 400px;
+}
+#miniAttacks .container .sec_card_list {
+  grid-area: secLists;
 }
 
 /*# sourceMappingURL=app.css.map */
