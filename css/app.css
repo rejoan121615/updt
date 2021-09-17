@@ -335,6 +335,7 @@ body {
 .cus_card .para {
   margin-top: 3px;
   font-size: 14px;
+  line-height: 130%;
 }
 @media only screen and (min-width: 576px) {
   .cus_card .para {
@@ -379,19 +380,6 @@ body {
 .quotes .texts .quote_text {
   font-family: 14px;
   display: inline-block;
-}
-.quotes .texts .quote_text {
-  font-size: 14px;
-}
-@media screen and (min-width: 310px) {
-  .quotes .texts .quote_text {
-    font-size: calc( 14px + 15 * ( (100vw - 310px) / 682 ) );
-  }
-}
-@media screen and (min-width: 992px) {
-  .quotes .texts .quote_text {
-    font-size: 29px;
-  }
 }
 @media only screen and (min-width: 425px) {
   .quotes .texts .quote_text {
@@ -571,20 +559,9 @@ body {
     font-size: 55px;
   }
 }
-@media only screen and (min-width: 992px) {
-  .section_heading {
-    margin-top: 25px !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .section_heading {
-    margin-top: 30px !important;
-  }
-}
 @media only screen and (min-width: 1400px) {
   .section_heading {
     font-size: 60px !important;
-    margin-top: 49px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -595,6 +572,21 @@ body {
 
 .section_description {
   font-family: ECMedium;
+}
+@media only screen and (min-width: 1200px) {
+  .section_description {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section_description {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .section_description {
+    margin-top: 15px;
+  }
 }
 .section_description span {
   font-size: 17px;
@@ -612,16 +604,19 @@ body {
 @media only screen and (min-width: 1200px) {
   .section_description span {
     font-size: 30px !important;
+    margin-top: 5px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .section_description span {
     font-size: 35px !important;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .section_description span {
     font-size: 48px !important;
+    margin-top: 15px;
   }
 }
 
@@ -1131,21 +1126,16 @@ main #mainContainer .card__element:nth-child(4) {
   grid-area: item3;
 }
 
-#miniAttacks {
-  background: url("../img/background/curves-1.png") no-repeat top right;
-  background-size: 95% 100%;
-}
-#miniAttacks .container {
+.card_container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1.1fr auto 1.1fr;
   grid-template-areas: "mainHeading" "firstLists" "quotes" "secLists";
   grid-row-gap: 10px;
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container {
+  .card_container {
     grid-template-columns: 1fr repeat(4, 0.25fr) 1fr;
-    grid-template-rows: 1fr 3.25fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas: initial;
     grid-gap: 45px 20px;
     padding-top: 130px !important;
@@ -1153,72 +1143,253 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 @media only screen and (min-width: 1200px) {
-  #miniAttacks .container {
+  .card_container {
     grid-gap: 55px 25px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #miniAttacks .container {
+  .card_container {
     grid-gap: 80px 30px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #miniAttacks .container {
+  .card_container {
     grid-gap: 110px 30px;
   }
 }
-#miniAttacks .container .main_heading {
+.card_container .main_heading {
   grid-area: mainHeading;
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container .main_heading {
+  .card_container .main_heading {
     grid-row: 1/2;
     grid-column: 1/6;
   }
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container .main_heading .section_heading {
+  .card_container .main_heading .section_heading {
     font-size: 50px;
     margin-top: 8px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container .main_heading .section_description span {
+  .card_container .main_heading .section_description span {
     font-size: 26px;
   }
 }
-#miniAttacks .container .first_card_list {
+.card_container .first_card_list {
   grid-area: firstLists;
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container .first_card_list {
+  .card_container .first_card_list {
     grid-area: initial;
     grid-row: 2/3;
     grid-column: 4/-1;
   }
 }
-#miniAttacks .container .quotes {
+.card_container .quotes {
   grid-area: quotes;
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container .quotes {
+  .card_container .quotes {
     grid-row: 1/2;
     grid-column: 2/-1;
   }
 }
 @media only screen and (min-width: 576px) {
-  #miniAttacks .container .quotes .quote_text {
+  .card_container .quotes .quote_text {
     max-width: initial;
   }
 }
-#miniAttacks .container .sec_card_list {
+.card_container .sec_card_list {
   grid-area: secLists;
 }
 @media only screen and (min-width: 992px) {
-  #miniAttacks .container .sec_card_list {
+  .card_container .sec_card_list {
     grid-area: initial;
     grid-row: 2/3;
     grid-column: 1/4;
+  }
+}
+
+#miniAttacks .container .section_heading {
+  font-family: ECBold;
+}
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .section_heading {
+    margin-top: 25px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #miniAttacks .container .section_heading {
+    margin-top: 30px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #miniAttacks .container .section_heading {
+    font-size: 60px !important;
+    margin-top: 49px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #miniAttacks .container .section_heading {
+    font-size: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 18.5px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 315px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: calc( 18.5px + 6.5 * ( (100vw - 315px) / 110 ) );
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 425px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 576px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 576px) and (min-width: 425px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: calc( 25px + 10 * ( (100vw - 425px) / 151 ) );
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 576px) and (min-width: 576px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) and (min-width: 576px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: calc( 34px + 2 * ( (100vw - 576px) / 192 ) );
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) and (min-width: 768px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 768px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: calc( 44px + 4 * ( (100vw - 768px) / 224 ) );
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 992px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 41px;
+  }
+}
+#minimizeDowntime .container .main_heading .section_heading:last-child {
+  margin-top: 0px !important;
+}
+@media only screen and (min-width: 1200px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    font-size: 55px !important;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #minimizeDowntime .container .main_heading .section_heading {
+    margin-top: 40px;
+    font-size: 70px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) and (min-width: 576px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: calc( 20px + 4 * ( (100vw - 576px) / 192 ) );
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) and (min-width: 768px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) and (min-width: 768px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: calc( 24px + 6 * ( (100vw - 768px) / 224 ) );
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) and (min-width: 992px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 28px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 33px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #minimizeDowntime .container .section_description span {
+    font-size: 41px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #minimizeDowntime .container .quotes {
+    grid-column: 1/6;
+    display: grid;
+  }
+  #minimizeDowntime .container .quotes .quotes_owner {
+    align-self: flex-end;
+  }
+}
+#minimizeDowntime .container .quotes .texts .quote_text {
+  text-align: left !important;
+}
+#minimizeDowntime .container .quotes .quotes_owner {
+  text-align: left !important;
+}
+@media only screen and (min-width: 992px) {
+  #minimizeDowntime .container .main_heading {
+    grid-column: 2/7;
   }
 }
 

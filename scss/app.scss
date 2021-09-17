@@ -143,6 +143,12 @@ $breakPointLists: 0px, 425px, 576px, 768px, 992px, 1200px, 1400px, 1800px;
 @mixin fLargeToExtraLarge($font-small, $font-large) {
     @include font-size($lg, $mxl, $font-small, $font-large);
 }
+// minimum to maximum media query
+@mixin minMax($min, $max) {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
 
 // responsive list property  applyer
 
@@ -208,11 +214,11 @@ body {
         font-size: 18px;
         padding: 8px 7px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         font-size: 19px;
         padding: 9px;
     }
-    @include resp ($mxl) {
+    @include resp($mxl) {
         font-size: 20px;
         padding: 10px;
     }
@@ -243,7 +249,7 @@ body {
     @include resp($md) {
         padding: 25px 35px;
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         height: 120px;
         display: grid;
         align-content: center;
@@ -279,7 +285,7 @@ body {
         @include resp($xxl) {
             font-size: 20px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             font-size: 21px;
         }
     }
@@ -287,6 +293,7 @@ body {
     .para {
         margin-top: 3px;
         font-size: 14px;
+        line-height: 130%;
         @include resp($sm) {
             font-size: 15px;
             margin-top: 5px;
@@ -303,7 +310,7 @@ body {
         @include resp($xxl) {
             font-size: 18px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             font-size: 18.5px;
         }
     }
@@ -324,7 +331,6 @@ body {
         .quote_text {
             font-family: 14px;
             display: inline-block;
-            @include fSmallToLarge(14px, 29px);
             @include resp($xs) {
                 line-height: 135%;
             }
@@ -344,7 +350,7 @@ body {
             @include resp($xxl) {
                 font-size: 31px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 font-size: 36.5px;
             }
         }
@@ -369,7 +375,7 @@ body {
             font-size: 28px;
             margin-top: 40px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             font-size: 31px;
             margin-top: 60px;
         }
@@ -425,35 +431,40 @@ body {
     font-family: $bold;
     // font-size: 25px;
     @include fSmallToLarge(25px, 55px);
-    @include resp($lg) {
-        margin-top: 25px !important;
-    }
-    @include resp($xl) {
-        margin-top: 30px !important;
-    }
     @include resp($xxl) {
         font-size: 60px !important;
-        margin-top: 49px !important;
     }
     @include resp($mxl) {
-        font-size: 80px!important;
+        font-size: 80px !important;
     }
 }
 
 // section description
 .section_description {
     font-family: $medium;
+    @include resp($xl) {
+        margin-top: 5px;
+    }
+    @include resp($xxl) {
+        margin-top: 10px;
+    }
+    @include resp($mxl) {
+        margin-top: 15px;
+    }
     span {
         // font-size: 17px;
         @include fSmallToLarge(17px, 35px);
         @include resp($xl) {
             font-size: 30px !important;
+            margin-top: 5px;
         }
         @include resp($xxl) {
             font-size: 35px !important;
+            margin-top: 10px;
         }
-        @include resp ($mxl) {
-            font-size: 48px!important;
+        @include resp($mxl) {
+            font-size: 48px !important;
+            margin-top: 15px;
         }
     }
 }
@@ -837,96 +848,197 @@ main {
     }
 }
 
-// ---------------------------- mini attacks -----------------------------
-#miniAttacks {
-    background: url("../img/background/curves-1.png") no-repeat top right;
-    background-size: 95% 100%;
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1.1fr auto 1.1fr;
-        grid-template-areas:
-            "mainHeading"
-            "firstLists"
-            "quotes"
-            "secLists";
-        grid-row-gap: 10px;
-        // @include resp ($sm) {
-        //     grid-tem
-        // }
+// ---------------------------- mini attacks card decoration -----------------------------
+.card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "mainHeading"
+        "firstLists"
+        "quotes"
+        "secLists";
+    grid-row-gap: 10px;
+    @include resp($lg) {
+        grid-template-columns: 1fr repeat(4, 0.25fr) 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: initial;
+        grid-gap: 45px 20px;
+        // padding
+        padding-top: 130px !important;
+        padding-bottom: 50px !important;
+    }
+    @include resp($xl) {
+        grid-gap: 55px 25px;
+    }
+    @include resp($xxl) {
+        grid-gap: 80px 30px;
+    }
+    @include resp($mxl) {
+        grid-gap: 110px 30px;
+    }
+    // main heading ------------------
+    .main_heading {
+        grid-area: mainHeading;
         @include resp($lg) {
-            grid-template-columns: 1fr repeat(4, 0.25fr) 1fr;
-            grid-template-rows: 1fr 3.25fr;
-            grid-template-areas: initial;
-            grid-gap: 45px 20px;
-            // padding
-            padding-top: 130px !important;
-            padding-bottom: 50px !important;
+            grid-row: 1/2;
+            grid-column: 1/6;
         }
-        @include resp($xl) {
-            grid-gap: 55px 25px;
+        // smb
+        .s_head_ti {
         }
-        @include resp($xxl) {
-            grid-gap: 80px 30px;
-        }
-        @include resp ($mxl) {
-            grid-gap: 110px 30px;
-        }
-        // main heading ------------------
-        .main_heading {
-            grid-area: mainHeading;
+        // section highlight
+        .section_heading {
             @include resp($lg) {
-                grid-row: 1/2;
-                grid-column: 1/6;
+                font-size: 50px;
+                margin-top: 8px;
             }
-            // smb
-            .s_head_ti {
-            }
-            // section highlight
-            .section_heading {
+        }
+        // tittle description
+        .section_description {
+            span {
                 @include resp($lg) {
-                    font-size: 50px;
-                    margin-top: 8px;
-                }
-            }
-            // tittle description
-            .section_description {
-                span {
-                    @include resp($lg) {
-                        font-size: 26px;
-                    }
+                    font-size: 26px;
                 }
             }
         }
-        // first lists
-        .first_card_list {
-            grid-area: firstLists;
+    }
+    // first lists
+    .first_card_list {
+        grid-area: firstLists;
+        @include resp($lg) {
+            grid-area: initial;
+            grid-row: 2/3;
+            grid-column: 4/-1;
+        }
+    }
+    // secound list
+    .quotes {
+        grid-area: quotes;
+        @include resp($lg) {
+            grid-row: 1/2;
+            grid-column: 2/-1;
+        }
+        .quote_text {
+            @include resp($sm) {
+                max-width: initial;
+            }
+        }
+    }
+    // sec list
+    .sec_card_list {
+        grid-area: secLists;
+        @include resp($lg) {
+            grid-area: initial;
+            grid-row: 2/3;
+            grid-column: 1/4;
+        }
+    }
+}
+
+#miniAttacks {
+    .container {
+        // section margin top
+        .section_heading {
+            font-family: $bold;
             @include resp($lg) {
-                grid-area: initial;
-                grid-row: 2/3;
-                grid-column: 4/-1;
+                margin-top: 25px !important;
+            }
+            @include resp($xl) {
+                margin-top: 30px !important;
+            }
+            @include resp($xxl) {
+                font-size: 60px !important;
+                margin-top: 49px !important;
+            }
+            @include resp($mxl) {
+                font-size: 80px !important;
             }
         }
-        // secound list
+    }
+}
+// ---------------------------- minimize downtime -----------------------------
+#minimizeDowntime {
+    .container {
+        .main_heading {
+            // section heading
+            .section_heading {
+                @media only screen and (max-width: $xs) {
+                    @include font-size(315px, $xs, 18.5px, 25px);
+                }
+                @media screen and (min-width: $xs) and (max-width: $sm) {
+                    @include font-size($xs, $sm, 25px, 35px);
+                }
+                @media screen and (min-width: $sm) and (max-width: $md) {
+                    @include font-size($sm, $md, 34px, 36px);
+                }
+                @media screen and (min-width: $md) and (max-width: $lg) {
+                    @include font-size($md, $lg, 44px, 48px);
+                }
+                @include resp($lg) {
+                    font-size: 41px;
+                }
+                &:last-child {
+                    margin-top: 0px !important;
+                }
+                @include resp($xl) {
+                    margin-top: 15px;
+                }
+                @include resp($xxl) {
+                    font-size: 55px !important;
+                    margin-top: 25px;
+                }
+                @include resp($mxl) {
+                    margin-top: 40px;
+                    font-size: 70px !important;
+                }
+            }
+        }
+        // section secound heading
+        .section_description {
+            span {
+                @include minMax($sm, $md) {
+                    // font-size: ;
+                    @include font-size($sm, $md, 20px, 24px);
+                }
+                @include minMax($md, $lg) {
+                    @include font-size($md, $lg, 24px, 30px);
+                }
+                @include resp($lg) {
+                    font-size: 25px !important;
+                }
+                @include resp($xl) {
+                    font-size: 28px !important;
+                }
+                @include resp($xxl) {
+                    font-size: 33px !important;
+                }
+                @include resp($mxl) {
+                    font-size: 41px !important;
+                }
+            }
+        }
+        // ------------quotes section------------
         .quotes {
-            grid-area: quotes;
             @include resp($lg) {
-                grid-row: 1/2;
-                grid-column: 2/-1;
-            }
-            .quote_text {
-                @include resp($sm) {
-                    max-width: initial;
+                grid-column: 1/6;
+                display: grid;
+                .quotes_owner {
+                    align-self: flex-end;
                 }
             }
+            .texts {
+                .quote_text {
+                    text-align: left !important;
+                }
+            }
+            .quotes_owner {
+                text-align: left !important;
+            }
         }
-        // sec list
-        .sec_card_list {
-            grid-area: secLists;
+        // main heading
+        .main_heading {
             @include resp($lg) {
-                grid-area: initial;
-                grid-row: 2/3;
-                grid-column: 1/4;
+                grid-column: 2/7;
             }
         }
     }
