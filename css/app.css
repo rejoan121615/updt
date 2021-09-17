@@ -234,21 +234,88 @@ body {
   border-radius: 1px;
   box-shadow: 0px 0px 10px #e3e3e3, 0px 0px 10px #e3e3e3;
 }
+@media only screen and (min-width: 425px) {
+  .cus_card {
+    padding: 22px;
+  }
+}
 @media only screen and (min-width: 576px) {
   .cus_card {
-    padding: 25px 5px 25px 15px;
+    padding: 28px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cus_card {
+    padding: 25px 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cus_card {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .cus_card {
+    padding: 30px;
+    margin-bottom: 30px;
   }
 }
 .cus_card:hover {
   box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
   transform: scale(1.05);
 }
+@media only screen and (min-width: 992px) {
+  .cus_card:hover {
+    transform: scale(1.025);
+  }
+}
 .cus_card h5 {
-  font-size: 14.5px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .cus_card h5 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cus_card h5 {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .cus_card h5 {
+    font-size: 20px;
+  }
 }
 .cus_card .para {
   margin-top: 3px;
-  font-size: 12.5px;
+  font-size: 14px;
+}
+@media only screen and (min-width: 576px) {
+  .cus_card .para {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cus_card .para {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cus_card .para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cus_card .para {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .cus_card .para {
+    font-size: 18px;
+  }
 }
 
 .para {
@@ -256,9 +323,96 @@ body {
   line-height: 110%;
 }
 
+.quotes .texts {
+  line-height: 120%;
+}
 .quotes .texts .quote_text {
   font-family: 14px;
   display: inline-block;
+}
+.quotes .texts .quote_text {
+  font-size: 14px;
+}
+@media screen and (min-width: 310px) {
+  .quotes .texts .quote_text {
+    font-size: calc( 14px + 15 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  .quotes .texts .quote_text {
+    font-size: 29px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .quotes .texts .quote_text {
+    line-height: 135%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .quotes .texts .quote_text {
+    font-size: 22px;
+    text-align: right !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .quotes .texts .quote_text {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .quotes .texts .quote_text {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .quotes .texts .quote_text {
+    font-size: 26.5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .quotes .texts .quote_text {
+    font-size: 30px;
+  }
+}
+.quotes .quotes_owner {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+@media only screen and (min-width: 576px) {
+  .quotes .quotes_owner {
+    text-align: right !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .quotes .quotes_owner {
+    margin-top: 31px;
+  }
+}
+.quotes .quotes_owner {
+  font-size: 14px;
+}
+@media screen and (min-width: 310px) {
+  .quotes .quotes_owner {
+    font-size: calc( 14px + 8 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  .quotes .quotes_owner {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .quotes .quotes_owner {
+    margin-top: 25px;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .quotes .quotes_owner {
+    font-size: 28px;
+    margin-top: 40px;
+  }
 }
 
 .m_head_wrap h1 {
@@ -356,6 +510,27 @@ body {
     font-size: 55px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .section_heading {
+    margin-top: 25px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section_heading {
+    margin-top: 30px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section_heading {
+    font-size: 60px !important;
+    margin-top: 49px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section_heading {
+    font-size: 82px !important;
+  }
+}
 
 .section_description {
   font-family: ECMedium;
@@ -371,6 +546,16 @@ body {
 @media screen and (min-width: 992px) {
   .section_description span {
     font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section_description span {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section_description span {
+    font-size: 35px !important;
   }
 }
 
@@ -568,6 +753,7 @@ h6 {
     grid-template-rows: repeat(6, 1fr);
     align-items: flex-start;
     margin-top: 45px;
+    padding-bottom: 50px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -888,28 +1074,81 @@ main #mainContainer .card__element:nth-child(4) {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1.1fr auto 1.1fr;
   grid-template-areas: "mainHeading" "firstLists" "quotes" "secLists";
+  grid-row-gap: 10px;
 }
 @media only screen and (min-width: 992px) {
   #miniAttacks .container {
-    grid-template-columns: 1fr repeat(3, 0.33fr) 1fr;
+    grid-template-columns: 1fr repeat(4, 0.25fr) 1fr;
     grid-template-rows: 1fr 3.25fr;
+    grid-template-areas: initial;
+    grid-gap: 45px 20px;
+    padding-top: 130px !important;
+    padding-bottom: 50px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #miniAttacks .container {
+    grid-gap: 55px 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #miniAttacks .container {
+    grid-gap: 55px 30px;
   }
 }
 #miniAttacks .container .main_heading {
   grid-area: mainHeading;
 }
-#miniAttacks .container .main_heading .tittle_description {
-  font-size: 18px;
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .main_heading {
+    grid-row: 1/2;
+    grid-column: 1/6;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .main_heading .section_heading {
+    font-size: 50px;
+    margin-top: 8px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .main_heading .section_description span {
+    font-size: 26px;
+  }
 }
 #miniAttacks .container .first_card_list {
   grid-area: firstLists;
 }
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .first_card_list {
+    grid-area: initial;
+    grid-row: 2/3;
+    grid-column: 4/-1;
+  }
+}
 #miniAttacks .container .quotes {
   grid-area: quotes;
-  max-width: 400px;
+}
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .quotes {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #miniAttacks .container .quotes .quote_text {
+    max-width: initial;
+  }
 }
 #miniAttacks .container .sec_card_list {
   grid-area: secLists;
+}
+@media only screen and (min-width: 992px) {
+  #miniAttacks .container .sec_card_list {
+    grid-area: initial;
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
