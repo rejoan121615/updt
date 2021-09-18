@@ -89,7 +89,7 @@ $mxl: 1800px;
 }
 
 // auto responsive write
-$breakPointLists: 0px, 425px, 576px, 768px, 992px, 1200px, 1400px, 1800px;
+$breakPointLists: 1800px, 1400px, 1200px, 992px, 768px, 576px, 425px, 0px;
 @mixin respLists($propertyName, $propertyValue) {
     @for $i from 1 to 9 {
         @include resp(nth($list: $breakPointLists, $n: $i)) {
@@ -179,6 +179,8 @@ body {
     background-color: $yellow;
     color: black !important;
     display: inline-block;
+    text-decoration: none;
+    border: none;
     padding: 10px 15px !important;
     @include font-size($msm, $lg, 10px, 16px);
     @include resp($lg) {
@@ -466,6 +468,56 @@ body {
             font-size: 48px !important;
             margin-top: 15px;
         }
+    }
+}
+
+// small section heading 
+.small_section_heading {
+    @extend .semiBold;
+    color: $blue;
+    @include font-size($xs, $mxl, 13px, 19px);
+    span {
+        background-color: #FBF2CB;
+    }
+}
+
+
+// texts and buttons 
+.text__buttons {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-top: 20px;
+    @include resp ($xs) {
+        flex-flow: row wrap;
+    }
+    // button text medium 
+    .btn_txt_medium {
+        @extend .regular; 
+        color: $blue;
+        @include font-size($xs, $mxl, 13px, 22px);
+    }
+    // texts 
+    .texts {
+        margin-bottom: 15px;
+        @include resp($xs) {
+            width: 60%;
+        }
+    }
+    // button 
+    .cus__btn {
+        @include resp ($xs) {
+            width: 40%;
+        }
+    }
+}
+
+
+// button and description container design 
+.btn_description_container {
+    @include resp ($lg) {
+        display: grid;
+        
     }
 }
 
