@@ -48,7 +48,7 @@
   font-family: ECLight;
 }
 
-.regular {
+.regular, .text__buttons .btn_txt_medium {
   font-family: ECRegular;
 }
 
@@ -56,7 +56,7 @@
   font-family: ECMedium;
 }
 
-.semiBold {
+.semiBold, .small_section_heading {
   font-family: ECSemiBold;
 }
 
@@ -167,6 +167,8 @@ body {
   background-color: #ffcd00;
   color: black !important;
   display: inline-block;
+  text-decoration: none;
+  border: none;
   padding: 10px 15px !important;
 }
 .cus__btn, .strategy_btn {
@@ -636,8 +638,6 @@ body {
   }
 }
 
-<<<<<<< Updated upstream
-=======
 .small_section_heading {
   color: #352878;
 }
@@ -729,7 +729,6 @@ body {
   }
 }
 
->>>>>>> Stashed changes
 p,
 a {
   font-family: ECMedium;
@@ -1560,6 +1559,44 @@ main #mainContainer .card__element:nth-child(4) {
 }
 .btn_description_container .right_section .content_img img {
   width: 80%;
+}
+
+#moreThenMaintence .main_heading .section_heading {
+  font-size: 19px;
+}
+#moreThenMaintence .main_heading .section_heading {
+  font-size: 19px;
+}
+@media screen and (min-width: 310px) {
+  #moreThenMaintence .main_heading .section_heading {
+    font-size: calc( 19px + 25 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  #moreThenMaintence .main_heading .section_heading {
+    font-size: 44px;
+  }
+}
+#moreThenMaintence .main_heading .section_description span {
+  display: block;
+}
+#moreThenMaintence .main_heading .section_description span {
+  font-size: 17px;
+}
+@media screen and (min-width: 310px) {
+  #moreThenMaintence .main_heading .section_description span {
+    font-size: calc( 17px + 12 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  #moreThenMaintence .main_heading .section_description span {
+    font-size: 29px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #moreThenMaintence .main_heading .section_description span {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
