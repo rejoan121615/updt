@@ -192,6 +192,19 @@ body {
     }
 }
 
+.strategy_btn {
+    @extend .cus__btn;
+    @include resp($lg) {
+        width: 205px;
+    }
+    @include resp($xl) {
+        width: 215px;
+    }
+    @include resp($mxl) {
+        width: 235px;
+    }
+}
+
 // heading and tittle container
 .s_head_ti {
     @include fSmallToLarge(9.8px, 16px);
@@ -466,6 +479,74 @@ body {
             font-size: 48px !important;
             margin-top: 15px;
         }
+    }
+}
+
+// small section heading
+.small_section_heading {
+    @extend .semiBold;
+    color: $blue;
+    @include font-size($xs, $mxl, 13px, 19px);
+    span {
+        background-color: #fbf2cb;
+    }
+}
+
+// texts and buttons
+.text__buttons {
+    margin-top: 10px;
+    @include resp($xs) {
+        flex-flow: row wrap;
+    }
+    // button text medium
+    .btn_txt_medium {
+        @extend .regular;
+        color: $blue;
+        @include font-size($xs, $mxl, 14px, 22px);
+        @include resp($lg) {
+            font-size: 16px;
+        }
+        @include resp($xl) {
+            font-size: 17px;
+        }
+        @include resp($xxl) {
+            font-size: 17.5px;
+        }
+        @include resp($mxl) {
+            font-size: 18px;
+        }
+    }
+    // text and btn wrapper
+    .text_btn_wrap {
+        @include resp($sm) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @include resp ($lg) {
+            justify-content: flex-start;
+        }
+        // texts
+        .texts {
+            margin-bottom: 15px;
+            @include resp($sm) {
+                margin-bottom: 0px;
+            }
+            // button description
+            .button_description {
+                span {
+                }
+            }
+        }
+    }
+    
+}
+
+// button and description container design
+.btn_description_container {
+    @include resp($lg) {
+        display: grid;
     }
 }
 
@@ -1039,6 +1120,85 @@ main {
         .main_heading {
             @include resp($lg) {
                 grid-column: 2/7;
+            }
+        }
+    }
+}
+
+// --------------------- btn description -----------------
+.btn_description_container {
+    // left right wrapper
+    .left_right_wrapper {
+        @include resp($lg) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 30px;
+            width: 93%;
+        }
+    }
+    // left section
+    .left_section {
+        // section heading
+        .section_heading {
+            @include resp($lg) {
+                font-size: 36px;
+            }
+        }
+        // section description
+        .section_description {
+            span {
+                @include resp($lg) {
+                    font-size: 22px;
+                }
+            }
+        }
+        // main heading
+        .main_heading {
+            height: 45%;
+        }
+        // texts and button
+        .text__buttons {
+            @include resp($lg) {
+                height: 55%;
+                margin-top: 0px;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: column wrap;
+            }
+            // sample image 
+            .img_container {
+                box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
+            }
+        }
+    }
+    // right section
+    .right_section {
+        display: none;
+        @include resp($lg) {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+        // image wrap
+        .img_wrap {
+            img {
+                width: 95px;
+            }
+        }
+        // texts
+        .para {
+            font-size: 16.5px;
+            @include resp ($lg) {
+                font-size: 17px;
+            }
+        }
+
+        // rejoan 
+        // image container
+        .content_img {
+            img {
+                width: 80%;
             }
         }
     }

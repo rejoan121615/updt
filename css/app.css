@@ -161,7 +161,7 @@ body {
   }
 }
 
-.cus__btn {
+.cus__btn, .strategy_btn {
   font-family: ECSemiBold;
   border-radius: 1px;
   background-color: #ffcd00;
@@ -169,32 +169,48 @@ body {
   display: inline-block;
   padding: 10px 15px !important;
 }
-.cus__btn {
+.cus__btn, .strategy_btn {
   font-size: 10px;
 }
 @media screen and (min-width: 310px) {
-  .cus__btn {
+  .cus__btn, .strategy_btn {
     font-size: calc( 10px + 6 * ( (100vw - 310px) / 682 ) );
   }
 }
 @media screen and (min-width: 992px) {
-  .cus__btn {
+  .cus__btn, .strategy_btn {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .cus__btn {
+  .cus__btn, .strategy_btn {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .cus__btn {
+  .cus__btn, .strategy_btn {
     font-size: 17px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .cus__btn {
+  .cus__btn, .strategy_btn {
     font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .strategy_btn {
+    width: 205px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .strategy_btn {
+    width: 215px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .strategy_btn {
+    width: 235px;
   }
 }
 
@@ -620,6 +636,100 @@ body {
   }
 }
 
+<<<<<<< Updated upstream
+=======
+.small_section_heading {
+  color: #352878;
+}
+.small_section_heading {
+  font-size: 13px;
+}
+@media screen and (min-width: 425px) {
+  .small_section_heading {
+    font-size: calc( 13px + 6 * ( (100vw - 425px) / 1375 ) );
+  }
+}
+@media screen and (min-width: 1800px) {
+  .small_section_heading {
+    font-size: 19px;
+  }
+}
+.small_section_heading span {
+  background-color: #fbf2cb;
+}
+
+.text__buttons {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 425px) {
+  .text__buttons {
+    flex-flow: row wrap;
+  }
+}
+.text__buttons .btn_txt_medium {
+  color: #352878;
+}
+.text__buttons .btn_txt_medium {
+  font-size: 14px;
+}
+@media screen and (min-width: 425px) {
+  .text__buttons .btn_txt_medium {
+    font-size: calc( 14px + 8 * ( (100vw - 425px) / 1375 ) );
+  }
+}
+@media screen and (min-width: 1800px) {
+  .text__buttons .btn_txt_medium {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .text__buttons .btn_txt_medium {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text__buttons .btn_txt_medium {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .text__buttons .btn_txt_medium {
+    font-size: 17.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .text__buttons .btn_txt_medium {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .text__buttons .text_btn_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .text__buttons .text_btn_wrap {
+    justify-content: flex-start;
+  }
+}
+.text__buttons .text_btn_wrap .texts {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 576px) {
+  .text__buttons .text_btn_wrap .texts {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn_description_container {
+    display: grid;
+  }
+}
+
+>>>>>>> Stashed changes
 p,
 a {
   font-family: ECMedium;
@@ -801,7 +911,7 @@ h6 {
   }
 }
 @media only screen and (min-width: 1800px) {
-  .navbar .navbar-nav .nav-item .nav-link.cus__btn {
+  .navbar .navbar-nav .nav-item .nav-link.cus__btn, .navbar .navbar-nav .nav-item .nav-link.strategy_btn {
     padding-left: 27px !important;
     padding-right: 27px !important;
   }
@@ -1391,6 +1501,65 @@ main #mainContainer .card__element:nth-child(4) {
   #minimizeDowntime .container .main_heading {
     grid-column: 2/7;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  .btn_description_container .left_right_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    width: 93%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn_description_container .left_section .section_heading {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btn_description_container .left_section .section_description span {
+    font-size: 22px;
+  }
+}
+.btn_description_container .left_section .main_heading {
+  height: 45%;
+}
+@media only screen and (min-width: 992px) {
+  .btn_description_container .left_section .text__buttons {
+    height: 55%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+  }
+}
+.btn_description_container .left_section .text__buttons .img_container {
+  box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
+}
+.btn_description_container .right_section {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .btn_description_container .right_section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+}
+.btn_description_container .right_section .img_wrap img {
+  width: 95px;
+}
+.btn_description_container .right_section .para {
+  font-size: 16.5px;
+}
+@media only screen and (min-width: 992px) {
+  .btn_description_container .right_section .para {
+    font-size: 17px;
+  }
+}
+.btn_description_container .right_section .content_img img {
+  width: 80%;
 }
 
 /*# sourceMappingURL=app.css.map */
