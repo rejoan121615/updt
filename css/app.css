@@ -204,6 +204,8 @@ body {
   .cus__btn, .strategy_btn {
     font-size: 18px;
     width: 235px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
   }
 }
 
@@ -908,16 +910,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 576px) and (min-width: 576px) {
+  .text__buttons .text_btn_wrap {
+    justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1125,6 +1125,8 @@ h6 {
 @media only screen and (min-width: 992px) {
   .navbar .navbar-nav .nav-item .nav-link.cus__btn, .navbar .navbar-nav .nav-item .nav-link.strategy_btn {
     width: 225px;
+    padding-top: 12.5px !important;
+    padding-bottom: 12.5px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1699,9 +1701,25 @@ main #mainContainer .card__element:nth-child(4) {
     width: 93%;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .btn_description_container .left_right_wrapper {
+    grid-column-gap: 40px;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .btn_description_container .left_right_wrapper {
+    grid-column-gap: 55px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .btn_description_container .left_section .section_heading {
     font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn_description_container .left_section .section_heading {
+    font-size: 50px !important;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1711,6 +1729,16 @@ main #mainContainer .card__element:nth-child(4) {
 }
 .btn_description_container .left_section .main_heading {
   height: 45%;
+}
+@media only screen and (min-width: 1400px) {
+  .btn_description_container .left_section .small_section_heading {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .btn_description_container .left_section .small_section_heading {
+    font-size: 20.5px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .btn_description_container .left_section .text__buttons {
@@ -1752,12 +1780,38 @@ main #mainContainer .card__element:nth-child(4) {
 .btn_description_container .right_section .img_wrap img {
   width: 95px;
 }
+@media only screen and (min-width: 1200px) {
+  .btn_description_container .right_section .img_wrap img {
+    width: 105px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn_description_container .right_section .img_wrap img {
+    width: 110px;
+  }
+}
 .btn_description_container .right_section .para {
   font-size: 16.5px;
 }
 @media only screen and (min-width: 992px) {
   .btn_description_container .right_section .para {
     font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn_description_container .right_section .para {
+    font-size: 19px;
+    line-height: 130%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn_description_container .right_section .para {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .btn_description_container .right_section .para {
+    font-size: 21px;
   }
 }
 .btn_description_container .right_section .content_img img {
@@ -1799,6 +1853,21 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 768px) {
   #moreThenMaintence .main_heading .section_description span {
     display: inline-block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #moreThenMaintence .main_heading .section_description span {
+    font-size: 27px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #moreThenMaintence .main_heading .section_description span {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #moreThenMaintence .main_heading .section_description span {
+    font-size: 38px !important;
   }
 }
 
@@ -1961,6 +2030,11 @@ main #mainContainer .card__element:nth-child(4) {
     grid-row: 1/3;
     grid-column: 1/4;
     padding-left: 55px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .visual_card_list .shaveOffSection {
+    padding-left: 80px !important;
   }
 }
 .visual_card_list .shaveOffSection .tittle {
