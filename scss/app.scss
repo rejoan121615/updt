@@ -198,8 +198,8 @@ body {
     @include resp($mxl) {
         font-size: 18px;
         width: 235px;
-        padding-top: 15px!important;
-        padding-bottom: 15px!important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
     }
 }
 
@@ -287,7 +287,7 @@ body {
 // card tittle
 @at-root .sm_root_card_tittle {
     @include fLargeToExtraLarge(14px, 17.5px);
-    @include resp ($sm) {
+    @include resp($sm) {
         font-size: 17px;
     }
     @include resp($xl) {
@@ -301,83 +301,83 @@ body {
     }
 }
 
-// card 
-    @at-root .sm_root_card {
-        margin-bottom: 20px;
-        padding: 25px 18px;
-        border-radius: 15px;
-        @include resp($xs) {
-            padding: 40px 50px;
-        }
+// card
+@at-root .sm_root_card {
+    margin-bottom: 20px;
+    padding: 25px 18px;
+    border-radius: 15px;
+    @include resp($xs) {
+        padding: 40px 50px;
+    }
+    @include resp($sm) {
+        border-radius: 0px;
+        margin-bottom: 0px;
+        padding: 45px 10px 45px 35px;
+    }
+    @include resp($md) {
+        padding: 65px 10px 65px 70px;
+    }
+    @include resp($lg) {
+        padding: 25px 5px 25px 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    @include resp($xl) {
+        padding: 25px 0px 25px 35px !important;
+    }
+    @include resp($xxl) {
+        padding: 35px 0px 35px 35px !important;
+    }
+    @include resp($mxl) {
+        padding: 60px 0px 60px 55px !important;
+    }
+    // card icon
+    .icon_wrap {
+        text-align: center;
         @include resp($sm) {
-            border-radius: 0px;
-            margin-bottom: 0px;
-            padding: 45px 10px 45px 35px;
+            text-align: left;
         }
-        @include resp($md) {
-            padding: 65px 10px 65px 70px;
-        }
-        @include resp($lg) {
-            padding: 25px 5px 25px 50px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-        @include resp($xl) {
-            padding: 25px 0px 25px 35px !important;
-        }
-        @include resp($xxl) {
-            padding: 35px 0px 35px 35px !important;
-        }
-        @include resp ($mxl) {
-            padding: 60px 0px 60px 55px !important;
-        }
-        // card icon
-        .icon_wrap {
-            text-align: center;
+        img {
+            width: 22px;
             @include resp($sm) {
-                text-align: left;
+                width: 25px;
             }
-            img {
+            @include resp($xl) {
+                width: 20px;
+            }
+            @include resp($xxl) {
                 width: 22px;
-                @include resp($sm) {
-                    width: 25px;
-                }
-                @include resp($xl) {
-                    width: 20px;
-                }
-                @include resp ($xxl) {
-                    width: 22px;
-                }
-                @include resp ($mxl) {
-                    width: 25px;
-                }
             }
-        }
-        // tittle
-        h1.tittle {
-            text-align: center;
-            margin-top: 10px;
-            @include resp($sm) {
-                text-align: left;
+            @include resp($mxl) {
+                width: 25px;
             }
-            @extend .sm_root_card_tittle;
-        }
-        // root paragraph
-
-        // para
-        .para {
-            @extend .sm_root_card_para;
-            color: #fffc;
         }
     }
+    // tittle
+    h1.tittle {
+        text-align: center;
+        margin-top: 10px;
+        @include resp($sm) {
+            text-align: left;
+        }
+        @extend .sm_root_card_tittle;
+    }
+    // root paragraph
+
+    // para
+    .para {
+        @extend .sm_root_card_para;
+        color: #fffc;
+    }
+}
 // custom card container
 
 .cus_card {
@@ -511,7 +511,7 @@ body {
                 font-size: 31px;
             }
             @include resp($mxl) {
-                font-size: 36.5px;
+                font-size: 38px;
             }
         }
     }
@@ -675,7 +675,7 @@ body {
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
-            @include resp ($sm) {
+            @include resp($sm) {
                 justify-content: flex-start;
             }
         }
@@ -837,12 +837,12 @@ h6 {
                 }
             }
             .nav-link.cus__btn {
-                @include resp ($lg) {
+                @include resp($lg) {
                     width: 225px;
-                    padding-top: 12.5px!important;
-                    padding-bottom: 12.5px!important;
+                    padding-top: 12.5px !important;
+                    padding-bottom: 12.5px !important;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     width: 235px;
                 }
                 @include resp($mxl) {
@@ -1289,7 +1289,7 @@ main {
             grid-column-gap: 30px;
             width: 93%;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             grid-column-gap: 40px;
             width: 90%;
         }
@@ -1304,11 +1304,11 @@ main {
             @include resp($lg) {
                 font-size: 36px;
             }
-            @include resp ($xxl) {
-                font-size: 50px!important;
+            @include resp($xxl) {
+                font-size: 50px !important;
             }
-            @include resp ($mxl) {
-                font-size: 65px!important;
+            @include resp($mxl) {
+                font-size: 65px !important;
             }
         }
         // section description
@@ -1323,12 +1323,12 @@ main {
         .main_heading {
             height: 45%;
         }
-        // small section heading 
+        // small section heading
         .small_section_heading {
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 font-size: 19px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 font-size: 20.5px;
             }
         }
@@ -1374,10 +1374,10 @@ main {
         .img_wrap {
             img {
                 width: 95px;
-                @include resp ($xl) {
+                @include resp($xl) {
                     width: 105px;
                 }
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     width: 110px;
                 }
             }
@@ -1388,16 +1388,16 @@ main {
             @include resp($lg) {
                 font-size: 17px;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 font-size: 19px;
                 line-height: 130%;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 font-size: 20px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 font-size: 21px;
-            } 
+            }
         }
 
         // rejoan
@@ -1418,7 +1418,7 @@ main {
             font-size: 19px;
             @include fSmallToLarge(19px, 44px);
         }
-        // root style 
+        // root style
         @at-root .root_section_description {
             span {
                 display: block;
@@ -1426,13 +1426,16 @@ main {
                 @include resp($md) {
                     display: inline-block;
                 }
-                @include resp ($xl) {
+                @include resp($lg) {
+                    font-size: 26px;
+                }
+                @include resp($xl) {
                     font-size: 27px;
                 }
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     font-size: 30px;
                 }
-                @include resp ($mxl) {
+                @include resp($mxl) {
                     font-size: 38px;
                 }
             }
@@ -1440,7 +1443,7 @@ main {
         // section description
         .section_description {
             @extend .root_section_description;
-        } 
+        }
     }
 }
 
@@ -1590,15 +1593,15 @@ main {
             grid-column: 1/4;
             padding-left: 55px !important;
         }
-        @include resp ($mxl) {
-            padding-left: 80px!important;
+        @include resp($mxl) {
+            padding-left: 80px !important;
         }
         .tittle {
             line-height: 110%;
             @include resp($sm) {
                 // @include font-size($sm, $lg, 16px, 30px);
             }
-            @include resp ($md) {
+            @include resp($md) {
                 font-size: 30px;
             }
             @include resp($xl) {
@@ -1619,12 +1622,10 @@ main {
         }
         // custom button
         .cus__btn {
-
             // @include resp()
         }
     }
 }
-
 
 // ------------------ zero tech arrogance style-----------------------
 #zeroTech {
@@ -1632,22 +1633,75 @@ main {
         .section_description {
             @extend .root_section_description;
             span {
-                @include resp ($lg) {
-                    margin-top: 0px!important;
+                @include resp($lg) {
+                    margin-top: 0px !important;
                 }
                 @media only screen and (min-width: $lg) and (max-width: $xl) {
-                    font-size: 22px!important;
+                    font-size: 22px !important;
                 }
                 @media only screen and (min-width: $xl) and (max-width: $xxl) {
-                    font-size: 25.5px!important;
+                    font-size: 25.5px !important;
                 }
-                @include resp ($xxl) {
-                    font-size: 26px!important;
+                @include resp($xxl) {
+                    font-size: 26px !important;
                 }
-                @include resp ($mxl) {
-                    font-size: 35px!important;
+                @include resp($mxl) {
+                    font-size: 35px !important;
                 }
             }
         }
     }
-} 
+}
+
+// quote heading card list container
+.quote_heading_cardList_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto;
+
+    // main heading
+    .main_heading {
+        @include resp($lg) {
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+        // section heading
+        .section_heading {
+            @include resp($lg) {
+                font-size: 36.5px!important;
+            }
+            @include resp ($xl) {
+                font-size: 52px!important;
+            }
+            @include resp ($mxl) {
+                font-size: 60px!important;
+            }
+        }
+    }
+    // quotes
+    .quotes {
+        grid-column: 3/-1;
+        grid-row: 1/2;
+        // display: grid !important;
+        .texts {
+            
+        }
+    }
+    // visual card list
+    .visual_card_list {
+        @include resp($lg) {
+            grid-column: 1/-1;
+            grid-row: 2/3;
+        }
+    }
+    // section description 
+    .section_description {
+        span {
+            font-size: 33px!important;
+            @include resp ($mxl) {
+                font-size: 38px!important;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

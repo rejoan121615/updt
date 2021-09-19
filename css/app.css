@@ -632,7 +632,7 @@ body {
 }
 @media only screen and (min-width: 1800px) {
   .quotes .texts .quote_text {
-    font-size: 36.5px;
+    font-size: 38px;
   }
 }
 .quotes .quotes_owner {
@@ -1860,6 +1860,11 @@ main #mainContainer .card__element:nth-child(4) {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 992px) {
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+    font-size: 26px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 27px;
@@ -2096,6 +2101,52 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 1800px) {
   #zeroTech .left_section .section_description span {
     font-size: 35px !important;
+  }
+}
+
+.quote_heading_cardList_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr auto;
+}
+@media only screen and (min-width: 992px) {
+  .quote_heading_cardList_container .main_heading {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .quote_heading_cardList_container .main_heading .section_heading {
+    font-size: 36.5px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .quote_heading_cardList_container .main_heading .section_heading {
+    font-size: 52px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .quote_heading_cardList_container .main_heading .section_heading {
+    font-size: 60px !important;
+  }
+}
+.quote_heading_cardList_container .quotes {
+  grid-column: 3/-1;
+  grid-row: 1/2;
+}
+@media only screen and (min-width: 992px) {
+  .quote_heading_cardList_container .visual_card_list {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+.quote_heading_cardList_container .section_description span {
+  font-size: 33px !important;
+}
+@media only screen and (min-width: 1800px) {
+  .quote_heading_cardList_container .section_description span {
+    font-size: 38px !important;
+    margin-bottom: 25px;
   }
 }
 
