@@ -1307,6 +1307,9 @@ main {
             @include resp ($xxl) {
                 font-size: 50px!important;
             }
+            @include resp ($mxl) {
+                font-size: 65px!important;
+            }
         }
         // section description
         .section_description {
@@ -1415,8 +1418,8 @@ main {
             font-size: 19px;
             @include fSmallToLarge(19px, 44px);
         }
-        // section description
-        .section_description {
+        // root style 
+        @at-root .root_section_description {
             span {
                 display: block;
                 @include fSmallToLarge(17px, 29px);
@@ -1424,16 +1427,20 @@ main {
                     display: inline-block;
                 }
                 @include resp ($xl) {
-                    font-size: 27px!important;
+                    font-size: 27px;
                 }
                 @include resp ($xxl) {
-                    font-size: 30px!important;
+                    font-size: 30px;
                 }
                 @include resp ($mxl) {
-                    font-size: 38px!important;
+                    font-size: 38px;
                 }
             }
         }
+        // section description
+        .section_description {
+            @extend .root_section_description;
+        } 
     }
 }
 
@@ -1617,3 +1624,30 @@ main {
         }
     }
 }
+
+
+// ------------------ zero tech arrogance style-----------------------
+#zeroTech {
+    .left_section {
+        .section_description {
+            @extend .root_section_description;
+            span {
+                @include resp ($lg) {
+                    margin-top: 0px!important;
+                }
+                @media only screen and (min-width: $lg) and (max-width: $xl) {
+                    font-size: 22px!important;
+                }
+                @media only screen and (min-width: $xl) and (max-width: $xxl) {
+                    font-size: 25.5px!important;
+                }
+                @include resp ($xxl) {
+                    font-size: 26px!important;
+                }
+                @include resp ($mxl) {
+                    font-size: 35px!important;
+                }
+            }
+        }
+    }
+} 

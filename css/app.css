@@ -1722,6 +1722,11 @@ main #mainContainer .card__element:nth-child(4) {
     font-size: 50px !important;
   }
 }
+@media only screen and (min-width: 1800px) {
+  .btn_description_container .left_section .section_heading {
+    font-size: 65px !important;
+  }
+}
 @media only screen and (min-width: 992px) {
   .btn_description_container .left_section .section_description span {
     font-size: 22px;
@@ -1834,40 +1839,40 @@ main #mainContainer .card__element:nth-child(4) {
     font-size: 44px;
   }
 }
-#moreThenMaintence .main_heading .section_description span {
+.root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
   display: block;
 }
-#moreThenMaintence .main_heading .section_description span {
+.root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
   font-size: 17px;
 }
 @media screen and (min-width: 310px) {
-  #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: calc( 17px + 12 * ( (100vw - 310px) / 682 ) );
   }
 }
 @media screen and (min-width: 992px) {
-  #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 29px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #moreThenMaintence .main_heading .section_description span {
-    font-size: 27px !important;
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+    font-size: 27px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #moreThenMaintence .main_heading .section_description span {
-    font-size: 30px !important;
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #moreThenMaintence .main_heading .section_description span {
-    font-size: 38px !important;
+  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+    font-size: 38px;
   }
 }
 
@@ -2066,6 +2071,31 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 992px) {
   .visual_card_list .shaveOffSection .tittle span {
     display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #zeroTech .left_section .section_description span {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #zeroTech .left_section .section_description span {
+    font-size: 22px !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  #zeroTech .left_section .section_description span {
+    font-size: 25.5px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #zeroTech .left_section .section_description span {
+    font-size: 26px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #zeroTech .left_section .section_description span {
+    font-size: 35px !important;
   }
 }
 
