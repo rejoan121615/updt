@@ -49,7 +49,7 @@
   font-family: ECLight;
 }
 
-.regular, .visual_card_list .visual_card .para, .text__buttons .btn_txt_medium {
+.regular, .text__buttons .btn_txt_medium, .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
   font-family: ECRegular;
 }
 
@@ -133,7 +133,7 @@
   color: #f6f6f6 !important;
 }
 
-.bg-lateWhite {
+.bg-lateWhite, .visual_card_list .expand {
   background-color: #f6f6f6 !important;
 }
 
@@ -191,16 +191,19 @@ body {
 @media only screen and (min-width: 992px) {
   .cus__btn, .strategy_btn {
     font-size: 16px;
+    width: 210px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .cus__btn, .strategy_btn {
     font-size: 17px;
+    width: 220px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .cus__btn, .strategy_btn {
     font-size: 18px;
+    width: 235px;
   }
 }
 
@@ -270,6 +273,186 @@ body {
 .s_h_l {
   font-family: ECBold;
   font-size: 26px;
+}
+
+.sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 125%;
+}
+.sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+  font-size: 14px;
+}
+@media screen and (min-width: 310px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    font-size: calc( 14px + 2 * ( (100vw - 310px) / 682 ) );
+  }
+}
+@media screen and (min-width: 992px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    font-size: 15.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .visual_card_list .visual_card .para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card_para span, main #mainContainer .card__element .para_wrap p span, .sm_root_card .para span, .visual_card_list .visual_card .para span {
+    display: block;
+  }
+}
+
+.sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+  font-size: 14px;
+}
+@media screen and (min-width: 992px) {
+  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    font-size: calc( 14px + 3.5 * ( (100vw - 992px) / 808 ) );
+  }
+}
+@media screen and (min-width: 1800px) {
+  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    font-size: 17.5px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    font-size: 18px;
+  }
+}
+
+.sm_root_card, .visual_card_list .visual_card {
+  margin-bottom: 20px;
+  padding: 25px 18px;
+  border-radius: 15px;
+}
+@media only screen and (min-width: 425px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    padding: 40px 50px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding: 45px 10px 45px 35px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    padding: 65px 10px 65px 70px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    padding: 25px 5px 25px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    padding: 25px 0px 25px 35px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    padding: 35px 0px 35px 35px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sm_root_card, .visual_card_list .visual_card {
+    padding: 60px 0px 60px 55px !important;
+  }
+}
+.sm_root_card .icon_wrap, .visual_card_list .visual_card .icon_wrap {
+  text-align: center;
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card .icon_wrap, .visual_card_list .visual_card .icon_wrap {
+    text-align: left;
+  }
+}
+.sm_root_card .icon_wrap img, .visual_card_list .visual_card .icon_wrap img {
+  width: 22px;
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card .icon_wrap img, .visual_card_list .visual_card .icon_wrap img {
+    width: 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sm_root_card .icon_wrap img, .visual_card_list .visual_card .icon_wrap img {
+    width: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sm_root_card .icon_wrap img, .visual_card_list .visual_card .icon_wrap img {
+    width: 22px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sm_root_card .icon_wrap img, .visual_card_list .visual_card .icon_wrap img {
+    width: 25px;
+  }
+}
+.sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+  text-align: center;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 576px) {
+  .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle {
+    text-align: left;
+  }
+}
+.sm_root_card .para, .visual_card_list .visual_card .para {
+  color: #fffc;
 }
 
 .cus_card {
@@ -939,10 +1122,21 @@ h6 {
     font-size: 17.5px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link.cus__btn, .navbar .navbar-nav .nav-item .nav-link.strategy_btn {
+    width: 225px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navbar .navbar-nav .nav-item .nav-link.cus__btn, .navbar .navbar-nav .nav-item .nav-link.strategy_btn {
+    width: 235px;
+  }
+}
 @media only screen and (min-width: 1800px) {
   .navbar .navbar-nav .nav-item .nav-link.cus__btn, .navbar .navbar-nav .nav-item .nav-link.strategy_btn {
-    padding-left: 27px !important;
-    padding-right: 27px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: 255px;
   }
 }
 
@@ -1205,53 +1399,9 @@ main #mainContainer .card__element .icon_wrap img {
     width: 26px;
   }
 }
-main #mainContainer .card__element .heading h6 {
-  font-size: 14px;
-}
-@media screen and (min-width: 992px) {
-  main #mainContainer .card__element .heading h6 {
-    font-size: calc( 14px + 3.5 * ( (100vw - 992px) / 808 ) );
-  }
-}
-@media screen and (min-width: 1800px) {
-  main #mainContainer .card__element .heading h6 {
-    font-size: 17.5px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  main #mainContainer .card__element .heading h6 {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  main #mainContainer .card__element .heading h6 {
-    font-size: 17px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  main #mainContainer .card__element .heading h6 {
-    font-size: 17.5px;
-  }
-}
 @media only screen and (min-width: 1200px) {
   main #mainContainer .card__element .para_wrap {
     margin-top: 8px;
-  }
-}
-main #mainContainer .card__element .para_wrap p {
-  line-height: 130%;
-  color: #ffffffd1 !important;
-  font-size: 12px;
-}
-@media only screen and (min-width: 1400px) {
-  main #mainContainer .card__element .para_wrap p {
-    font-size: 14px;
-    line-height: 140%;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  main #mainContainer .card__element .para_wrap p {
-    font-size: 15px;
   }
 }
 main #mainContainer .card__element:nth-child(1) {
@@ -1674,103 +1824,10 @@ main #mainContainer .card__element:nth-child(4) {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-.visual_card_list .visual_card {
-  margin-bottom: 20px;
-  padding: 25px 18px;
-  border-radius: 15px;
-}
-@media only screen and (min-width: 425px) {
-  .visual_card_list .visual_card {
-    padding: 40px 50px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card {
-    border-radius: 0px;
-    margin-bottom: 0px;
-    padding: 45px 10px 45px 35px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .visual_card_list .visual_card {
-    padding: 65px 10px 65px 45px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .visual_card_list .visual_card {
-    padding: 75px 10px 75px 55px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .visual_card_list .visual_card {
-    padding: 25px 0px 25px 25px !important;
-  }
-}
-.visual_card_list .visual_card .icon_wrap {
-  text-align: center;
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .icon_wrap {
-    text-align: left;
-  }
-}
-.visual_card_list .visual_card .icon_wrap img {
-  width: 22px;
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .icon_wrap img {
-    width: 25px;
-  }
-}
-.visual_card_list .visual_card h1.tittle {
-  text-align: center;
-  margin-top: 10px;
-}
-.visual_card_list .visual_card h1.tittle {
-  font-size: 16px;
-}
-@media screen and (min-width: 310px) {
-  .visual_card_list .visual_card h1.tittle {
-    font-size: calc( 16px + 3 * ( (100vw - 310px) / 682 ) );
-  }
-}
-@media screen and (min-width: 992px) {
-  .visual_card_list .visual_card h1.tittle {
-    font-size: 19px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card h1.tittle {
-    text-align: left;
-  }
-}
-.visual_card_list .visual_card .para {
-  text-align: center;
-  margin-bottom: 0px;
-  color: white;
-  line-height: 125%;
-}
-.visual_card_list .visual_card .para {
-  font-size: 14px;
-}
-@media screen and (min-width: 310px) {
-  .visual_card_list .visual_card .para {
-    font-size: calc( 14px + 2 * ( (100vw - 310px) / 682 ) );
-  }
-}
-@media screen and (min-width: 992px) {
-  .visual_card_list .visual_card .para {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .para {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .para span {
-    display: block;
+@media only screen and (min-width: 1400px) {
+  .visual_card_list {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 576px) {
@@ -1792,154 +1849,10 @@ main #mainContainer .card__element:nth-child(4) {
     grid-template-rows: 1fr 1fr;
   }
 }
-.visual_card_list .visual_card {
-  margin-bottom: 20px;
-  padding: 25px 18px;
-  border-radius: 15px;
-}
-@media only screen and (min-width: 425px) {
-  .visual_card_list .visual_card {
-    padding: 40px 50px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card {
-    border-radius: 0px;
-    margin-bottom: 0px;
-    padding: 45px 10px 45px 35px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .visual_card_list .visual_card {
-    padding: 65px 10px 65px 45px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .visual_card_list .visual_card {
-    padding: 25px 5px 25px 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
-.visual_card_list .visual_card .icon_wrap {
-  text-align: center;
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .icon_wrap {
-    text-align: left;
-  }
-}
-.visual_card_list .visual_card .icon_wrap img {
-  width: 22px;
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .icon_wrap img {
-    width: 25px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .visual_card_list .visual_card .icon_wrap img {
-    width: 20px;
-  }
-}
-.visual_card_list .visual_card h1.tittle {
-  text-align: center;
-  margin-top: 10px;
-}
-.visual_card_list .visual_card h1.tittle {
-  font-size: 16px;
-}
-@media screen and (min-width: 310px) {
-  .visual_card_list .visual_card h1.tittle {
-    font-size: calc( 16px + 3 * ( (100vw - 310px) / 682 ) );
-  }
-}
-@media screen and (min-width: 992px) {
-  .visual_card_list .visual_card h1.tittle {
-    font-size: 19px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card h1.tittle {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .visual_card_list .visual_card h1.tittle {
-    font-size: 15px;
-  }
-}
-.visual_card_list .visual_card .para {
-  text-align: center;
-  margin-bottom: 0px;
-  color: white;
-  line-height: 125%;
-}
-.visual_card_list .visual_card .para {
-  font-size: 14px;
-}
-@media screen and (min-width: 310px) {
-  .visual_card_list .visual_card .para {
-    font-size: calc( 14px + 2 * ( (100vw - 310px) / 682 ) );
-  }
-}
-@media screen and (min-width: 992px) {
-  .visual_card_list .visual_card .para {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .para {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .visual_card_list .visual_card .para {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .visual_card .para span {
-    display: block;
-  }
-}
 @media only screen and (min-width: 576px) {
   .visual_card_list .shaveCard {
     grid-column: 1/3;
     grid-row: 1/2;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .call {
-    grid-column: 2/3;
-    grid-row: -1/-2;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .visual_card_list .expand {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: none !important;
-    background-color: white !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .visual_card_list .expand {
-    grid-column: -2/-1;
-    grid-row: 1/2;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .visual_card_list .expand img {
-    width: 18px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -1997,6 +1910,11 @@ main #mainContainer .card__element:nth-child(4) {
     grid-row: 1/2;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .visual_card_list .expand img {
+    width: 18px;
+  }
+}
 @media only screen and (min-width: 576px) {
   .visual_card_list .logoCard {
     grid-column: 1/2;
@@ -2042,23 +1960,13 @@ main #mainContainer .card__element:nth-child(4) {
   .visual_card_list .shaveOffSection {
     grid-row: 1/3;
     grid-column: 1/4;
+    padding-left: 55px !important;
   }
 }
 .visual_card_list .shaveOffSection .tittle {
-  font-size: 16.5px;
   line-height: 110%;
 }
-@media only screen and (min-width: 576px) {
-  .visual_card_list .shaveOffSection .tittle {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 576px) and (min-width: 576px) {
-  .visual_card_list .shaveOffSection .tittle {
-    font-size: calc( 16px + 14 * ( (100vw - 576px) / 416 ) );
-  }
-}
-@media only screen and (min-width: 576px) and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .visual_card_list .shaveOffSection .tittle {
     font-size: 30px;
   }
@@ -2075,7 +1983,7 @@ main #mainContainer .card__element:nth-child(4) {
 }
 @media only screen and (min-width: 1800px) {
   .visual_card_list .shaveOffSection .tittle {
-    font-size: 53px;
+    font-size: 50px;
   }
 }
 .visual_card_list .shaveOffSection .tittle span {
@@ -2084,11 +1992,6 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 992px) {
   .visual_card_list .shaveOffSection .tittle span {
     display: block;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .visual_card_list .shaveOffSection .cus__btn, .visual_card_list .shaveOffSection .strategy_btn {
-    width: 210px;
   }
 }
 

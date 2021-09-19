@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 // color code
@@ -189,12 +189,15 @@ body {
     @include font-size($msm, $lg, 10px, 16px);
     @include resp($lg) {
         font-size: 16px;
+        width: 210px;
     }
     @include resp($xl) {
         font-size: 17px;
+        width: 220px;
     }
     @include resp($mxl) {
         font-size: 18px;
+        width: 235px;
     }
 }
 
@@ -248,6 +251,131 @@ body {
     font-size: 26px;
 }
 
+// card tittle
+
+// card paragraph
+@at-root .sm_root_card_para {
+    @extend .regular;
+    text-align: center;
+    margin-bottom: 0px;
+    line-height: 125%;
+    @include fSmallToLarge(14px, 16px);
+    @include resp($sm) {
+        text-align: left;
+    }
+    @include resp($lg) {
+        font-size: 14px;
+    }
+    @include resp($xl) {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    @include resp($xxl) {
+        font-size: 15.5px;
+    }
+    @include resp($mxl) {
+        font-size: 16px;
+    }
+    span {
+        @include resp($sm) {
+            display: block;
+        }
+    }
+}
+// card tittle
+@at-root .sm_root_card_tittle {
+    @include fLargeToExtraLarge(14px, 17.5px);
+    @include resp ($sm) {
+        font-size: 17px;
+    }
+    @include resp($xl) {
+        font-size: 15px;
+    }
+    @include resp($xxl) {
+        font-size: 17px;
+    }
+    @include resp($mxl) {
+        font-size: 18px;
+    }
+}
+
+// card 
+    @at-root .sm_root_card {
+        margin-bottom: 20px;
+        padding: 25px 18px;
+        border-radius: 15px;
+        @include resp($xs) {
+            padding: 40px 50px;
+        }
+        @include resp($sm) {
+            border-radius: 0px;
+            margin-bottom: 0px;
+            padding: 45px 10px 45px 35px;
+        }
+        @include resp($md) {
+            padding: 65px 10px 65px 70px;
+        }
+        @include resp($lg) {
+            padding: 25px 5px 25px 50px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        @include resp($xl) {
+            padding: 25px 0px 25px 35px !important;
+        }
+        @include resp($xxl) {
+            padding: 35px 0px 35px 35px !important;
+        }
+        @include resp ($mxl) {
+            padding: 60px 0px 60px 55px !important;
+        }
+        // card icon
+        .icon_wrap {
+            text-align: center;
+            @include resp($sm) {
+                text-align: left;
+            }
+            img {
+                width: 22px;
+                @include resp($sm) {
+                    width: 25px;
+                }
+                @include resp($xl) {
+                    width: 20px;
+                }
+                @include resp ($xxl) {
+                    width: 22px;
+                }
+                @include resp ($mxl) {
+                    width: 25px;
+                }
+            }
+        }
+        // tittle
+        h1.tittle {
+            text-align: center;
+            margin-top: 10px;
+            @include resp($sm) {
+                text-align: left;
+            }
+            @extend .sm_root_card_tittle;
+        }
+        // root paragraph
+
+        // para
+        .para {
+            @extend .sm_root_card_para;
+            color: #fffc;
+        }
+    }
 // custom card container
 
 .cus_card {
@@ -255,15 +383,15 @@ body {
     border: none !important;
     cursor: pointer;
     -webkit-transform-origin: center center;
-        -ms-transform-origin: center center;
-            transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     margin-bottom: 20px;
     border-radius: 1px;
     -webkit-box-shadow: 0px 0px 10px #e3e3e3, 0px 0px 10px #e3e3e3;
-            box-shadow: 0px 0px 10px #e3e3e3, 0px 0px 10px #e3e3e3;
+    box-shadow: 0px 0px 10px #e3e3e3, 0px 0px 10px #e3e3e3;
     @include resp($xs) {
         padding: 22px;
     }
@@ -277,7 +405,7 @@ body {
         height: 120px;
         display: grid;
         -ms-flex-line-pack: center;
-            align-content: center;
+        align-content: center;
     }
     @include resp($xl) {
         margin-bottom: 25px;
@@ -294,14 +422,14 @@ body {
 
     &:hover {
         -webkit-box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
-                box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
+        box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
         -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
         @include resp($lg) {
             -webkit-transform: scale(1.025);
-                -ms-transform: scale(1.025);
-                    transform: scale(1.025);
+            -ms-transform: scale(1.025);
+            transform: scale(1.025);
         }
     }
     h5 {
@@ -515,8 +643,8 @@ body {
     @include resp($xs) {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
     }
     // button text medium
     .btn_txt_medium {
@@ -544,19 +672,19 @@ body {
             display: flex;
             -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
-                -ms-flex-flow: row wrap;
-                    flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
             -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
         }
         @include resp($lg) {
             -webkit-box-pack: start;
-                -ms-flex-pack: start;
-                    justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
         }
         // texts
         .texts {
@@ -685,7 +813,7 @@ h6 {
         // focus
         &:focus {
             -webkit-box-shadow: none !important;
-                    box-shadow: none !important;
+            box-shadow: none !important;
         }
         .navbar-icon {
             img {
@@ -711,9 +839,16 @@ h6 {
                 }
             }
             .nav-link.cus__btn {
+                @include resp ($lg) {
+                    width: 225px;
+                }
+                @include resp ($xl) {
+                    width: 235px;
+                }
                 @include resp($mxl) {
-                    padding-left: 27px !important;
-                    padding-right: 27px !important;
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                    width: 255px;
                 }
             }
         }
@@ -729,8 +864,8 @@ main {
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(6, 1fr);
             -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
             margin-top: 45px;
             padding-bottom: 50px !important;
         }
@@ -775,16 +910,16 @@ main {
             button {
                 width: 100%;
                 -ms-flex-preferred-size: 100%;
-                    flex-basis: 100%;
+                flex-basis: 100%;
                 border: none !important;
                 border-radius: 0 !important;
                 @include resp($xxl) {
                     -ms-flex-preferred-size: 45%;
-                        flex-basis: 45%;
+                    flex-basis: 45%;
                 }
                 @include resp($mxl) {
                     -ms-flex-preferred-size: 35%;
-                        flex-basis: 35%;
+                    flex-basis: 35%;
                 }
             }
             // input
@@ -809,7 +944,7 @@ main {
                 @include resp($xxl) {
                     padding: 17px !important;
                     -ms-flex-preferred-size: 65%;
-                        flex-basis: 65%;
+                    flex-basis: 65%;
                 }
                 @include resp($mxl) {
                     padding: 20px !important;
@@ -912,16 +1047,7 @@ main {
             // heading
             .heading {
                 h6 {
-                    @include fLargeToExtraLarge(14px, 17.5px);
-                    @include resp($xl) {
-                        font-size: 15px;
-                    }
-                    @include resp($xxl) {
-                        font-size: 17px;
-                    }
-                    @include resp($mxl) {
-                        font-size: 17.5px;
-                    }
+                    @extend .sm_root_card_tittle;
                 }
             }
             // paragraph
@@ -930,17 +1056,7 @@ main {
                     margin-top: 8px;
                 }
                 p {
-                    // font-size: 12px;
-                    line-height: 130%;
-                    color: #ffffffd1 !important;
-                    font-size: 12px;
-                    @include resp($xxl) {
-                        font-size: 14px;
-                        line-height: 140%;
-                    }
-                    @include resp($mxl) {
-                        font-size: 15px;
-                    }
+                    @extend .sm_root_card_para;
                 }
             }
             // card color
@@ -1141,7 +1257,7 @@ main {
                 display: grid;
                 .quotes_owner {
                     -ms-flex-item-align: end;
-                        align-self: flex-end;
+                    align-self: flex-end;
                 }
             }
             .texts {
@@ -1203,17 +1319,17 @@ main {
                 display: -ms-flexbox;
                 display: flex;
                 -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-flow: column wrap;
-                        flex-flow: column wrap;
+                -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
             }
             // sample image
             .img_container {
                 -webkit-box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
-                        box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
+                box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
             }
         }
     }
@@ -1226,11 +1342,11 @@ main {
             display: flex;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-                -ms-flex-flow: column wrap;
-                    flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
             -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
         }
         // image wrap
         .img_wrap {
@@ -1284,8 +1400,8 @@ main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
     // card decoration
     @include resp($sm) {
         display: grid;
@@ -1293,70 +1409,12 @@ main {
         grid-template-rows: auto repeat(2, 1fr);
     }
     @include resp($xl) {
-        grid-template-columns: repeat(3, 1fr) repeat(3, 1.33fr)!important;
+        grid-template-columns: repeat(3, 1fr) repeat(3, 1.33fr) !important;
         grid-template-rows: repeat(2, 1fr);
     }
-    // visual card
-    .visual_card {
-        margin-bottom: 20px;
-        padding: 25px 18px;
-        border-radius: 15px;
-        @include resp($xs) {
-            padding: 40px 50px;
-        }
-        @include resp($sm) {
-            border-radius: 0px;
-            margin-bottom: 0px;
-            padding: 45px 10px 45px 35px;
-        }
-        @include resp($md) {
-            padding: 65px 10px 65px 45px;
-        }
-        @include resp($lg) {
-            padding: 75px 10px 75px 55px;
-        }
-        @include resp ($xl) {
-            padding: 25px 0px 25px 25px!important;
-        }
-        // card icon
-        .icon_wrap {
-            text-align: center;
-            @include resp($sm) {
-                text-align: left;
-            }
-            img {
-                width: 22px;
-                @include resp($sm) {
-                    width: 25px;
-                }
-            }
-        }
-        // tittle
-        h1.tittle {
-            @include fSmallToLarge(16px, 19px);
-            text-align: center;
-            margin-top: 10px;
-            @include resp($sm) {
-                text-align: left;
-            }
-        }
-        // para
-        .para {
-            @extend .regular;
-            text-align: center;
-            margin-bottom: 0px;
-            color: white;
-            line-height: 125%;
-            @include fSmallToLarge(14px, 16px);
-            @include resp($sm) {
-                text-align: left;
-            }
-            span {
-                @include resp($sm) {
-                    display: block;
-                }
-            }
-        }
+    @include resp($xxl) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     @include resp($sm) {
         display: grid;
@@ -1373,81 +1431,7 @@ main {
     }
     // visual card
     .visual_card {
-        margin-bottom: 20px;
-        padding: 25px 18px;
-        border-radius: 15px;
-        @include resp($xs) {
-            padding: 40px 50px;
-        }
-        @include resp($sm) {
-            border-radius: 0px;
-            margin-bottom: 0px;
-            padding: 45px 10px 45px 35px;
-        }
-        @include resp($md) {
-            padding: 65px 10px 65px 45px;
-        }
-        @include resp($lg) {
-            padding: 25px 5px 25px 50px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-flow: column wrap;
-                    flex-flow: column wrap;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-        }
-        // card icon
-        .icon_wrap {
-            text-align: center;
-            @include resp($sm) {
-                text-align: left;
-            }
-            img {
-                width: 22px;
-                @include resp($sm) {
-                    width: 25px;
-                }
-                @include resp ($xl) {
-                    width: 20px;
-                }
-            }
-        }
-        // tittle
-        h1.tittle {
-            @include fSmallToLarge(16px, 19px);
-            text-align: center;
-            margin-top: 10px;
-            @include resp($sm) {
-                text-align: left;
-            }
-            @include resp ($xl) {
-                font-size: 15px;
-            }
-        }
-        // para
-        .para {
-            @extend .regular;
-            text-align: center;
-            margin-bottom: 0px;
-            color: white;
-            line-height: 125%;
-            @include fSmallToLarge(14px, 16px);
-            @include resp($sm) {
-                text-align: left;
-            }
-            @include resp ($xl) {
-                font-size: 14px;
-            }
-            span {
-                @include resp($sm) {
-                    display: block;
-                }
-            }
-        }
+        @extend .sm_root_card;
     }
     // different style for different card
     // shave card
@@ -1456,34 +1440,6 @@ main {
             grid-column: 1/3;
             grid-row: 1/2;
         }
-    }
-
-    // call card
-    .call {
-        @include resp($sm) {
-            grid-column: 2/3;
-            grid-row: -1/-2;
-        }
-    }
-    // expand card
-    .expand {
-        @include resp($sm) {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            border: none !important;
-            background-color: white !important;
-        }
-        @include resp($xl) {
-            grid-column: -2/-1;
-            grid-row: 1/2;
-        }
-
-        img {
-            @include resp ($xl) {
-                width: 18px;
-            }
-        }
-
     }
     // trash card
     .trash {
@@ -1517,6 +1473,7 @@ main {
     }
     // expand card
     .expand {
+        @extend .bg-lateWhite;
         @include resp($sm) {
             grid-column: 2/3;
             grid-row: 2/3;
@@ -1529,6 +1486,11 @@ main {
         @include resp($xl) {
             grid-column: -2/-1;
             grid-row: 1/2;
+        }
+        img {
+            @include resp($xl) {
+                width: 18px;
+            }
         }
     }
     // logo card
@@ -1575,12 +1537,15 @@ main {
         @include resp($xl) {
             grid-row: 1/3;
             grid-column: 1/4;
+            padding-left: 55px !important;
         }
         .tittle {
-            font-size: 16.5px;
             line-height: 110%;
             @include resp($sm) {
-                @include font-size($sm, $lg, 16px, 30px);
+                // @include font-size($sm, $lg, 16px, 30px);
+            }
+            @include resp ($md) {
+                font-size: 30px;
             }
             @include resp($xl) {
                 font-size: 35px;
@@ -1589,7 +1554,7 @@ main {
                 font-size: 42px;
             }
             @include resp($mxl) {
-                font-size: 53px;
+                font-size: 50px;
             }
             span {
                 display: block;
@@ -1600,9 +1565,7 @@ main {
         }
         // custom button
         .cus__btn {
-            @include resp($lg) {
-                width: 210px;
-            }
+
             // @include resp()
         }
     }
