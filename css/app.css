@@ -1862,22 +1862,22 @@ main #mainContainer .card__element:nth-child(4) {
 }
 @media only screen and (min-width: 992px) {
   .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
-    font-size: 26px;
+    font-size: 26px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
   .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
-    font-size: 27px;
+    font-size: 27px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
   .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
   .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
-    font-size: 38px;
+    font-size: 38px !important;
   }
 }
 
@@ -2106,8 +2106,14 @@ main #mainContainer .card__element:nth-child(4) {
 
 .quote_heading_cardList_container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+@media only screen and (min-width: 992px) {
+  .quote_heading_cardList_container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto;
+  }
 }
 @media only screen and (min-width: 992px) {
   .quote_heading_cardList_container .main_heading {
@@ -2130,9 +2136,11 @@ main #mainContainer .card__element:nth-child(4) {
     font-size: 60px !important;
   }
 }
-.quote_heading_cardList_container .quotes {
-  grid-column: 3/-1;
-  grid-row: 1/2;
+@media only screen and (min-width: 992px) {
+  .quote_heading_cardList_container .quotes {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+  }
 }
 @media only screen and (min-width: 992px) {
   .quote_heading_cardList_container .visual_card_list {
@@ -2140,13 +2148,53 @@ main #mainContainer .card__element:nth-child(4) {
     grid-row: 2/3;
   }
 }
-.quote_heading_cardList_container .section_description span {
-  font-size: 33px !important;
+@media only screen and (min-width: 992px) {
+  .quote_heading_cardList_container .section_description span {
+    font-size: 33px !important;
+  }
 }
 @media only screen and (min-width: 1800px) {
   .quote_heading_cardList_container .section_description span {
     font-size: 38px !important;
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .main_heading .section_heading {
+    font-size: 46px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .main_heading .section_heading {
+    font-size: 52px !important;
+    margin-top: 60px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .main_heading .section_heading {
+    font-size: 70px !important;
+    margin-top: 80px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .section_description span {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .section_description span {
+    font-size: 27px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .section_description span {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #fixItBeforeItBreaks .quote_heading_cardList_container .section_description span {
+    font-size: 38px !important;
   }
 }
 

@@ -1427,16 +1427,16 @@ main {
                     display: inline-block;
                 }
                 @include resp($lg) {
-                    font-size: 26px;
+                    font-size: 26px !important;
                 }
                 @include resp($xl) {
-                    font-size: 27px;
+                    font-size: 27px !important;
                 }
                 @include resp($xxl) {
-                    font-size: 30px;
+                    font-size: 30px !important;
                 }
                 @include resp($mxl) {
-                    font-size: 38px;
+                    font-size: 38px !important;
                 }
             }
         }
@@ -1656,9 +1656,12 @@ main {
 // quote heading card list container
 .quote_heading_cardList_container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr auto;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    @include resp($lg) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr auto;
+    }
     // main heading
     .main_heading {
         @include resp($lg) {
@@ -1668,23 +1671,24 @@ main {
         // section heading
         .section_heading {
             @include resp($lg) {
-                font-size: 36.5px!important;
+                font-size: 36.5px !important;
             }
-            @include resp ($xl) {
-                font-size: 52px!important;
+            @include resp($xl) {
+                font-size: 52px !important;
             }
-            @include resp ($mxl) {
-                font-size: 60px!important;
+            @include resp($mxl) {
+                font-size: 60px !important;
             }
         }
     }
     // quotes
     .quotes {
-        grid-column: 3/-1;
-        grid-row: 1/2;
+        @include resp($lg) {
+            grid-column: 3/-1;
+            grid-row: 1/2;
+        }
         // display: grid !important;
         .texts {
-            
         }
     }
     // visual card list
@@ -1694,13 +1698,51 @@ main {
             grid-row: 2/3;
         }
     }
-    // section description 
+    // section description
     .section_description {
         span {
-            font-size: 33px!important;
-            @include resp ($mxl) {
-                font-size: 38px!important;
+            @include resp($lg) {
+                font-size: 33px !important;
+            }
+            @include resp($mxl) {
+                font-size: 38px !important;
                 margin-bottom: 25px;
+            }
+        }
+    }
+}
+// fix it brefore it breaks ----------------------------
+#fixItBeforeItBreaks {
+    .quote_heading_cardList_container .main_heading .section_heading {
+        @include resp($xl) {
+            font-size: 46px !important;
+        }
+        @include resp($xxl) {
+            font-size: 52px !important;
+            margin-top: 60px !important;
+        }
+        @include resp($mxl) {
+            font-size: 70px !important;
+            margin-top: 80px !important;
+        }
+    }
+    // section description
+    .quote_heading_cardList_container {
+        .section_description {
+            span {
+                @include resp($lg) {
+                    font-size: 25px !important;
+                }
+
+                @include resp($xl) {
+                    font-size: 27px !important;
+                }
+                @include resp($xxl) {
+                    font-size: 30px !important;
+                }
+                @include resp($mxl) {
+                    font-size: 38px !important;
+                }
             }
         }
     }
