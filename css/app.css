@@ -1843,44 +1843,44 @@ main #mainContainer .card__element:nth-child(4) {
     font-size: 44px;
   }
 }
-.root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+.root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
   display: block;
 }
-.root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+.root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
   font-size: 17px;
 }
 @media screen and (min-width: 310px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: calc( 17px + 12 * ( (100vw - 310px) / 682 ) );
   }
 }
 @media screen and (min-width: 992px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 29px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 992px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 26px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 27px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 30px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .root_section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 38px !important;
   }
 }
@@ -2676,6 +2676,39 @@ main #mainContainer .card__element:nth-child(4) {
 }
 #oldWayNewWay .container .allListWrapper .right_list li h6 {
   text-decoration: none !important;
+}
+
+#iddentefy3Bottleck .section_description {
+  display: block !important;
+}
+#iddentefy3Bottleck .section_description span {
+  display: inline;
+}
+@media only screen and (min-width: 992px) {
+  #iddentefy3Bottleck .section_description span {
+    display: block;
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #iddentefy3Bottleck .section_description span {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  #iddentefy3Bottleck .section_description span {
+    font-size: 22px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #iddentefy3Bottleck .section_description span {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #iddentefy3Bottleck .section_description span {
+    font-size: 31px !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
