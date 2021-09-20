@@ -1887,7 +1887,7 @@ main {
 }
 
 // ---------------- old way vs new way --------------------------
-#oldWayNewWay {
+ .oldWayStyles{
     .container {
         background-color: white;
         padding: 50px;
@@ -2179,6 +2179,43 @@ main {
             }
             @include resp($mxl) {
                 font-size: 31px !important;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------ faq ------------------------------------------- 
+#faq {
+    .container {
+        background-color: transparent;
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+    // faq list 
+    #faqList {
+        margin-top: 30px;
+        .accordion-item {
+            background-color: transparent;
+            .accordion-button {
+                background-color: transparent;
+            }
+            // accordion button 
+            .accordion-button::after {
+                background-image: url('../img/icon/list\ icon/plus.png');
+                background-size: 15px 15px;
+                transform-origin: center center;
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: url('../img/icon/list\ icon/minus.png');
+                background-size: 15px 4px;
+            }
+        }
+        // accordion body 
+        .accordion-body {
+            .section_description {
+                span {
+                    @extend .regular;
+                }
             }
         }
     }
