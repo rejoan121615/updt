@@ -45,6 +45,10 @@
   box-sizing: border-box;
 }
 
+.semiWhite {
+  color: #f6f6f6;
+}
+
 .light {
   font-family: ECLight;
 }
@@ -2340,6 +2344,338 @@ main #mainContainer .card__element:nth-child(4) {
     grid-column: 3/5;
     grid-row: 2/3;
   }
+}
+
+#oldWayNewWay .container {
+  background-color: white;
+  padding: 50px;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container {
+    padding: 50px 0px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #oldWayNewWay .container {
+    padding: 85px 65px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container {
+    padding: 110px 90px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container {
+    padding: 130px 100px !important;
+  }
+}
+#oldWayNewWay .container .main_heading .section_heading span {
+  color: #d1d1d1;
+}
+#oldWayNewWay .container .main_heading .section_description {
+  margin-top: 15px;
+  font-family: ECMedium;
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container .main_heading .section_description {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .main_heading .section_description {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .main_heading .section_description {
+    margin-top: 15px;
+  }
+}
+#oldWayNewWay .container .main_heading .section_description span {
+  font-size: 14px;
+}
+@media only screen and (min-width: 425px) {
+  #oldWayNewWay .container .main_heading .section_description span {
+    font-size: 15.5px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .main_heading .section_description span {
+    display: block;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .main_heading .section_description span {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container .main_heading .section_description span {
+    font-size: 25px !important;
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .main_heading .section_description span {
+    font-size: 32px !important;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .main_heading .section_description span {
+    font-size: 36px !important;
+    margin-top: 15px;
+  }
+}
+#oldWayNewWay .container .main_heading .section_description span:last-child {
+  margin-top: 0px !important;
+}
+#oldWayNewWay .container .allListWrapper {
+  margin-top: 25px;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+  color: #ff0000;
+  font-size: 23px;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+    font-size: 42px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list_tittle {
+    font-size: 45px;
+    margin-top: 15px;
+  }
+}
+#oldWayNewWay .container .allListWrapper .item_list .list {
+  list-style: none;
+  padding-left: 0px;
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list {
+    margin-top: 30px;
+  }
+}
+#oldWayNewWay .container .allListWrapper .item_list .list li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li {
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li {
+    margin-bottom: 45px;
+  }
+}
+#oldWayNewWay .container .allListWrapper .item_list .list li .iconWrap {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .iconWrap {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .iconWrap {
+    margin-right: 25px;
+    width: 35px;
+    height: 35px;
+  }
+}
+#oldWayNewWay .container .allListWrapper .item_list .list li .iconWrap img {
+  width: 11px;
+  display: block;
+  margin-bottom: -1px;
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .iconWrap img {
+    width: 15px;
+  }
+}
+#oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .allListWrapper .item_list .list li .medium {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .left_list {
+    width: 40%;
+    flex-basis: 40%;
+  }
+}
+#oldWayNewWay .container .allListWrapper .center_list {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .center_list {
+    flex-basis: 20%;
+    width: 20%;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #oldWayNewWay .container .allListWrapper .center_list {
+    justify-content: flex-start;
+  }
+}
+#oldWayNewWay .container .allListWrapper .center_list img {
+  width: 80px;
+  transform-origin: center center;
+  transform: rotate(100deg);
+  display: inline-block;
+  margin-left: 100px;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .center_list img {
+    margin-left: 0px;
+    transform: rotate(0deg);
+    width: 55px;
+    margin-top: -5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .allListWrapper .center_list img {
+    width: 115px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #oldWayNewWay .container .allListWrapper .center_list img {
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .center_list img {
+    width: 165px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .allListWrapper .center_list img {
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .right_list {
+    width: 40%;
+    flex-basis: 40%;
+  }
+}
+#oldWayNewWay .container .allListWrapper .right_list h3 {
+  color: black !important;
+}
+#oldWayNewWay .container .allListWrapper .right_list h3 img {
+  width: 115px;
+}
+@media only screen and (min-width: 576px) {
+  #oldWayNewWay .container .allListWrapper .right_list h3 img {
+    width: 125px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #oldWayNewWay .container .allListWrapper .right_list h3 img {
+    width: 165px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #oldWayNewWay .container .allListWrapper .right_list h3 img {
+    width: 190px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #oldWayNewWay .container .allListWrapper .right_list h3 img {
+    width: 205px;
+  }
+}
+#oldWayNewWay .container .allListWrapper .right_list li h6 {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=app.css.map */
