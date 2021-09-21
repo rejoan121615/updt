@@ -1887,7 +1887,7 @@ main {
 }
 
 // ---------------- old way vs new way --------------------------
- .oldWayStyles{
+.oldWayStyles {
     .container {
         background-color: white;
         padding: 50px;
@@ -2161,7 +2161,7 @@ main {
     // section description
     .section_description {
         @extend .root_section_description;
-        display: block!important;
+        display: block !important;
         span {
             display: inline;
             @include resp($lg) {
@@ -2184,14 +2184,14 @@ main {
     }
 }
 
-// ------------------------------------------------ faq ------------------------------------------- 
+// ------------------------------------------------ faq -------------------------------------------
 #faq {
     .container {
         background-color: transparent;
-        padding-top: 0px!important;
-        padding-bottom: 0px!important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
     }
-    // faq list 
+    // faq list
     #faqList {
         margin-top: 30px;
         .accordion-item {
@@ -2199,18 +2199,18 @@ main {
             .accordion-button {
                 background-color: transparent;
             }
-            // accordion button 
+            // accordion button
             .accordion-button::after {
-                background-image: url('../img/icon/list\ icon/plus.png');
+                background-image: url("../img/icon/list\ icon/plus.png");
                 background-size: 15px 15px;
                 transform-origin: center center;
             }
             .accordion-button:not(.collapsed)::after {
-                background-image: url('../img/icon/list\ icon/minus.png');
+                background-image: url("../img/icon/list\ icon/minus.png");
                 background-size: 15px 4px;
             }
         }
-        // accordion body 
+        // accordion body
         .accordion-body {
             .section_description {
                 span {
@@ -2218,5 +2218,36 @@ main {
                 }
             }
         }
+    }
+}
+
+// hmaberger menu
+@media screen and (min-width: 0px) and (max-width: $lg) {
+    // mavbar 
+    .navbar-collapse {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: all 0.5s;
+        .navbar-nav {
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0px!important;
+            margin-top: 0px!important;
+            transition: all 0.5s;
+            background-color: #000000d9 !important;
+            justify-content: center;
+        }
+    }
+    // navbar button 
+    .navbar-toggler {
+        position: relative;
+        z-index: 5000;
+        width: 28px;
+    }
+    // text color 
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: white!important;
+        display: inline-block;
     }
 }

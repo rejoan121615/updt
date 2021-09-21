@@ -2734,5 +2734,33 @@ main #mainContainer .card__element:nth-child(4) {
   background-image: url("../img/icon/list icon/minus.png");
   background-size: 15px 4px;
 }
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.5s;
+  }
+  .navbar-collapse .navbar-nav {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px !important;
+    margin-top: 0px !important;
+    transition: all 0.5s;
+    background-color: #000000d9 !important;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 5000;
+    width: 28px;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    display: inline-block;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
