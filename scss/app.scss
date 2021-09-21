@@ -2223,7 +2223,7 @@ main {
 
 // hmaberger menu
 @media screen and (min-width: 0px) and (max-width: $lg) {
-    // mavbar 
+    // mavbar
     .navbar-collapse {
         position: absolute;
         left: 0px;
@@ -2232,22 +2232,50 @@ main {
         .navbar-nav {
             width: 100vw;
             height: 100vh;
-            border-radius: 0px!important;
-            margin-top: 0px!important;
+            border-radius: 0px !important;
+            margin-top: 0px !important;
             transition: all 0.5s;
             background-color: #000000d9 !important;
             justify-content: center;
         }
+        .nav-item {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: right!important;
+        }
     }
-    // navbar button 
-    .navbar-toggler {
-        position: relative;
-        z-index: 5000;
-        width: 28px;
-    }
-    // text color 
+    // text color
     .navbar .navbar-nav .nav-item .nav-link {
-        color: white!important;
+        color: white !important;
         display: inline-block;
+
     }
 }
+
+// nav link font size 
+.navbar .navbar-nav .nav-item .nav-link a{
+    @include resp(0px) {
+        font-size: 13px!important;
+    }
+    @include resp (420px) {
+        font-size: 15px!important;
+    }
+    @include resp($md) {
+        font-size: 16px!important;
+    }
+}
+// navbar button
+.navbar-toggler {
+    position: relative;
+    z-index: 5000;
+    width: 23px;
+    @include resp($sm) {
+        width: 24.5px;
+    }
+    @include resp($md) {
+        width: 26px;
+    }
+    // hover animation 
+}
+
