@@ -1,19 +1,161 @@
 // import modules
 @import "_fonts";
-@import "./_variable_&_mixing_&_others.scss";
-
-// import  component 
-@import "./component/_btn_&_links";
-@import "./component/_cards_&_lists";
-@import "./component/_section";
-@import "./component/_typography";
-
 
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+// color code
+$yellow: #ffcd00;
+$blue: #352878;
+$half-blue: #286678;
+$green: #4b7828;
+$zinzar: #602878;
+$half-pink: #fff5cc;
+$half-black: #d1d1d1;
+$little-red: #ff0000;
+$bgWhite: #f6f6f6;
+
+.semiWhite {
+    color: $bgWhite;
+}
+
+// fonts variable
+$bold: ECBold;
+$light: ECLight;
+$medium: ECMedium;
+$regular: ECRegular;
+$semibold: ECSemiBold;
+
+// font class
+.light {
+    font-family: $light;
+}
+.regular {
+    font-family: $regular;
+}
+.medium {
+    font-family: $medium;
+}
+.semiBold {
+    font-family: $semibold;
+}
+.bold {
+    font-family: $bold;
+}
+
+// color class generator
+$color-list: (
+    "yellow": $yellow,
+    "blue": $blue,
+    "half-blue": $half-blue,
+    "green": $green,
+    "zinzar": $zinzar,
+    "half-pink": $half-pink,
+    "half-black": $half-black,
+    "little-red": $little-red,
+    "lateWhite": $bgWhite,
+);
+
+@each $name, $color in $color-list {
+    .#{$name} {
+        color: $color !important;
+    }
+    .bg-#{$name} {
+        background-color: $color !important;
+    }
+}
+// color class
+
+// responsive break points
+$msm: 310px;
+$xs: 425px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$mxl: 1800px;
+
+// mixing section
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+// max responsive
+@mixin mxResp($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+// auto responsive write
+$breakPointLists: 1800px, 1400px, 1200px, 992px, 768px, 576px, 425px, 0px;
+@mixin respLists($propertyName, $propertyValue) {
+    @for $i from 1 to 9 {
+        @include resp(nth($list: $breakPointLists, $n: $i)) {
+            #{$propertyName}: nth($list: $propertyValue, $n: $i);
+        }
+    }
+}
+
+// fluid fonts
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@mixin font-size($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(
+                    #{$min-font-size} + #{strip-unit(
+                            $max-font-size - $min-font-size
+                        )} *
+                        (
+                            (100vw - #{$min-vw}) / #{strip-unit(
+                                    $max-vw - $min-vw
+                                )}
+                        )
+                );
+            }
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    }
+}
+
+// font size and line height
+@mixin fsizeHeight($f, $h) {
+    font-size: $f;
+    line-height: $h;
+}
+
+@mixin fSmallToLarge($font-small, $font-large) {
+    @include font-size($msm, $lg, $font-small, $font-large);
+}
+@mixin fLargeToExtraLarge($font-small, $font-large) {
+    @include font-size($lg, $mxl, $font-small, $font-large);
+}
+// minimum to maximum media query
+@mixin minMax($min, $max) {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+// responsive list property  applyer
 
 // global common style ------------------------------
 body {
@@ -21,6 +163,9 @@ body {
 }
 // container modification
 .container {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     @include mxResp($xs) {
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -35,7 +180,32 @@ body {
 }
 
 // button component
-
+.cus__btn {
+    font-family: $semibold;
+    border-radius: 1px;
+    background-color: $yellow;
+    color: black !important;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px !important;
+    text-align: center;
+    @include font-size($msm, $lg, 10px, 16px);
+    @include resp($lg) {
+        font-size: 16px;
+        width: 210px;
+    }
+    @include resp($xl) {
+        font-size: 17px;
+        width: 220px;
+    }
+    @include resp($mxl) {
+        font-size: 18px;
+        width: 235px;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+}
 
 .strategy_btn {
     @extend .cus__btn;
@@ -156,7 +326,12 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
     @include resp($xl) {
@@ -213,7 +388,11 @@ body {
     padding: 15px;
     border: none !important;
     cursor: pointer;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
     transform-origin: center center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     margin-bottom: 20px;
     border-radius: 1px;
@@ -231,6 +410,7 @@ body {
     @include resp($lg) {
         height: 120px;
         display: grid;
+        -ms-flex-line-pack: center;
         align-content: center;
     }
     @include resp($xl) {
@@ -247,7 +427,10 @@ body {
     }
 
     &:hover {
+        -webkit-box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
         box-shadow: 1px 1px 4px #c8c8c8, -1px -1px 4px #c8c8c8;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
         transform: scale(1.05);
         @include resp($lg) {
             -webkit-transform: scale(1.025);
@@ -464,6 +647,9 @@ body {
 .text__buttons {
     margin-top: 10px;
     @include resp($xs) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     }
     // button text medium
@@ -487,6 +673,8 @@ body {
     // text and btn wrapper
     .text_btn_wrap {
         @include resp($sm) {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -496,6 +684,8 @@ body {
             }
         }
         @include resp($lg) {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
             justify-content: flex-start;
         }
         // texts
@@ -503,6 +693,9 @@ body {
             margin-bottom: 15px;
             @include resp($sm) {
                 margin-bottom: 0px;
+            }
+            // button description
+            .button_description {
             }
         }
     }
@@ -621,6 +814,7 @@ h6 {
         border-color: transparent !important;
         // focus
         &:focus {
+            -webkit-box-shadow: none !important;
             box-shadow: none !important;
         }
         .navbar-icon {
@@ -673,6 +867,8 @@ main {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(6, 1fr);
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
             margin-top: 45px;
             padding-bottom: 50px !important;
@@ -717,6 +913,7 @@ main {
             input,
             button {
                 width: 100%;
+                -ms-flex-preferred-size: 100%;
                 flex-basis: 100%;
                 border: none !important;
                 border-radius: 0 !important;
@@ -750,6 +947,7 @@ main {
                 }
                 @include resp($xxl) {
                     padding: 17px !important;
+                    -ms-flex-preferred-size: 65%;
                     flex-basis: 65%;
                 }
                 @include resp($mxl) {
@@ -1062,6 +1260,7 @@ main {
                 grid-column: 1/6;
                 display: grid;
                 .quotes_owner {
+                    -ms-flex-item-align: end;
                     align-self: flex-end;
                 }
             }
@@ -1145,11 +1344,17 @@ main {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 justify-content: space-between;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: column wrap;
                 flex-flow: column wrap;
             }
             // sample image
             .img_container {
+                -webkit-box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
                 box-shadow: -3px -3px 10px #c8c8c8, 3px 3px 10px #c8c8c8;
             }
         }
@@ -1161,7 +1366,12 @@ main {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
         }
         // image wrap
@@ -1239,11 +1449,22 @@ main {
             @extend .root_section_description;
         }
     }
+    // visual cad list
+    .visual_card_list {
+        @include resp($lg) {
+            background-color: white;
+        }
+    }
 }
 
 // virtual card list
 .visual_card_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     // card decoration
     @include resp($sm) {
@@ -1408,6 +1629,10 @@ main {
                     display: block;
                 }
             }
+        }
+        // custom button
+        .cus__btn {
+            // @include resp()
         }
     }
 }
@@ -2002,6 +2227,476 @@ main {
     }
 }
 
+// ---------------------------------- footer section -------------------------------
+#footer {
+    background: url("../img/background/bottom-bg.png") no-repeat center center;
+    background-size: 100% 100%;
+    @include resp($xl) {
+        background: url("../img/background/bottom-bg-big.png") no-repeat center
+            center;
+        background-size: 100% 100%;
+    }
+    .container {
+        position: relative;
+        @include resp($sm) {
+            padding-top: 80px !important;
+        }
+        @include resp($md) {
+            padding-top: 100px !important;
+        }
+        @include resp ($mxl) {
+            padding-top: 160px!important;
+        }
+        // image section
+        .img_wrap {
+            img {
+                width: 50px;
+            }
+        }
+        // main heading
+        .main_heading {
+            margin-top: 20px;
+            .section_heading  {
+                @include resp($xl) {
+                    font-size: 47px!important;
+                }
+                @include resp($mxl) {
+                    font-size: 60px!important;
+                }
+            }
+            .section_description span {
+                @include resp($xl) {
+                    font-size: 24px!important;
+                }
+                @include resp($xxl) {
+                    font-size: 28px!important;
+                }
+                @include resp($mxl) {
+                    font-size: 35px!important;
+                }
+            }
+            .section_description .semi-white {
+                @include resp ($xl) {
+                    font-size: 24px!important;
+                }
+                @include resp ($xxl) {
+                    font-size: 27px!important;
+                }
+                @include resp ($mxl) {
+                    font-size: 30px!important;
+                }
+            }
+        }
+        // email form
+        .email__form {
+            button {
+                border-radius: 5px;
+            }
+            @include resp($sm) {
+                input {
+                    border-radius: 0px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                button {
+                    border-radius: 0px;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    @include resp($xl) {
+                        width: 410px !important;
+                    }
+                }
+            }
+        }
+        // before link
+        .before_link {
+            h4 {
+                color: #ffffff9c !important;
+            }
+        }
+        // footer text
+        .footer_text {
+            color: #ffffff9c !important;
+            letter-spacing: 4px;
+            font-size: 11px;
+            margin-top: 40px;
+            @include resp($xxl) {
+                font-size: 14px;
+                margin-top: 25px;
+            }
+            @include resp($xxl) {
+                font-size: 14.5px;
+                margin-top: 20px;
+            }
+            @include resp($mxl) {
+                font-size: 18px;
+            }
+        }
+    }
+    // left side
+    .left_side {
+        @include resp($xl) {
+            width: 50%;
+        }
+        @include resp($xxl) {
+            width: 45%;
+        }
+        @include resp($mxl) {
+            width: 40%;
+        }
+    }
+    // right side
+    .right_side {
+        background: url(../img/background/frame.png) no-repeat center center;
+        width: 590px;
+        background-size: 100%;
+        height: 375px;
+        right: 0px;
+        bottom: -2px;
+        position: absolute;
+        @include resp($xxl) {
+            width: 750px;
+            background-size: 100%;
+            height: 479px;
+            bottom: -4px;
+        }
+        @include resp($mxl) {
+            width: 1000px;
+            background-size: 100%;
+            height: 638px;
+            bottom: -4px;
+        }
+        // frame content
+        .frame_content {
+            background-color: black;
+            padding: 25px;
+            width: 327.5px;
+            margin-top: 29px;
+            height: 254px;
+            margin-left: 112px;
+            @include resp($xxl) {
+                padding: 30px;
+                width: 419.5px;
+                margin-top: 41px;
+                height: 330px;
+                margin-left: 140px;
+            }
+            @include resp($mxl) {
+                padding: 60px;
+                width: 553.5px;
+                margin-top: 50px;
+                height: 444px;
+                margin-left: 190px;
+            }
+            img {
+                width: 120px;
+                @include resp($mxl) {
+                    width: 160px;
+                }
+            }
+            h2 {
+                margin-top: 15px;
+                color: $yellow;
+                font-weight: bold;
+                font-size: 22px;
+                @include resp($mxl) {
+                    font-size: 37px;
+                    margin-top: 25px;
+                }
+            }
+            .para {
+                @extend .para;
+                width: 90%;
+                line-height: 130%;
+                @include resp($mxl) {
+                    font-size: 18px;
+                    margin-top: 25px;
+                }
+            }
+            .cus__btn {
+                margin-top: 15px;
+                width: initial;
+                display: inline-block;
+                padding: 7px 12px !important;
+                font-size: 14px;
+                @include resp($mxl) {
+                    margin-top: 45px;
+                    width: initial;
+                    display: inline-block;
+                    padding: 8px 18px !important;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+//  footer border
+.footer_border {
+    background: url("../img/border/bottom-border.png") no-repeat bottom center;
+    width: 100%;
+    height: 7px;
+    background-size: 100% 100%;
+}
+
+// background images
+.miniAttacksMinimizeBackground {
+    background: url("../img/background/curves-1.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include resp($lg) {
+        background-size: 100% 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include resp($mxl) {
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+}
+
+// minimize downtime
+#minimizeDowntime {
+    @include resp($xl) {
+        margin-top: 30px;
+    }
+    @include resp($xxl) {
+        margin-top: 65px;
+    }
+    @include resp($mxl) {
+        margin-top: 80px;
+    }
+}
+
+// want us to show background
+#wantUsToShow {
+    background: url("../img/background/white-background-sm.png") no-repeat
+        center center;
+    background-size: 100% 100%;
+    @include resp($xl) {
+        background: url("../img/background/white-background.png") no-repeat
+            center center;
+        background-size: 100% 100%;
+    }
+    .container {
+        padding-top: 120px !important;
+        padding-bottom: 120px !important;
+        @include resp($sm) {
+            padding-top: 150px !important;
+            padding-bottom: 150px !important;
+        }
+        @include resp($lg) {
+            padding-top: 200px !important;
+            padding-bottom: 200px !important;
+        }
+        @include resp($xl) {
+            padding-top: 300px !important;
+            padding-bottom: 300px !important;
+        }
+        @include resp($mxl) {
+            padding-top: 370px !important;
+            padding-bottom: 370px !important;
+        }
+    }
+}
+
+// want us to show you
+#wantUsToShow {
+    @include resp($md) {
+        margin-bottom: 70px;
+    }
+    @include resp($lg) {
+        margin-bottom: 100px;
+    }
+    @include resp($xl) {
+        margin-bottom: 130px;
+    }
+}
+
+// more then maintence / zero tech / fix it background
+.maintenceZeroTechFixitBackground {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background: url("../img/background/curves-2.png") no-repeat center center;
+    background-size: cover;
+    @include resp($md) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-top: 100px;
+    }
+    @include resp($lg) {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        background-size: 100% auto;
+        background-position: 100% 0%;
+        margin-bottom: 50px;
+    }
+    @include resp($mxl) {
+        background-size: 100% 75%;
+        padding-bottom: 50px;
+        margin-bottom: 75px;
+    }
+}
+// zero tech section
+#zeroTech {
+    margin-top: 50px;
+    @include resp($md) {
+        margin-top: 75px;
+    }
+    @include resp($lg) {
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+}
+
+// fix it before it breaks
+#fixItBeforeItBreaks {
+    @include resp($md) {
+        padding-top: 75px !important;
+    }
+    @include resp($lg) {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
+}
+
+// zero tech section
+#zeroTech {
+    background: url("../img/background/white-background-left-to-right-sm.png")
+        no-repeat center center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include resp(700px) {
+        background-size: 100% 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include resp($lg) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    @include resp($xxl) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+// old way and new way
+#oldWayNewWay {
+    margin-bottom: 40px;
+    @include resp($md) {
+        margin-bottom: 100px;
+    }
+    @include resp($lg) {
+        margin-bottom: 110px;
+    }
+    @include resp($xxl) {
+        margin-bottom: 125px;
+    }
+}
+
+// iddentify 3 bottleck and faq section background
+.faqBottleBackground {
+    background: url("../img/background/curves-1.png") no-repeat center center;
+    background-size: cover;
+    @include resp($md) {
+        background-size: 100% 100%;
+    }
+    @include resp($xl) {
+        background-size: 100% 100%;
+    }
+}
+
+// iddentefy 3 bottleck
+#iddentefy3Bottleck {
+    background: url("../img/background/white-background-sm.png") no-repeat
+        center center;
+    background-size: 100% 100%;
+    @include resp($xl) {
+        background: url("../img/background/white-background.png") no-repeat
+            center center;
+        background-size: 100% 100%;
+    }
+    .container {
+        padding-top: 120px !important;
+        padding-bottom: 120px !important;
+        @include resp($sm) {
+            padding-top: 150px !important;
+            padding-bottom: 150px !important;
+        }
+        @include resp($lg) {
+            padding-top: 200px !important;
+            padding-bottom: 200px !important;
+        }
+        @include resp($xl) {
+            padding-top: 300px !important;
+            padding-bottom: 300px !important;
+        }
+        @include resp($mxl) {
+            padding-top: 370px !important;
+            padding-bottom: 370px !important;
+        }
+    }
+}
+// -------------------------------------- faq section ----------------------------------------------
+#faq {
+    .container {
+        padding-top: 70px !important;
+        padding-bottom: 50px !important;
+        @include resp($md) {
+            padding-top: 100px !important;
+            padding-bottom: 80px !important;
+        }
+        @include resp($xl) {
+            padding-top: 125px !important;
+            padding-bottom: 100px !important;
+        }
+        @include resp($mxl) {
+            padding-top: 150px !important;
+            padding-bottom: 130px !important;
+        }
+    }
+
+    .accordionList {
+        margin-top: 40px !important;
+        @include resp($sm) {
+            margin-top: 60px !important;
+        }
+        @include resp($xl) {
+            margin-top: 85px !important;
+        }
+        @include resp($xxl) {
+            margin-top: 100px !important;
+        }
+        // accordion header
+        .accordion-header {
+            .accordion-button {
+                @include resp($sm) {
+                    padding: 20px 30px !important;
+                }
+                @include resp($lg) {
+                    padding: 25px 30px !important;
+                }
+                @include resp($xxl) {
+                    padding: 30px !important;
+                }
+            }
+            .section_description {
+                span {
+                    @include resp($md) {
+                        font-size: 20px !important;
+                    }
+                    @include resp($xl) {
+                        font-size: 23px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // hmaberger menu
 @media screen and (min-width: 0px) and (max-width: $lg) {
     // mavbar
@@ -2059,4 +2754,3 @@ main {
     }
     // hover animation 
 }
-
