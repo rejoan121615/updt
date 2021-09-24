@@ -1,0 +1,71 @@
+// color code
+$yellow: #ffcd00;
+$blue: #352878;
+$half-blue: #286678;
+$green: #4b7828;
+$zinzar: #602878;
+$half-pink: #fff5cc;
+$half-black: #d1d1d1;
+$little-red: #ff0000;
+$bgWhite: #f6f6f6;
+
+.semiWhite {
+    color: $bgWhite;
+}
+
+// fonts variable
+$bold: ECBold;
+$light: ECLight;
+$medium: ECMedium;
+$regular: ECRegular;
+$semibold: ECSemiBold;
+
+// font class
+.light {
+    font-family: $light;
+}
+.regular {
+    font-family: $regular;
+}
+.medium {
+    font-family: $medium;
+}
+.semiBold {
+    font-family: $semibold;
+}
+.bold {
+    font-family: $bold;
+}
+
+// color class generator
+$color-list: (
+    "yellow": $yellow,
+    "blue": $blue,
+    "half-blue": $half-blue,
+    "green": $green,
+    "zinzar": $zinzar,
+    "half-pink": $half-pink,
+    "half-black": $half-black,
+    "little-red": $little-red,
+    "lateWhite": $bgWhite,
+);
+
+@each $name, $color in $color-list {
+    .#{$name} {
+        color: $color !important;
+    }
+    .bg-#{$name} {
+        background-color: $color !important;
+    }
+}
+// color class
+
+// responsive break points
+$msm: 310px;
+$xs: 425px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$mxl: 1800px;

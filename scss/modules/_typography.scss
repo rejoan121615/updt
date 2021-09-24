@@ -1,0 +1,173 @@
+// main highlight heading
+// highlight 1
+.high-1 {
+    font-size: calc(26px + 44 * ((100vw - 310px) / 682));
+    line-height: 125%;
+    @include resp($lg) {
+        font-size: 57px;
+    }
+    @include resp($xl) {
+        font-size: 62px;
+    }
+    @include resp($xxl) {
+        font-size: 75px;
+    }
+    @include resp($mxl) {
+        font-size: 95px;
+    }
+}
+
+.high-2 {
+    font-size: calc(25px + 30 * ((100vw - 310px) / 682));
+    line-height: 125%;
+    @include resp($lg) {
+        font-size: 50px;
+    }
+    @include resp($xl) {
+        font-size: 54px;
+    }
+    @include resp($xxl) {
+        font-size: 60px;
+    }
+    @include resp($mxl) {
+        font-size: 75px;
+    }
+}
+
+.high-3 {
+    font-size: calc(34px + 2 * ((100vw - 576px) / 192));
+    line-height: 125%;
+    @include resp($lg) {
+        font-size: 47px;
+    }
+    @include resp($xl) {
+        font-size: 51.5px;
+    }
+    @include resp($xxl) {
+        font-size: 57px;
+    }
+    @include resp($mxl) {
+        font-size: 71px;
+    }
+}
+
+.high-4 {
+    font-size: calc(1.3rem + 0.6vw);
+    line-height: 115%;
+    @include resp($lg) {
+        font-size: 30px;
+    }
+    @include resp($xl) {
+        font-size: 35px;
+    }
+    @include resp($xxl) {
+        font-size: 42px;
+    }
+    @include resp($mxl) {
+        font-size: 50px;
+    }
+}
+
+// batch
+.batch-1 {
+    @extend .big_s_head_ti;
+}
+.batch-2 {
+    @extend .batch-1;
+    @include resp($lg) {
+        font-size: 14px;
+    }
+    @include resp($xl) {
+        font-size: 14.5px;
+    }
+    @include resp($xxl) {
+        font-size: 15px;
+    }
+    @include resp($mxl) {
+        font-size: 15.8px;
+    }
+}
+
+// description
+.description-1 {
+    font-size: calc(17px + 18 * ((100vw - 310px) / 682));
+    line-height: 115%;
+    @include resp($lg) {
+        font-size: 28px;
+    }
+    @include resp($xl) {
+        font-size: 35px;
+    }
+    @include resp($xxl) {
+        font-size: 39px;
+    }
+    @include resp($mxl) {
+        font-size: 60px;
+    }
+}
+
+.description-2 {
+    font-size: calc(17px + 18 * ((100vw - 310px) / 682));
+    line-height: 115%;
+    @include resp($lg) {
+        font-size: 25px;
+    }
+    @include resp($xl) {
+        font-size: 30px;
+    }
+    @include resp($xxl) {
+        font-size: 35px;
+    }
+    @include resp($mxl) {
+        font-size: 46px;
+    }
+}
+// paragraph
+.para {
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 130%;
+    @include resp($sm) {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    @include resp($md) {
+        font-size: 17px;
+    }
+    @include resp($lg) {
+        font-size: 16px;
+    }
+    @include resp($xl) {
+        font-size: 17px;
+    }
+    @include resp($xxl) {
+        font-size: 18px;
+    }
+    @include resp($mxl) {
+        font-size: 18.5px;
+    }
+}
+
+// slogan wrap
+.slogan__wrap {
+    @include resp($lg) {
+    }
+    p {
+        @include fsizeHeight(11px, 120%);
+        color: $blue;
+        @include font-size($xs, $lg, 11px, 15px);
+        @include resp($lg) {
+            // @include fLargeToExtraLarge(16px, 21px);
+            font-size: 19px;
+        }
+        @include resp($xl) {
+            font-size: 20.5px;
+        }
+        @include resp($xxl) {
+            font-size: 25.5px;
+        }
+        @include resp($mxl) {
+            font-size: 32px;
+        }
+    }
+}

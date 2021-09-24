@@ -1,0 +1,20 @@
+// import modules
+@import "./assets/font";
+@import "./assets/variable";
+@import "./assets/mixing";
+
+// modules 
+@import "./modules/typography";
+@import "./modules/btn_&_links";
+@import "./modules/list_&_cards_&_quotes";
+@import "./modules/sections";
+
+// pages 
+@import "./page/landing_page";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

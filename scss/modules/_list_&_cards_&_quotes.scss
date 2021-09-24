@@ -1,0 +1,134 @@
+// quote section
+.quotes {
+    // texts
+    .texts {
+        line-height: 120%;
+        .quote_text {
+            font-family: 14px;
+            display: inline-block;
+            @include resp($xs) {
+                line-height: 135%;
+            }
+            @include resp($sm) {
+                font-size: 22px;
+                text-align: right !important;
+            }
+            @include resp($md) {
+                font-size: 24px;
+            }
+            @include resp($lg) {
+                font-size: 22px;
+            }
+            @include resp($xl) {
+                font-size: 26.5px;
+            }
+            @include resp($xxl) {
+                font-size: 31px;
+            }
+            @include resp($mxl) {
+                font-size: 38px;
+            }
+        }
+    }
+    // quotes owner
+    .quotes_owner {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        @include resp($sm) {
+            text-align: right !important;
+        }
+        @include resp($lg) {
+            margin-top: 31px;
+        }
+        @include fSmallToLarge(14px, 22px);
+        @include resp($xl) {
+            margin-top: 25px;
+            font-size: 25px;
+        }
+        @include resp($xxl) {
+            font-size: 28px;
+            margin-top: 40px;
+        }
+        @include resp($mxl) {
+            font-size: 31px;
+            margin-top: 60px;
+        }
+    }
+}
+
+// small card
+.card {
+    width: 215px;
+    padding: 28px 30px;
+    border-radius: 1px;
+    @include resp($lg) {
+        justify-self: flex-end;
+    }
+    @include resp($xl) {
+        width: 200px;
+        padding-top: 30px;
+        padding-right: 0px;
+    }
+    @include resp($xxl) {
+        padding-top: 35px;
+        width: 235px;
+    }
+    @include resp($mxl) {
+        width: 260px;
+        padding: 50px 25px 40px 42px;
+    }
+    .icon_wrap {
+        img {
+            width: 20px;
+            @include resp($xl) {
+                width: 23px;
+            }
+            @include resp($xxl) {
+                width: 26px;
+            }
+        }
+    }
+    // heading
+    .heading {
+        h6 {
+            @extend .sm_root_card_tittle;
+        }
+    }
+    // paragraph
+    .para_wrap {
+        @include resp($xl) {
+            margin-top: 8px;
+        }
+        p {
+            @extend .sm_root_card_para;
+        }
+    }
+    // card color
+    &:nth-child(1) {
+        background-color: $blue;
+        grid-area: item1;
+    }
+    &:nth-child(2) {
+        background-color: $half-blue;
+        grid-area: item2;
+    }
+    &:nth-child(3) {
+        background-color: $zinzar;
+        grid-area: item4;
+        justify-self: flex-end;
+    }
+    &:nth-child(4) {
+        background-color: $green;
+        grid-area: item3;
+    }
+}
+
+// horizontal card 
+.horizontal-card {
+    @extend .sm_root_card;
+}
+// list item 
+.horizontal-card-list {
+    @extend .cus_card;
+}
