@@ -19,3 +19,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+// common style for all pages 
+main {
+    .container {
+        @include resp($lg) {
+            margin-top: 45px;
+            padding-bottom: 50px !important;
+        }
+        @include resp($xl) {
+            margin-top: 65px;
+        }
+        @include resp($xxl) {
+            margin-top: 80px;
+        }
+        @include resp($mxl) {
+            margin-top: 110px;
+        }
+    }
+}

@@ -1,19 +1,42 @@
-// about us page 
+// about us page
 .about-us {
-    // main section style 
+    // main section style
     main {
-        // container 
+        // container
         .container {
-            display: grid;
-            grid-template-columns: repeat();
+            @include resp($lg) {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 1fr;
+            }
         }
-        // heading 
+        // heading
         .head_form {
-
+            @include resp($lg) {
+                // grid-area: head;
+                grid-column: 1/5;
+                grid-row: 1/2;
+            }
         }
-        // card wrapper section 
+        // card wrapper section
         .card_wrap {
-
+            @include resp($lg) {
+                grid-column: -1/4;
+                grid-row: 1/2;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "card1 card1"
+                    "card3 card2";
+                    grid-gap: 25px;
+            }
+            // card style 
+            .card-square {
+                &:nth-child(1) {
+                    justify-self: center;
+                }
+            }
         }
     }
 }
