@@ -62,13 +62,13 @@
     width: 215px;
     padding: 28px 30px;
     border-radius: 1px;
+    padding-right: 5px!important;
     @include resp($lg) {
         justify-self: flex-end;
     }
     @include resp($xl) {
         width: 200px;
         padding-top: 30px;
-        padding-right: 0px;
     }
     @include resp($xxl) {
         padding-top: 35px;

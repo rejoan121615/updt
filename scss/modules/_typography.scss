@@ -1,7 +1,8 @@
 // main highlight heading
 // highlight 1
 .high-1 {
-    font-size: calc(26px + 44 * ((100vw - 310px) / 682));
+    margin: 0px;
+    font-size: calc(25px + 44 * ((100vw - 310px) / 682));
     line-height: 125%;
     @include resp($lg) {
         font-size: 57px;
@@ -85,6 +86,22 @@
     }
     @include resp($mxl) {
         font-size: 15.8px;
+    }
+}
+
+.batch-mark-des {
+    @extend .small_section_heading;
+}
+
+
+.batch-mark-des-big {
+    @extend .medium;
+    @extend .high-4;
+    @media screen and (max-width: 420px) {
+        font-size: 1.2rem;
+    }
+    span {
+        background-color: #fbf2cb;
     }
 }
 
