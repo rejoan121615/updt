@@ -93,7 +93,6 @@
     @extend .small_section_heading;
 }
 
-
 .batch-mark-des-big {
     @extend .medium;
     @extend .high-4;
@@ -107,6 +106,7 @@
 
 // description
 .description-1 {
+    @extend .medium;
     font-size: calc(17px + 18 * ((100vw - 310px) / 682));
     line-height: 115%;
     @include resp($lg) {
@@ -124,6 +124,7 @@
 }
 
 .description-2 {
+    @extend .medium;
     font-size: calc(17px + 18 * ((100vw - 310px) / 682));
     line-height: 115%;
     @include resp($lg) {
@@ -137,6 +138,23 @@
     }
     @include resp($mxl) {
         font-size: 46px;
+    }
+}
+
+.description-3 {
+    font-size: 16.5px;
+    @include resp($lg) {
+        font-size: 17px;
+    }
+    @include resp($xl) {
+        font-size: 19px;
+        line-height: 130%;
+    }
+    @include resp($xxl) {
+        font-size: 20px;
+    }
+    @include resp($mxl) {
+        font-size: 21px;
     }
 }
 // paragraph

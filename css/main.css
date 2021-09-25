@@ -50,7 +50,7 @@
   font-family: ECRegular;
 }
 
-.medium, .batch-mark-des-big {
+.medium, .description-2, .description-1, .batch-mark-des-big {
   font-family: ECMedium;
 }
 
@@ -312,6 +312,31 @@
 @media only screen and (min-width: 1800px) {
   .description-2 {
     font-size: 46px;
+  }
+}
+
+.description-3 {
+  font-size: 16.5px;
+}
+@media only screen and (min-width: 992px) {
+  .description-3 {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .description-3 {
+    font-size: 19px;
+    line-height: 130%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .description-3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .description-3 {
+    font-size: 21px;
   }
 }
 
@@ -2891,37 +2916,37 @@ main #mainContainer .card__element:nth-child(4) {
     width: 15px;
   }
 }
-.oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+.oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
   font-size: 16px;
   text-decoration: line-through;
 }
 @media only screen and (min-width: 576px) {
-  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
     font-size: 17px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
     font-size: 26px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big {
+  .oldWayStyles .container .allListWrapper .item_list .list li .medium, .oldWayStyles .container .allListWrapper .item_list .list li .batch-mark-des-big, .oldWayStyles .container .allListWrapper .item_list .list li .description-1, .oldWayStyles .container .allListWrapper .item_list .list li .description-2 {
     font-size: 28px;
   }
 }
