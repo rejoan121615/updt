@@ -29,9 +29,23 @@
                 grid-template-areas:
                     "card1 card1"
                     "card3 card2";
-                    grid-gap: 25px;
+                grid-gap: 25px;
+                justify-self: flex-end;
             }
-            // card style 
+            @include resp($xl) {
+                grid-gap: 45px 50px;
+            }
+            @include resp ($xxl) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-areas: 
+                    ". card1"
+                    "card2 ."
+                    ". card3"
+                ;
+                grid-gap: 0;
+            }
+            // card style
             .card-square {
                 &:nth-child(1) {
                     justify-self: center;

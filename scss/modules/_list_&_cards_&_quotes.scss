@@ -88,16 +88,19 @@
         padding-right: 5px !important;
     }
     @include resp($xl) {
-        width: 200px;
+        width: 210px;
+        height: 200px;
+        padding: 28px 38px;
         padding-top: 30px;
     }
     @include resp($xxl) {
-        padding-top: 35px;
-        width: 235px;
+        width: 225px;
+        height: 215px;
     }
     @include resp($mxl) {
         width: 260px;
         padding: 50px 25px 40px 42px;
+        height: 240px;
     }
     .icon_wrap {
         img {

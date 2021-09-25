@@ -22,6 +22,7 @@
 
 // common style for all pages 
 main {
+    // container / wrapper section 
     .container {
         @include resp($lg) {
             margin-top: 45px;
@@ -36,5 +37,15 @@ main {
         @include resp($mxl) {
             margin-top: 110px;
         }
+        // heading form 
+        .head_form {
+            padding-top: 45px;
+        }
     }
+    // // heading form 
+    // .head_from {
+    //     @include resp ($lg) {
+    //         padding-top: 45px;
+    //     }
+    // }
 }
