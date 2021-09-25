@@ -2204,44 +2204,44 @@ main #mainContainer .card__element:nth-child(4) {
     font-size: 44px;
   }
 }
-.root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+.root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
   display: block;
 }
-.root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+.root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
   font-size: 17px;
 }
 @media screen and (min-width: 310px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: calc( 17px + 12 * ( (100vw - 310px) / 682 ) );
   }
 }
 @media screen and (min-width: 992px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 29px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 992px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 26px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 27px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 30px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
+  .root_section_description span, #iddentefy3Bottleck .section_description span, #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span, #moreThenMaintence .main_heading .section_description span {
     font-size: 38px !important;
   }
 }
@@ -2451,27 +2451,27 @@ main #mainContainer .card__element:nth-child(4) {
 }
 
 @media only screen and (min-width: 992px) {
-  #zeroTech .left_section .section_description span {
+  #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span {
     margin-top: 0px !important;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  #zeroTech .left_section .section_description span {
+  #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span {
     font-size: 22px !important;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  #zeroTech .left_section .section_description span {
+  #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span {
     font-size: 25.5px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #zeroTech .left_section .section_description span {
+  #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span {
     font-size: 26px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #zeroTech .left_section .section_description span {
+  #zeroTech .left_section .section_description span, #friendlyFolks .left_section .section_description span {
     font-size: 35px !important;
   }
 }
@@ -3463,16 +3463,16 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
-#zeroTech {
+#zeroTech, #friendlyFolks {
   margin-top: 50px;
 }
 @media only screen and (min-width: 768px) {
-  #zeroTech {
+  #zeroTech, #friendlyFolks {
     margin-top: 75px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #zeroTech {
+  #zeroTech, #friendlyFolks {
     margin-top: 100px;
     margin-bottom: 0px;
   }
@@ -3490,27 +3490,27 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
-#zeroTech {
+#zeroTech, #friendlyFolks {
   background: url("../img/background/white-background-left-to-right-sm.png") no-repeat center center;
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media only screen and (min-width: 700px) {
-  #zeroTech {
+  #zeroTech, #friendlyFolks {
     background-size: 100% 100%;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #zeroTech {
+  #zeroTech, #friendlyFolks {
     padding-top: 150px;
     padding-bottom: 150px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #zeroTech {
+  #zeroTech, #friendlyFolks {
     padding-top: 200px;
     padding-bottom: 200px;
   }
