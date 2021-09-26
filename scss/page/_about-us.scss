@@ -60,3 +60,98 @@
 #friendlyFolks {
     @extend #zeroTech;
 }
+
+
+// founder section -----------------------------
+#founder {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        // article section 
+        .founder-wrapper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            @include resp ($xs) {
+                width: 95%;
+            }
+            @include resp ($sm) {
+                padding: 40px;
+            }
+            @include resp ($md) {
+                padding: 50px;
+            }
+            @include resp ($lg) {
+                padding: 60px;
+            }
+            @include resp ($xl) {
+                padding: 75px;
+            }
+            @include resp ($xxl) {
+                padding: 100px;
+            }
+            @include resp ($mxl) {
+                padding: 115px;
+            }
+        }
+        // founder wrapper
+        .big-para {
+           
+        }
+        .founder-wrapper {
+            .f-tittle {
+
+            }
+            // image wrapper 
+            .img__wrap {
+                width: 100px;
+                @include resp ($xs) {
+                    width: 125px;
+                }
+                @include resp ($sm) {
+                    width: 135px;
+                }
+                @include resp ($md) {
+                    width: 140px;
+                }
+                @include resp ($lg) {
+                    width: 150px;
+                }
+                @include resp ($xl) {
+                    width: 175px;
+                }
+            }
+        }
+
+        // signature ------------------ 
+        .signature {
+            // left description 
+            .left {
+                .description-1 {
+                    font-family: $regular;
+                    @include resp ($mxl) {
+                        font-size: 55px;
+                    }
+                    
+                }
+            }
+            // right side signature 
+            .right {
+                img {
+                    width: 225px;
+                    @include resp ($lg) {
+                        width: 175px;
+                    }
+                    @include resp ($xxl) {
+                        width: 225px;
+                    }
+                    @include resp ($mxl) {
+                        width: 260px;
+                    }
+                }
+            }
+        }
+    }
+}

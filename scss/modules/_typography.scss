@@ -26,6 +26,7 @@
     }
     @include resp($xl) {
         font-size: 54px;
+        line-height: 100%;
     }
     @include resp($xxl) {
         font-size: 60px;
@@ -180,6 +181,28 @@
     }
     @include resp($mxl) {
         font-size: 18.5px;
+    }
+}
+// big para 
+.big-para {
+    font-size: 16px;
+    @include resp ($sm) {
+        font-size: 20px;
+    }
+    @include resp ($md) {
+        font-size: 26px;
+    }
+    @include resp ($lg) {
+        font-size: 25px;
+    }
+    @include resp ($xl) {
+        font-size: 28px;
+    }
+    @include resp ($xxl){
+        font-size: 30px;
+    }
+    @include resp ($mxl) {
+        font-size: 35px;
     }
 }
 

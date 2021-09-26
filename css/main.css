@@ -172,6 +172,7 @@
 @media only screen and (min-width: 1200px) {
   .high-2 {
     font-size: 54px;
+    line-height: 100%;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -374,6 +375,40 @@
 @media only screen and (min-width: 1800px) {
   .para, #footer .right_side .frame_content .para {
     font-size: 18.5px;
+  }
+}
+
+.big-para {
+  font-size: 16px;
+}
+@media only screen and (min-width: 576px) {
+  .big-para {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .big-para {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .big-para {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .big-para {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .big-para {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .big-para {
+    font-size: 35px;
   }
 }
 
@@ -3755,6 +3790,107 @@ main #mainContainer .card__element:nth-child(4) {
 }
 .about-us main .card_wrap .card-square:nth-child(1) {
   justify-self: center;
+}
+
+#founder .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+#founder .container .founder-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+@media only screen and (min-width: 425px) {
+  #founder .container .founder-wrapper {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #founder .container .founder-wrapper {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #founder .container .founder-wrapper {
+    padding: 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #founder .container .founder-wrapper {
+    padding: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #founder .container .founder-wrapper {
+    padding: 75px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #founder .container .founder-wrapper {
+    padding: 100px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #founder .container .founder-wrapper {
+    padding: 115px;
+  }
+}
+#founder .container .founder-wrapper .img__wrap {
+  width: 100px;
+}
+@media only screen and (min-width: 425px) {
+  #founder .container .founder-wrapper .img__wrap {
+    width: 125px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #founder .container .founder-wrapper .img__wrap {
+    width: 135px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #founder .container .founder-wrapper .img__wrap {
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #founder .container .founder-wrapper .img__wrap {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #founder .container .founder-wrapper .img__wrap {
+    width: 175px;
+  }
+}
+#founder .container .signature .left .description-1 {
+  font-family: ECRegular;
+}
+@media only screen and (min-width: 1800px) {
+  #founder .container .signature .left .description-1 {
+    font-size: 55px;
+  }
+}
+#founder .container .signature .right img {
+  width: 225px;
+}
+@media only screen and (min-width: 992px) {
+  #founder .container .signature .right img {
+    width: 175px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #founder .container .signature .right img {
+    width: 225px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #founder .container .signature .right img {
+    width: 260px;
+  }
 }
 
 * {
