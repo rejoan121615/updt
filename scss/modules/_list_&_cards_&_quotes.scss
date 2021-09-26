@@ -144,6 +144,111 @@
     }
 }
 
+// big card 
+.sq-big-card {
+    width: 100%;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    @include resp ($sm) {
+        max-width: initial;
+        border-radius: 0px;
+    }
+    @include resp ($md) {
+        height: 275px;
+        padding-top: 50px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    @include resp ($lg) {
+        width: 310px;
+        height: 295px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        border-radius: 0px;
+    }
+    @include resp ($xl) {
+        width: 371px;
+        height: 355px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @include resp ($xxl) {
+        width: 430px;
+        height: 400px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    @include resp ($mxl) {
+        width: 540px;
+        height: 460px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    // image 
+    .icon_wrap {
+        img {
+            width: 40px;
+            @include resp ($lg) {
+                width: 35px;
+            }
+            @include resp ($xl) {
+                width: 40px;
+            }
+            @include resp ($xxl) {
+                width: 42px;
+            }
+        }
+    }
+    // heading 
+    .heading {
+        @include resp ($sm) {
+            margin-top: 15px;
+        }
+        h6 {
+            font-size: 22px;
+            @include resp ($md) {
+                font-size: 24px;
+            }
+            @include resp ($lg) {
+                font-size: 26px;
+            }
+            @include resp ($xl) {
+                font-size: 30px;
+            }
+            @include resp ($xxl) {
+                font-size: 35px;
+            }
+            @include resp ($mxl) {
+                font-size: 45px;
+            }
+        }
+    }
+    // paragraph 
+    .para_wrap {
+        p {
+            font-family: $regular;
+            font-size: 18px;
+            @include resp ($lg) {
+                font-size: 20px;
+                line-height: 130%;
+            }
+            @include resp ($xl) {
+                font-size: 22px;
+            }
+            @include resp ($xxl) {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
 // horizontal card
 .horizontal-card {
     @extend .sm_root_card;

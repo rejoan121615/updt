@@ -639,6 +639,137 @@
   background-color: #4b7828;
 }
 
+.sq-big-card {
+  width: 100%;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 35px 20px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  .sq-big-card {
+    max-width: initial;
+    border-radius: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sq-big-card {
+    height: 275px;
+    padding-top: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sq-big-card {
+    width: 310px;
+    height: 295px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sq-big-card {
+    width: 371px;
+    height: 355px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sq-big-card {
+    width: 430px;
+    height: 400px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sq-big-card {
+    width: 540px;
+    height: 460px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.sq-big-card .icon_wrap img {
+  width: 40px;
+}
+@media only screen and (min-width: 992px) {
+  .sq-big-card .icon_wrap img {
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sq-big-card .icon_wrap img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sq-big-card .icon_wrap img {
+    width: 42px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .sq-big-card .heading {
+    margin-top: 15px;
+  }
+}
+.sq-big-card .heading h6 {
+  font-size: 22px;
+}
+@media only screen and (min-width: 768px) {
+  .sq-big-card .heading h6 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sq-big-card .heading h6 {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sq-big-card .heading h6 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sq-big-card .heading h6 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sq-big-card .heading h6 {
+    font-size: 45px;
+  }
+}
+.sq-big-card .para_wrap p {
+  font-family: ECRegular;
+  font-size: 18px;
+}
+@media only screen and (min-width: 992px) {
+  .sq-big-card .para_wrap p {
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sq-big-card .para_wrap p {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sq-big-card .para_wrap p {
+    font-size: 25px;
+  }
+}
+
 body {
   background-color: #f6f6f6;
 }
@@ -3891,6 +4022,63 @@ main #mainContainer .card__element:nth-child(4) {
   #founder .container .signature .right img {
     width: 260px;
   }
+}
+
+#whyWorkWithUs .container .card-wrapper-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-row-gap: 25px;
+}
+@media only screen and (min-width: 576px) {
+  #whyWorkWithUs .container .card-wrapper-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-row-gap: 0px;
+    grid-template-areas: "peace ." ". declutter" "modernize ." ". saveTime" "organization ." ". support" "proactive ." ". prepared" "speed .";
+  }
+}
+@media only screen and (min-width: 768px) {
+  #whyWorkWithUs .container .card-wrapper-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+}
+#whyWorkWithUs .container .peace {
+  background-color: #287871;
+  grid-area: peace;
+}
+#whyWorkWithUs .container .declutter {
+  background-color: #352878;
+  grid-area: declutter;
+}
+#whyWorkWithUs .container .modernize {
+  background-color: white;
+  grid-area: modernize;
+}
+#whyWorkWithUs .container .saveTime {
+  background-color: #285478;
+  grid-area: saveTime;
+}
+#whyWorkWithUs .container .organization {
+  background-color: #FFCD00;
+  grid-area: organization;
+}
+#whyWorkWithUs .container .support {
+  background-color: white;
+  grid-area: support;
+}
+#whyWorkWithUs .container .proactive {
+  background-color: #352878;
+  grid-area: proactive;
+}
+#whyWorkWithUs .container .prepared {
+  background-color: white;
+  grid-area: prepared;
+}
+#whyWorkWithUs .container .speed {
+  background-color: #ffcd00;
+  grid-area: speed;
 }
 
 * {

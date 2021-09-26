@@ -155,3 +155,77 @@
         }
     }
 }
+
+
+// why work with us secction 
+#whyWorkWithUs {
+    .container {
+        // card wrapper section 
+        .card-wrapper-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, 1fr);
+            grid-row-gap: 25px;
+            @include resp ($sm) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(9, 1fr);
+                grid-row-gap: 0px;
+                grid-template-areas: 
+                    "peace ."
+                    ". declutter"
+                    "modernize ."
+                    ". saveTime"
+                    "organization ."
+                    ". support"
+                    "proactive ."
+                    ". prepared"
+                    "speed ."
+                    
+                ;
+            }
+            @include resp ($md) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(16, 1fr);
+            }
+        }
+
+
+        // cards style 
+        .peace {
+            background-color: #287871;
+            grid-area: peace;
+        }
+        .declutter {
+            background-color: #352878;
+            grid-area: declutter;
+        }
+        .modernize {
+            background-color: white;
+            grid-area: modernize;
+        }
+        .saveTime {
+            background-color: #285478;
+            grid-area: saveTime;
+        }
+        .organization {
+            background-color: #FFCD00;
+            grid-area: organization;
+        }
+        .support {
+            background-color: white;
+            grid-area: support;
+        }
+        .proactive {
+            background-color: #352878;
+            grid-area: proactive;
+        }
+        .prepared {
+            background-color: white;
+            grid-area: prepared;
+        }
+        .speed {
+            background-color: $yellow;
+            grid-area: speed;
+        }
+    }
+}
