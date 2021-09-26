@@ -166,6 +166,17 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(9, 1fr);
             grid-row-gap: 25px;
+            grid-template-areas: 
+                    "peace"
+                    "declutter"
+                    "modernize"
+                    "saveTime"
+                    "organization"
+                    "support"
+                    "proactive"
+                    "prepared"
+                    "speed"
+                ;
             @include resp ($sm) {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(9, 1fr);
@@ -220,7 +231,9 @@
         .modernize {
             background-color: white;
             grid-area: modernize;
-            transform: translateY(25px);
+            @include resp ($lg) {
+                transform: translateY(25px);
+            }
             @include resp($xl) {
                 transform: translateY(35px);
             }
@@ -254,6 +267,112 @@
         .speed {
             background-color: $yellow;
             grid-area: speed;
+        }
+    }
+}
+
+// proud partnership 
+#proudPartnership {
+    .container {
+        // tittle 
+
+
+        // top company list 
+        .top-brand-list {
+            width: 250px;
+            @include resp ($sm) {
+                width: 350px;
+            }
+            @include resp ($md) {
+                width: 420px;
+            }
+            @include resp ($xxl) {
+                width: 460px;
+            }
+            @include resp ($mxl) {
+                width: 580px;
+            }
+            .brand-wrap {
+                width: 45px;
+                @include resp ($xs) {
+                    width: 55px;
+                }
+                @include resp ($sm) {
+                    width: 65px;
+                }
+                @include resp ($md) {
+                    width: 70px;
+                }
+                @include resp ($xl) {
+                    width: 80px;
+                }
+                @include resp ($xxl) {
+                    width: 85px;
+                }
+                @include resp ($mxl) {
+                    width: 90px;
+                }
+                img {
+                    width: 100%;
+                }
+                &:nth-child(3) {
+                    width: 75px;
+                    @include resp ($xs) {
+                        width: 80px;
+                    }
+                    @include resp ($sm) {
+                        width: 90px;
+                    }
+                    @include resp ($md) {
+                        width: 95px;
+                    }
+                    @include resp ($xl) {
+                        width: 105px;
+                    }
+                    @include resp ($xxl) {
+                        width: 110px;
+                    }
+                    @include resp ($mxl) {
+                        width: 125px;
+                    }
+                }
+            }
+        }
+        // central brand list 
+        .bottom-brand-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 15px;
+            @include resp ($sm) {
+                grid-template-columns: 1fr 1fr 1fr; 
+            }
+            @include resp ($md) {
+                grid-row-gap: 25px;
+            }
+            @include resp ($lg) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            @include resp ($xl) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            .brand-wrap {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                img {
+                    width: 50%;
+                    display: inline-block;
+                    @include resp ($sm) {
+                        width: 70%;
+                    }
+                    @include resp ($md) {
+                        width: 55%;
+                    }
+                }
+            }
+            .chisco {
+                width: 70%;
+            }
         }
     }
 }

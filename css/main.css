@@ -4029,6 +4029,7 @@ main #mainContainer .card__element:nth-child(4) {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, 1fr);
   grid-row-gap: 25px;
+  grid-template-areas: "peace" "declutter" "modernize" "saveTime" "organization" "support" "proactive" "prepared" "speed";
 }
 @media only screen and (min-width: 576px) {
   #whyWorkWithUs .container .card-wrapper-list {
@@ -4057,7 +4058,11 @@ main #mainContainer .card__element:nth-child(4) {
 #whyWorkWithUs .container .modernize {
   background-color: white;
   grid-area: modernize;
-  transform: translateY(25px);
+}
+@media only screen and (min-width: 992px) {
+  #whyWorkWithUs .container .modernize {
+    transform: translateY(25px);
+  }
 }
 @media only screen and (min-width: 1200px) {
   #whyWorkWithUs .container .modernize {
@@ -4097,6 +4102,146 @@ main #mainContainer .card__element:nth-child(4) {
 #whyWorkWithUs .container .speed {
   background-color: #ffcd00;
   grid-area: speed;
+}
+
+#proudPartnership .container .top-brand-list {
+  width: 250px;
+}
+@media only screen and (min-width: 576px) {
+  #proudPartnership .container .top-brand-list {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #proudPartnership .container .top-brand-list {
+    width: 420px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #proudPartnership .container .top-brand-list {
+    width: 460px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #proudPartnership .container .top-brand-list {
+    width: 580px;
+  }
+}
+#proudPartnership .container .top-brand-list .brand-wrap {
+  width: 45px;
+}
+@media only screen and (min-width: 425px) {
+  #proudPartnership .container .top-brand-list .brand-wrap {
+    width: 55px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #proudPartnership .container .top-brand-list .brand-wrap {
+    width: 65px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #proudPartnership .container .top-brand-list .brand-wrap {
+    width: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #proudPartnership .container .top-brand-list .brand-wrap {
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #proudPartnership .container .top-brand-list .brand-wrap {
+    width: 85px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #proudPartnership .container .top-brand-list .brand-wrap {
+    width: 90px;
+  }
+}
+#proudPartnership .container .top-brand-list .brand-wrap img {
+  width: 100%;
+}
+#proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+  width: 75px;
+}
+@media only screen and (min-width: 425px) {
+  #proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+    width: 90px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+    width: 95px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+    width: 105px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+    width: 110px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #proudPartnership .container .top-brand-list .brand-wrap:nth-child(3) {
+    width: 125px;
+  }
+}
+#proudPartnership .container .bottom-brand-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 15px;
+}
+@media only screen and (min-width: 576px) {
+  #proudPartnership .container .bottom-brand-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #proudPartnership .container .bottom-brand-list {
+    grid-row-gap: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #proudPartnership .container .bottom-brand-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #proudPartnership .container .bottom-brand-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+#proudPartnership .container .bottom-brand-list .brand-wrap {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+#proudPartnership .container .bottom-brand-list .brand-wrap img {
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (min-width: 576px) {
+  #proudPartnership .container .bottom-brand-list .brand-wrap img {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #proudPartnership .container .bottom-brand-list .brand-wrap img {
+    width: 55%;
+  }
+}
+#proudPartnership .container .bottom-brand-list .chisco {
+  width: 70%;
 }
 
 * {
