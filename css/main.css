@@ -664,7 +664,7 @@
 }
 @media only screen and (min-width: 992px) {
   .sq-big-card {
-    width: 310px;
+    width: 100%;
     height: 295px;
     display: flex;
     flex-flow: column wrap;
@@ -676,7 +676,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .sq-big-card {
-    width: 371px;
+    width: 100%;
     height: 355px;
     padding-left: 80px;
     padding-right: 80px;
@@ -684,7 +684,7 @@
 }
 @media only screen and (min-width: 1400px) {
   .sq-big-card {
-    width: 430px;
+    width: 100%;
     height: 400px;
     padding-left: 90px;
     padding-right: 90px;
@@ -692,7 +692,7 @@
 }
 @media only screen and (min-width: 1800px) {
   .sq-big-card {
-    width: 540px;
+    width: 100%;
     height: 460px;
     padding-left: 100px;
     padding-right: 100px;
@@ -4038,10 +4038,12 @@ main #mainContainer .card__element:nth-child(4) {
     grid-template-areas: "peace ." ". declutter" "modernize ." ". saveTime" "organization ." ". support" "proactive ." ". prepared" "speed .";
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   #whyWorkWithUs .container .card-wrapper-list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(16, 1fr);
+    grid-template-areas: ". peace ." "modernize peace ." "modernize peace declutter" "modernize peace declutter" "modernize . declutter" ". saveTime declutter" ". saveTime ." "organization saveTime support" "organization saveTime support" "organization . support" "organization proactive support" ". proactive ." "prepared proactive speed" "prepared proactive speed" "prepared . speed" "prepared . speed";
+    grid-column-gap: 3px;
   }
 }
 #whyWorkWithUs .container .peace {
@@ -4055,6 +4057,22 @@ main #mainContainer .card__element:nth-child(4) {
 #whyWorkWithUs .container .modernize {
   background-color: white;
   grid-area: modernize;
+  transform: translateY(25px);
+}
+@media only screen and (min-width: 1200px) {
+  #whyWorkWithUs .container .modernize {
+    transform: translateY(35px);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #whyWorkWithUs .container .modernize {
+    transform: translateY(45px);
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #whyWorkWithUs .container .modernize {
+    transform: translateY(50px);
+  }
 }
 #whyWorkWithUs .container .saveTime {
   background-color: #285478;

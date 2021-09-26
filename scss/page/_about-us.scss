@@ -180,12 +180,30 @@
                     "proactive ."
                     ". prepared"
                     "speed ."
-                    
                 ;
             }
-            @include resp ($md) {
+            @include resp ($lg) {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(16, 1fr);
+                grid-template-areas: 
+                    ". peace ."
+                    "modernize peace ."
+                    "modernize peace declutter"
+                    "modernize peace declutter"
+                    "modernize . declutter"
+                    ". saveTime declutter"
+                    ". saveTime ."
+                    "organization saveTime support"
+                    "organization saveTime support"
+                    "organization . support"
+                    "organization proactive support"
+                    ". proactive ."
+                    "prepared proactive speed"
+                    "prepared proactive speed"
+                    "prepared . speed"
+                    "prepared . speed"
+                ;
+                grid-column-gap: 3px;
             }
         }
 
@@ -202,6 +220,16 @@
         .modernize {
             background-color: white;
             grid-area: modernize;
+            transform: translateY(25px);
+            @include resp($xl) {
+                transform: translateY(35px);
+            }
+            @include resp ($xxl) {
+                transform: translateY(45px);
+            }
+            @include resp ($mxl) {
+                transform: translateY(50px);
+            }
         }
         .saveTime {
             background-color: #285478;
