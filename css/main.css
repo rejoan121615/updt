@@ -207,7 +207,7 @@
 }
 @media only screen and (min-width: 1800px) {
   .high-3 {
-    font-size: 71px;
+    font-size: 65px;
   }
 }
 
@@ -933,23 +933,23 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .sm_root_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .sm_root_card .para, .visual_card_list .visual_card .para, .visual_card_list .visual_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .visual_card_list .visual_card .para, .horizontal-card .para, .horizontal-card #footer .right_side .frame_content .para, #footer .right_side .frame_content .horizontal-card .para, .card-square .para_wrap p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .sm_root_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .sm_root_card .para, .visual_card_list .visual_card .para, .visual_card_list .visual_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .visual_card_list .visual_card .para, .horizontal-card .para, .horizontal-card #footer .right_side .frame_content .para, #footer .right_side .frame_content .horizontal-card .para, .card-square .para_wrap p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 130%;
   }
 }
 @media only screen and (min-width: 1400px) {
   .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .sm_root_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .sm_root_card .para, .visual_card_list .visual_card .para, .visual_card_list .visual_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .visual_card_list .visual_card .para, .horizontal-card .para, .horizontal-card #footer .right_side .frame_content .para, #footer .right_side .frame_content .horizontal-card .para, .card-square .para_wrap p {
-    font-size: 15.5px;
+    font-size: 17px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .sm_root_card_para, main #mainContainer .card__element .para_wrap p, .sm_root_card .para, .sm_root_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .sm_root_card .para, .visual_card_list .visual_card .para, .visual_card_list .visual_card #footer .right_side .frame_content .para, #footer .right_side .frame_content .visual_card_list .visual_card .para, .horizontal-card .para, .horizontal-card #footer .right_side .frame_content .para, #footer .right_side .frame_content .horizontal-card .para, .card-square .para_wrap p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -963,32 +963,22 @@ body {
 }
 @media screen and (min-width: 992px) {
   .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle, .horizontal-card h1.tittle, .card-square .heading h6 {
-    font-size: calc( 14px + 3.5 * ( (100vw - 992px) / 808 ) );
+    font-size: calc( 14px + 4 * ( (100vw - 992px) / 808 ) );
   }
 }
 @media screen and (min-width: 1800px) {
   .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle, .horizontal-card h1.tittle, .card-square .heading h6 {
-    font-size: 17.5px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle, .horizontal-card h1.tittle, .card-square .heading h6 {
-    font-size: 17px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle, .horizontal-card h1.tittle, .card-square .heading h6 {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle, .horizontal-card h1.tittle, .card-square .heading h6 {
-    font-size: 17px;
+    font-size: 19.5px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .sm_root_card_tittle, main #mainContainer .card__element .heading h6, .sm_root_card h1.tittle, .visual_card_list .visual_card h1.tittle, .horizontal-card h1.tittle, .card-square .heading h6 {
-    font-size: 18px;
+    font-size: 20.5px;
   }
 }
 
@@ -4084,7 +4074,7 @@ main #mainContainer .card__element:nth-child(4) {
   grid-area: saveTime;
 }
 #whyWorkWithUs .container .organization {
-  background-color: #FFCD00;
+  background-color: #ffcd00;
   grid-area: organization;
 }
 #whyWorkWithUs .container .support {
@@ -4242,6 +4232,158 @@ main #mainContainer .card__element:nth-child(4) {
 }
 #proudPartnership .container .bottom-brand-list .chisco {
   width: 70%;
+}
+
+#readTheLatestNews .card_wrap .card-square {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: initial;
+  border-radius: 10px;
+  padding: 40px 50px;
+  height: initial;
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews .card_wrap .card-square {
+    width: 48.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap .card-square {
+    padding: 55px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #readTheLatestNews .card_wrap .card-square {
+    padding: 65px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #readTheLatestNews .card_wrap .card-square {
+    height: 440px;
+    padding-left: 85px;
+    padding-top: 80px;
+    width: 48%;
+  }
+}
+#readTheLatestNews .card_wrap .card-square:nth-child(1) {
+  background: url("../img/about-us/post/left-bg.png") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap .card-square:nth-child(1) {
+    background-size: 100% 100%;
+  }
+}
+#readTheLatestNews .card_wrap .card-square:nth-child(2) {
+  background: url("../img/about-us/post/right-bg.png") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap .card-square:nth-child(2) {
+    background-size: 100% 100%;
+  }
+}
+#readTheLatestNews .card_wrap .card-square .heading h6 {
+  font-size: 17px;
+}
+@media only screen and (min-width: 576px) {
+  #readTheLatestNews .card_wrap .card-square .heading h6 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews .card_wrap .card-square .heading h6 {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews .card_wrap .card-square .heading h6 {
+    height: initial;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap .card-square .heading h6 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #readTheLatestNews .card_wrap .card-square .heading h6 {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #readTheLatestNews .card_wrap .card-square .heading h6 {
+    font-size: 30px;
+  }
+}
+#readTheLatestNews .card_wrap .card-square .para_wrap {
+  width: 80%;
+}
+@media only screen and (min-width: 576px) {
+  #readTheLatestNews .card_wrap .card-square .para_wrap {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews .card_wrap .card-square .para_wrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews .card_wrap .card-square .para_wrap {
+    width: 55%;
+  }
+}
+#readTheLatestNews .card_wrap .card-square .para_wrap .sm_para {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews .card_wrap .card-square .para_wrap .sm_para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews .card_wrap .card-square .para_wrap .sm_para {
+    height: initial;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap .card-square .para_wrap .sm_para {
+    font-family: ECLight;
+    font-size: 18px;
+    line-height: initial;
+  }
+}
+#readTheLatestNews .card_wrap .card-square a.para {
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #ffcd00;
+  display: inline-block;
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews .card_wrap .card-square a.para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews .card_wrap .card-square a.para {
+    height: initial;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap .card-square a.para {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #readTheLatestNews .card_wrap .card-square a.para {
+    font-size: 19px;
+  }
 }
 
 * {

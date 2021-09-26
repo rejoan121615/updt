@@ -35,14 +35,13 @@
             @include resp($xl) {
                 grid-gap: 45px 50px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(3, 1fr);
-                grid-template-areas: 
+                grid-template-areas:
                     ". card1"
                     "card2 ."
-                    ". card3"
-                ;
+                    ". card3";
                 grid-gap: 0;
             }
             // card style
@@ -55,12 +54,10 @@
     }
 }
 
-
-// friendly folks 
+// friendly folks
 #friendlyFolks {
     @extend #zeroTech;
 }
-
 
 // founder section -----------------------------
 #founder {
@@ -68,86 +65,83 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        // article section 
+        // article section
         .founder-wrapper {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
             padding: 30px;
-            @include resp ($xs) {
+            @include resp($xs) {
                 width: 95%;
             }
-            @include resp ($sm) {
+            @include resp($sm) {
                 padding: 40px;
             }
-            @include resp ($md) {
+            @include resp($md) {
                 padding: 50px;
             }
-            @include resp ($lg) {
+            @include resp($lg) {
                 padding: 60px;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 padding: 75px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 padding: 100px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 padding: 115px;
             }
         }
         // founder wrapper
         .big-para {
-           
         }
         .founder-wrapper {
             .f-tittle {
-
             }
-            // image wrapper 
+            // image wrapper
             .img__wrap {
                 width: 100px;
-                @include resp ($xs) {
+                @include resp($xs) {
                     width: 125px;
                 }
-                @include resp ($sm) {
+                @include resp($sm) {
                     width: 135px;
                 }
-                @include resp ($md) {
+                @include resp($md) {
                     width: 140px;
                 }
-                @include resp ($lg) {
+                @include resp($lg) {
                     width: 150px;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     width: 175px;
                 }
             }
         }
 
-        // signature ------------------ 
+        // signature ------------------
         .signature {
-            // left description 
+            // left description
             .left {
                 .description-1 {
                     font-family: $regular;
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         font-size: 55px;
                     }
-                    
                 }
             }
-            // right side signature 
+            // right side signature
             .right {
                 img {
                     width: 225px;
-                    @include resp ($lg) {
+                    @include resp($lg) {
                         width: 175px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         width: 225px;
                     }
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         width: 260px;
                     }
                 }
@@ -156,32 +150,30 @@
     }
 }
 
-
-// why work with us secction 
+// why work with us secction
 #whyWorkWithUs {
     .container {
-        // card wrapper section 
+        // card wrapper section
         .card-wrapper-list {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(9, 1fr);
             grid-row-gap: 25px;
-            grid-template-areas: 
-                    "peace"
-                    "declutter"
-                    "modernize"
-                    "saveTime"
-                    "organization"
-                    "support"
-                    "proactive"
-                    "prepared"
-                    "speed"
-                ;
-            @include resp ($sm) {
+            grid-template-areas:
+                "peace"
+                "declutter"
+                "modernize"
+                "saveTime"
+                "organization"
+                "support"
+                "proactive"
+                "prepared"
+                "speed";
+            @include resp($sm) {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(9, 1fr);
                 grid-row-gap: 0px;
-                grid-template-areas: 
+                grid-template-areas:
                     "peace ."
                     ". declutter"
                     "modernize ."
@@ -190,13 +182,12 @@
                     ". support"
                     "proactive ."
                     ". prepared"
-                    "speed ."
-                ;
+                    "speed .";
             }
-            @include resp ($lg) {
+            @include resp($lg) {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(16, 1fr);
-                grid-template-areas: 
+                grid-template-areas:
                     ". peace ."
                     "modernize peace ."
                     "modernize peace declutter"
@@ -212,14 +203,12 @@
                     "prepared proactive speed"
                     "prepared proactive speed"
                     "prepared . speed"
-                    "prepared . speed"
-                ;
+                    "prepared . speed";
                 grid-column-gap: 3px;
             }
         }
 
-
-        // cards style 
+        // cards style
         .peace {
             background-color: #287871;
             grid-area: peace;
@@ -231,16 +220,16 @@
         .modernize {
             background-color: white;
             grid-area: modernize;
-            @include resp ($lg) {
+            @include resp($lg) {
                 transform: translateY(25px);
             }
             @include resp($xl) {
                 transform: translateY(35px);
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 transform: translateY(45px);
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 transform: translateY(50px);
             }
         }
@@ -249,7 +238,7 @@
             grid-area: saveTime;
         }
         .organization {
-            background-color: #FFCD00;
+            background-color: #ffcd00;
             grid-area: organization;
         }
         .support {
@@ -271,45 +260,44 @@
     }
 }
 
-// proud partnership 
+// proud partnership
 #proudPartnership {
     .container {
-        // tittle 
+        // tittle
 
-
-        // top company list 
+        // top company list
         .top-brand-list {
             width: 250px;
-            @include resp ($sm) {
+            @include resp($sm) {
                 width: 350px;
             }
-            @include resp ($md) {
+            @include resp($md) {
                 width: 420px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 width: 460px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 width: 580px;
             }
             .brand-wrap {
                 width: 45px;
-                @include resp ($xs) {
+                @include resp($xs) {
                     width: 55px;
                 }
-                @include resp ($sm) {
+                @include resp($sm) {
                     width: 65px;
                 }
-                @include resp ($md) {
+                @include resp($md) {
                     width: 70px;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     width: 80px;
                 }
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     width: 85px;
                 }
-                @include resp ($mxl) {
+                @include resp($mxl) {
                     width: 90px;
                 }
                 img {
@@ -317,42 +305,42 @@
                 }
                 &:nth-child(3) {
                     width: 75px;
-                    @include resp ($xs) {
+                    @include resp($xs) {
                         width: 80px;
                     }
-                    @include resp ($sm) {
+                    @include resp($sm) {
                         width: 90px;
                     }
-                    @include resp ($md) {
+                    @include resp($md) {
                         width: 95px;
                     }
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         width: 105px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         width: 110px;
                     }
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         width: 125px;
                     }
                 }
             }
         }
-        // central brand list 
+        // central brand list
         .bottom-brand-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 15px;
-            @include resp ($sm) {
-                grid-template-columns: 1fr 1fr 1fr; 
+            @include resp($sm) {
+                grid-template-columns: 1fr 1fr 1fr;
             }
-            @include resp ($md) {
+            @include resp($md) {
                 grid-row-gap: 25px;
             }
-            @include resp ($lg) {
+            @include resp($lg) {
                 grid-template-columns: repeat(4, 1fr);
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 grid-template-columns: repeat(5, 1fr);
             }
             .brand-wrap {
@@ -362,16 +350,140 @@
                 img {
                     width: 50%;
                     display: inline-block;
-                    @include resp ($sm) {
+                    @include resp($sm) {
                         width: 70%;
                     }
-                    @include resp ($md) {
+                    @include resp($md) {
                         width: 55%;
                     }
                 }
             }
             .chisco {
                 width: 70%;
+            }
+        }
+    }
+}
+
+// read the latest news section -----------------------------
+#readTheLatestNews {
+    // card section
+    .card_wrap {
+        // card square
+        .card-square {
+            display: block;
+            margin-bottom: 25px;
+            width: 100%;
+            max-width: initial;
+            border-radius: 10px;
+            padding: 40px 50px;
+            height: initial;
+            @include resp($md) {
+                width: 48.5%;
+            }
+            @include resp($xl) {
+                padding: 55px;
+            }
+            @include resp($xxl) {
+                padding: 65px;
+            }
+            @include resp($mxl) {
+                height: 440px;
+                padding-left: 85px;
+                padding-top: 80px;
+                width: 48%;
+            }
+            // first card
+            &:nth-child(1) {
+                background: url("../img/about-us/post/left-bg.png") no-repeat
+                    center center;
+                background-size: cover;
+                @include resp($xl) {
+                    background-size: 100% 100%;
+                }
+            }
+            &:nth-child(2) {
+                background: url("../img/about-us/post/right-bg.png") no-repeat
+                    center center;
+                background-size: cover;
+                @include resp ($xl) {
+                    background-size: 100% 100%;
+                }
+            }
+            // heading
+            .heading {
+                h6 {
+                    font-size: 17px;
+                    @include resp($sm) {
+                        font-size: 18px;
+                    }
+                    @include resp($md) {
+                        font-size: 19px;
+                    }
+                    @include resp($lg) {
+                        height: initial;
+                        font-size: 20px;
+                    }
+                    @include resp($xl) {
+                        font-size: 22px;
+                    }
+                    @include resp($xxl) {
+                        font-size: 26px;
+                    }
+                    @include resp($mxl) {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            // paragraph
+            .para_wrap {
+                width: 80%;
+                @include resp($sm) {
+                    width: 70%;
+                }
+                @include resp($md) {
+                    width: 100%;
+                }
+                @include resp($lg) {
+                    width: 55%;
+                }
+                .sm_para {
+                    font-size: 16px;
+                    @include resp($md) {
+                        font-size: 16px;
+                    }
+                    @include resp($lg) {
+                        height: initial;
+                        font-size: 17px;
+                    }
+                    @include resp($xl) {
+                        font-family: $light;
+                        font-size: 18px;
+                        line-height: initial;
+                    }
+                }
+            }
+            // links section
+            a.para {
+                padding-bottom: 5px;
+                text-decoration: none;
+                border-bottom: 2px solid $yellow;
+                display: inline-block;
+                font-size: 16px;
+                @include resp($md) {
+                    font-size: 16px;
+                }
+                @include resp($lg) {
+                    height: initial;
+                    font-size: 17px;
+                }
+                @include resp($xl) {
+                    font-size: 18px;
+                }
+                @include resp($xxl) {
+                    font-size: 19px;
+                }
             }
         }
     }
