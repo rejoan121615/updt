@@ -406,7 +406,7 @@
                 background: url("../img/about-us/post/right-bg.png") no-repeat
                     center center;
                 background-size: cover;
-                @include resp ($xl) {
+                @include resp($xl) {
                     background-size: 100% 100%;
                 }
             }
@@ -483,6 +483,67 @@
                 }
                 @include resp($xxl) {
                     font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+// about us footer
+.about-us {
+    #footer {
+        background: url("../img/about-us/bottom/footer-sm.png") no-repeat center
+            center;
+        background-size: cover;
+        @include resp($lg) {
+            background: url("../img/about-us/bottom/footer-lg.png") no-repeat
+                center center;
+            background-size: 100% 100%;
+        }
+
+        // right side frame image
+        .right_side {
+            background: url("../img/about-us/bottom/frame.png") no-repeat center
+                center;
+            background-size: 99%;
+            // frame content
+            .frame_content {
+                padding-left: 20px;
+                padding-top: 20px;
+                width: 289px;
+                margin-top: 35px;
+                height: 217px;
+                margin-left: 184px;
+                @include resp($xxl) {
+                    padding-left: 40px;
+                    padding-top: 40px;
+                    width: 367px;
+                    margin-top: 46px;
+                    height: 276px;
+                    margin-left: 234px;
+                }
+                @include resp($mxl) {
+                    padding-left: 70px;
+                    padding-top: 70px;
+                    width: 489px;
+                    margin-top: 62px;
+                    height: 367px;
+                    margin-left: 312px;
+                }
+                // h2
+                h2 {
+                    margin-top: 10px;
+                }
+                // button
+                .cus__btn {
+                    margin-top: -1px;
+                    @include resp($xxl) {
+                        margin-top: 20px;
+                    }
+                }
+                // paragraph
+                .para {
+                    margin-top: 15px;
                 }
             }
         }

@@ -3496,6 +3496,8 @@ main #mainContainer .card__element:nth-child(4) {
   width: 100%;
   height: 7px;
   background-size: 100% 100%;
+  position: relative;
+  z-index: 2500;
 }
 
 .miniAttacksMinimizeBackground {
@@ -4384,6 +4386,63 @@ main #mainContainer .card__element:nth-child(4) {
   #readTheLatestNews .card_wrap .card-square a.para {
     font-size: 19px;
   }
+}
+
+.about-us #footer {
+  background: url("../img/about-us/bottom/footer-sm.png") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 992px) {
+  .about-us #footer {
+    background: url("../img/about-us/bottom/footer-lg.png") no-repeat center center;
+    background-size: 100% 100%;
+  }
+}
+.about-us #footer .right_side {
+  background: url("../img/about-us/bottom/frame.png") no-repeat center center;
+  background-size: 99%;
+}
+.about-us #footer .right_side .frame_content {
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 289px;
+  margin-top: 35px;
+  height: 217px;
+  margin-left: 184px;
+}
+@media only screen and (min-width: 1400px) {
+  .about-us #footer .right_side .frame_content {
+    padding-left: 40px;
+    padding-top: 40px;
+    width: 367px;
+    margin-top: 46px;
+    height: 276px;
+    margin-left: 234px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .about-us #footer .right_side .frame_content {
+    padding-left: 70px;
+    padding-top: 70px;
+    width: 489px;
+    margin-top: 62px;
+    height: 367px;
+    margin-left: 312px;
+  }
+}
+.about-us #footer .right_side .frame_content h2 {
+  margin-top: 10px;
+}
+.about-us #footer .right_side .frame_content .cus__btn, .about-us #footer .right_side .frame_content .cus-btn, .about-us #footer .right_side .frame_content .sm-cus-btn, .about-us #footer .right_side .frame_content .strategy_btn {
+  margin-top: -1px;
+}
+@media only screen and (min-width: 1400px) {
+  .about-us #footer .right_side .frame_content .cus__btn, .about-us #footer .right_side .frame_content .cus-btn, .about-us #footer .right_side .frame_content .sm-cus-btn, .about-us #footer .right_side .frame_content .strategy_btn {
+    margin-top: 20px;
+  }
+}
+.about-us #footer .right_side .frame_content .para {
+  margin-top: 15px;
 }
 
 * {
