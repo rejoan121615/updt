@@ -211,9 +211,17 @@
     @include resp($lg) {
     }
     p {
-        @include fsizeHeight(11px, 120%);
         color: $blue;
-        @include font-size($xs, $lg, 11px, 15px);
+        font-size: 13px;
+        @include resp ($xs) {
+            font-size: 15px;
+        }
+        @include resp ($sm) {
+            font-size: 17px;
+        }
+        @include resp ($md) {
+            font-size: 18px;
+        }
         @include resp($lg) {
             // @include fLargeToExtraLarge(16px, 21px);
             font-size: 19px;

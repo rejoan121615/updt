@@ -61,6 +61,10 @@ main {
             padding-top: 13px;
             padding-bottom: 13px;
         }
+        @include resp ($xxl) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
         @include resp ($mxl) {
             padding-top: 18px;
             padding-bottom: 18px;

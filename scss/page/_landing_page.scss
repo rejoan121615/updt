@@ -106,6 +106,7 @@ body {
     text-align: center;
     margin-bottom: 0px;
     line-height: 125%;
+    font-family: $medium;
     @include fSmallToLarge(14px, 16px);
     @include resp($sm) {
         text-align: left;
@@ -114,14 +115,8 @@ body {
         font-size: 15px;
     }
     @include resp($xl) {
-        font-size: 16px;
+        // font-size: 16px;
         line-height: 130%;
-    }
-    @include resp($xxl) {
-        font-size: 17px;
-    }
-    @include resp($mxl) {
-        font-size: 18px;
     }
     span {
         @include resp($sm) {
@@ -132,12 +127,12 @@ body {
 // card tittle
 @at-root .sm_root_card_tittle {
     @include fLargeToExtraLarge(14px, 18px);
-    @include resp($xxl) {
-        font-size: 19.5px;
-    }
-    @include resp($mxl) {
-        font-size: 20.5px;
-    }
+    // @include resp($xxl) {
+    //     font-size: 19.5px;
+    // }
+    // @include resp($mxl) {
+    //     font-size: 20.5px;
+    // }
 }
 
 // card

@@ -252,6 +252,38 @@
 // horizontal card
 .horizontal-card {
     @extend .sm_root_card;
+    @include resp ($sm) {
+        border: none!important;
+    }
+    h1.tittle {
+        font-size: 16px!important;
+        @include resp ($sm) {
+            font-size: 16px!important;
+        }
+        @include resp ($md) {
+            font-size: 17.5px!important;
+        }
+        @include resp ($lg) {
+            font-size: 19px!important;
+        }
+        @include resp ($xl) {
+            font-size: 20.5px!important;
+        }
+        @include resp ($xxl) {
+            font-size: 22px!important;
+        }
+        @include resp ($mxl) {
+            font-size: 24px!important;
+        }
+    }
+    p.para {
+        @include resp ($xxl) {
+            font-size: 16px;
+        }
+        @include resp ($mxl) {
+            font-size: 17px;
+        }
+    }
 }
 // list item
 .horizontal-card-list {

@@ -2,6 +2,15 @@
 .about-us {
     // main section style
     main {
+        @include resp ($xl) {
+            margin-bottom: 35px;
+        }
+        @include resp ($xxl) {
+            margin-bottom: 65px;
+        }
+        @include resp ($mxl) {
+            margin-bottom: 80px;
+        }
         // container
         .container {
             @include resp($lg) {
@@ -557,4 +566,46 @@
         background: url('../img/about-us/background/header-bg-lg.png') no-repeat top center;
         background-size: 100% 100%;
     }
+}
+
+
+// our north star section 
+#ourNorthStar {
+    padding-top: 50px;
+    @include resp ($md) {
+        padding-top: 80px;
+    }
+    @include resp ($lg) {
+        padding-top: 100px;
+    }
+    @include resp ($xl) {
+        padding-top: 125px;
+    }
+    @include resp ($xxl) {
+        padding-top: 140px;
+    }
+    @include resp ($mxl) {
+        padding-top: 155px;
+    }
+}
+
+// our north friendly folks background 
+.ourNorthFriendlyFolksBackgroundWrapper {
+    background: url('../img/about-us/background/north-section-bg.png') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 70px;
+    @include resp ($md) {
+        padding-bottom: 90px;
+    }
+    @include resp ($lg) {
+        padding-bottom: 105px;
+        background-size: 100% 100%;
+    }
+    @include resp ($xl) {
+        padding-bottom: 125px;
+    }
+    @include resp ($xxl) {
+        padding-bottom: 150px;
+    }
+
 }
