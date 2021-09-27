@@ -8,6 +8,8 @@ $half-pink: #fff5cc;
 $half-black: #d1d1d1;
 $little-red: #ff0000;
 $bgWhite: #f6f6f6;
+$goldBlack: #030015;
+$halfDark: #484848;
 
 .semiWhite {
     color: $bgWhite;
@@ -48,6 +50,8 @@ $color-list: (
     "half-black": $half-black,
     "little-red": $little-red,
     "lateWhite": $bgWhite,
+    "goldBlack": $goldBlack,
+    "halfDark": $halfDark,
 );
 
 @each $name, $color in $color-list {

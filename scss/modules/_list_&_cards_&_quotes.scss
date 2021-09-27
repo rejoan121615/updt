@@ -117,6 +117,16 @@
     .heading {
         h6 {
             @extend .sm_root_card_tittle;
+            font-size: 17px!important;
+            @include resp ($xl) {
+                font-size: 18px!important;
+            }
+            @include resp ($xxl) {
+                font-size: 19px!important;
+            }
+            @include resp ($mxl) {
+                font-size: 20px!important;
+            }
         }
     }
     // paragraph

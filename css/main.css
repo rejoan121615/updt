@@ -134,6 +134,22 @@
   background-color: #f6f6f6 !important;
 }
 
+.goldBlack {
+  color: #030015 !important;
+}
+
+.bg-goldBlack {
+  background-color: #030015 !important;
+}
+
+.halfDark {
+  color: #484848 !important;
+}
+
+.bg-halfDark {
+  background-color: #484848 !important;
+}
+
 .high-1 {
   margin: 0px;
   font-size: calc(25px + 44 * ((100vw - 310px) / 682));
@@ -619,6 +635,24 @@
 @media only screen and (min-width: 1400px) {
   .card-square .icon_wrap img {
     width: 26px;
+  }
+}
+.card-square .heading h6 {
+  font-size: 17px !important;
+}
+@media only screen and (min-width: 1200px) {
+  .card-square .heading h6 {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .card-square .heading h6 {
+    font-size: 19px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .card-square .heading h6 {
+    font-size: 20px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -4733,6 +4767,185 @@ main #mainContainer .card__element:nth-child(4) {
   .founderLatestNewsSection {
     background-size: 100%;
     background-position: left center;
+  }
+}
+
+.careers main .description-2 {
+  font-family: ECRegular;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .head_form .batch-mark-des-big {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .head_form .batch-mark-des-big {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .head_form .batch-mark-des-big {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .head_form .halfDark {
+    font-size: 27px;
+    width: 451px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .head_form .halfDark {
+    width: initial;
+    font-size: 27.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .head_form .halfDark {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .head_form .description-1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .head_form .description-1 {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .head_form .description-1 {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers main .container .card_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "cheifdev seniordev" "intern intern" "juniorEng cto";
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  .careers main .container .card_wrap {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "cheifdev . seniordev" "cheifdev . seniordev" "cheifdev intern seniordev" ". intern ." "juniorEng intern cto" "juniorEng intern cto" "juniorEng . cto";
+    grid-gap: 0px;
+  }
+}
+.careers main .container .card_wrap .cheifItDev {
+  grid-area: cheifdev;
+}
+.careers main .container .card_wrap .seniorDev {
+  grid-area: seniordev;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .card_wrap .seniorDev {
+    transform: translateY(-40px);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .seniorDev {
+    transform: translateY(-55px);
+  }
+}
+.careers main .container .card_wrap .juniorEng {
+  grid-area: juniorEng;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .card_wrap .juniorEng {
+    transform: translateY(30px);
+  }
+}
+.careers main .container .card_wrap .cto {
+  grid-area: cto;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .card_wrap .cto {
+    transform: translateY(45px);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .cto {
+    transform: translateY(50px);
+  }
+}
+.careers main .container .card_wrap .intern {
+  grid-area: intern;
+  justify-self: center;
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .card_wrap .card-square {
+    padding: 30px 25px 40px 42px;
+  }
+}
+.careers main .container .card_wrap .card-square .heading h6 {
+  font-family: ECBold;
+  font-size: 20px !important;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .card_wrap .card-square .heading h6 {
+    font-size: 22px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .card-square .heading h6 {
+    font-size: 24px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .card_wrap .card-square .heading h6 {
+    font-size: 25px !important;
+  }
+}
+.careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+  width: 14.5px;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+    width: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+    width: 16px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+    width: 17px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para {
+    font-size: 18px;
+  }
+}
+.careers main .container .card_wrap .card-square .para_wrap .end-text {
+  margin-left: 22px;
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container .card_wrap .card-square .para_wrap .end-text {
+    margin-left: 26px;
   }
 }
 

@@ -1,0 +1,174 @@
+.careers {
+    main {
+        .description-2 {
+            font-family: $regular;
+        }
+    }
+
+    // main section style 
+
+    main {
+        .container {
+            // heading texts section 
+            .head_form {
+                .batch-mark-des-big {
+                    @include resp ($xl) {
+                        font-size: 30px;
+                    }
+                    @include resp ($xxl) {
+                        font-size: 34px;
+                    }
+                    @include resp ($mxl) {
+                        font-size: 38px;
+                    }
+                }
+                .halfDark {
+                    @include resp ($xl) {
+                        font-size: 27px;
+                        width: 451px;
+                    }
+                    @include resp ($xxl) {
+                        width: initial;
+                        font-size: 27.5px;
+                    }
+                    @include resp ($mxl) {
+                        font-size: 32px;
+                    }
+                }
+                .description-1 {
+                    @include resp ($xl) {
+                        font-size: 32px;
+                    }
+                    @include resp ($xxl) {
+                        font-size: 34px;
+                    }
+                    @include resp ($mxl) {
+                        font-size: 38px;
+                    }
+                }
+            }
+
+
+
+
+            // card wrapper 
+            .card_wrap {
+                @include resp ($lg) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-areas: 
+                        "cheifdev seniordev"
+                        "intern intern"
+                        "juniorEng cto"
+                    ;
+                    @include resp ($xl) {
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(7, 1fr);
+                        grid-template-areas:
+                            "cheifdev . seniordev"
+                            "cheifdev . seniordev"
+                            "cheifdev intern seniordev"
+                            ". intern ."
+                            "juniorEng intern cto"
+                            "juniorEng intern cto"
+                            "juniorEng . cto"
+                        ;
+                        grid-gap: 0px;
+                    }
+                }
+
+                // cards 
+                .cheifItDev {
+                    grid-area: cheifdev;
+                }
+                .seniorDev {
+                    grid-area: seniordev;
+                    @include resp ($xl) {
+                        transform: translateY(-40px);
+                    }
+                    @include resp ($xxl) {
+                        transform: translateY(-55px);
+                    }
+                }
+                .juniorEng {
+                    grid-area: juniorEng;
+                    @include resp ($xl) {
+                        transform: translateY(30px);
+                    }
+                }
+                .cto {
+                    grid-area: cto;
+                    @include resp ($xl) {
+                        transform: translateY(45px);
+                    }
+                    @include resp ($xxl) {
+                        transform: translateY(50px);
+                    }
+                }
+                .intern {
+                    grid-area: intern;
+                    justify-self: center;
+                }
+                // card style 
+                .card-square {
+                    @include resp ($mxl) {
+                        padding: 30px 25px 40px 42px;
+                    }
+                    // heading texts 
+                    .heading {
+                        h6 {
+                            font-family: $bold;
+                            font-size: 20px!important;
+                            @include resp ($xl) {
+                                font-size: 22px!important;
+                            }
+                            @include resp ($xxl) {
+                                font-size: 24px!important;
+                            }
+                            @include resp ($mxl) {
+                                font-size: 25px!important;
+                            }
+                        }
+                    }
+                    // paragraph 
+                    .para_wrap {
+                        .para {
+                            img {
+                                width: 14.5px;
+                                @include resp ($xl) {
+                                    width: 15px;
+                                }
+                                @include resp ($xxl) {
+                                    width: 16px;
+                                }
+                                @include resp ($mxl) {
+                                    width: 17px;
+                                }
+                                margin-right: 5px;
+                                @include resp ($xxl) {
+                                    margin-right: 10px;
+                                }
+                            }
+                            @include resp ($xl) {
+                                font-size: 16px;
+                            }
+                            @include resp ($xxl) {
+                                font-size: 17px;
+                            }
+                            @include resp ($mxl) {
+                                font-size: 18px;
+                            }
+                        }
+                        .end-text {
+                            margin-left: 22px;
+                            @include resp ($xxl) {
+                                margin-left: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
