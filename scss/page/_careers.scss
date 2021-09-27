@@ -9,6 +9,16 @@
 
     main {
         .container {
+            padding-bottom: 50px;
+            @include resp ($xl) {
+                margin-top: 110px;
+            }
+            @include resp ($xxl) {
+                margin-top: 140px;
+            }
+            @include resp ($mxl) {
+                margin-top: 185px;
+            }
             // heading texts section 
             .head_form {
                 .batch-mark-des-big {
@@ -170,5 +180,23 @@
                 }
             }
         }
+    }
+}
+
+
+// careers 
+.careers {
+    .headerMainBg {
+        padding-bottom: 50px;
+        @include resp ($md) {
+            padding-bottom: 110px;
+        }
+        @include resp ($xl) {
+            padding-bottom: 65px;
+        }
+        @include resp ($xxl) {
+            padding-bottom: 10px;
+        }
+
     }
 }

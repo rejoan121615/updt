@@ -4773,6 +4773,24 @@ main #mainContainer .card__element:nth-child(4) {
 .careers main .description-2 {
   font-family: ECRegular;
 }
+.careers main .container {
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 1200px) {
+  .careers main .container {
+    margin-top: 110px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers main .container {
+    margin-top: 140px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers main .container {
+    margin-top: 185px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .careers main .container .head_form .batch-mark-des-big {
     font-size: 30px;
@@ -4946,6 +4964,25 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 1400px) {
   .careers main .container .card_wrap .card-square .para_wrap .end-text {
     margin-left: 26px;
+  }
+}
+
+.careers .headerMainBg {
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .careers .headerMainBg {
+    padding-bottom: 110px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers .headerMainBg {
+    padding-bottom: 65px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers .headerMainBg {
+    padding-bottom: 10px;
   }
 }
 
