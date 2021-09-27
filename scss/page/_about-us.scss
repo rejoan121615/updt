@@ -549,3 +549,12 @@
         }
     }
 }
+
+
+// background and padding fix 
+.about-us {
+    .headerMainBg {
+        background: url('../img/about-us/background/header-bg-lg.png') no-repeat top center;
+        background-size: 100% 100%;
+    }
+}

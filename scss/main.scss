@@ -42,10 +42,38 @@ main {
             padding-top: 45px;
         }
     }
-    // // heading form 
-    // .head_from {
-    //     @include resp ($lg) {
-    //         padding-top: 45px;
-    //     }
-    // }
+}
+
+.email-dark {
+    background-color: #F2F2F2!important;
+    color: lighten($color: #000000, $amount: 20);
+}
+
+
+.email__form {
+    // email input 
+    input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        @include resp ($md) {
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
+        @include resp ($mxl) {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+
+    // button 
+    button.cus__btn {
+        @include resp ($xl) {
+            width: 430px!important;
+        }
+        @include resp ($mxl) {
+            width: 470px!important;
+        }
+    }
 }

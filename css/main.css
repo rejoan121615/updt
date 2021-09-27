@@ -4445,6 +4445,11 @@ main #mainContainer .card__element:nth-child(4) {
   margin-top: 15px;
 }
 
+.about-us .headerMainBg {
+  background: url("../img/about-us/background/header-bg-lg.png") no-repeat top center;
+  background-size: 100% 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -4474,6 +4479,40 @@ main #mainContainer .card__element:nth-child(4) {
 }
 main .container .head_form {
   padding-top: 45px;
+}
+
+.email-dark {
+  background-color: #F2F2F2 !important;
+  color: #333333;
+}
+
+.email__form input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .email__form input {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .email__form input {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .email__form button.cus__btn, .email__form button.cus-btn, .email__form button.sm-cus-btn, .email__form button.strategy_btn {
+    width: 430px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .email__form button.cus__btn, .email__form button.cus-btn, .email__form button.sm-cus-btn, .email__form button.strategy_btn {
+    width: 470px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
