@@ -4061,12 +4061,46 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
+#whyWorkWithUs .container {
+  padding-top: 75px;
+}
+@media only screen and (min-width: 576px) {
+  #whyWorkWithUs .container {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #whyWorkWithUs .container {
+    padding-top: 130px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #whyWorkWithUs .container {
+    padding-top: 160px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #whyWorkWithUs .container {
+    padding-top: 180px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #whyWorkWithUs .container {
+    padding-top: 200px;
+  }
+}
 #whyWorkWithUs .container .card-wrapper-list {
+  margin-top: 35px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, 1fr);
   grid-row-gap: 25px;
   grid-template-areas: "peace" "declutter" "modernize" "saveTime" "organization" "support" "proactive" "prepared" "speed";
+}
+@media only screen and (min-width: 992px) {
+  #whyWorkWithUs .container .card-wrapper-list {
+    margin-top: 50px;
+  }
 }
 @media only screen and (min-width: 576px) {
   #whyWorkWithUs .container .card-wrapper-list {
@@ -4141,17 +4175,52 @@ main #mainContainer .card__element:nth-child(4) {
   grid-area: speed;
 }
 
+#proudPartnership {
+  padding-top: 75px;
+}
+@media only screen and (min-width: 576px) {
+  #proudPartnership {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #proudPartnership {
+    padding-top: 130px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #proudPartnership {
+    padding-top: 160px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #proudPartnership {
+    padding-top: 180px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #proudPartnership {
+    padding-top: 200px;
+  }
+}
 #proudPartnership .container .top-brand-list {
   width: 250px;
+  margin-top: 25px;
 }
 @media only screen and (min-width: 576px) {
   #proudPartnership .container .top-brand-list {
     width: 350px;
+    margin-top: 40px;
   }
 }
 @media only screen and (min-width: 768px) {
   #proudPartnership .container .top-brand-list {
     width: 420px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #proudPartnership .container .top-brand-list {
+    margin-top: 55px;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -4236,11 +4305,14 @@ main #mainContainer .card__element:nth-child(4) {
 #proudPartnership .container .bottom-brand-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 15px;
+  grid-row-gap: 25px;
+  margin-top: 25px !important;
 }
 @media only screen and (min-width: 576px) {
   #proudPartnership .container .bottom-brand-list {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px !important;
+    grid-row-gap: 40px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -4251,6 +4323,8 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 992px) {
   #proudPartnership .container .bottom-brand-list {
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 55px !important;
+    grid-row-gap: 55px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -4281,6 +4355,106 @@ main #mainContainer .card__element:nth-child(4) {
   width: 70%;
 }
 
+#readTheLatestNews {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews {
+    margin-top: 110px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews {
+    margin-top: 140px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews {
+    margin-top: 165px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #readTheLatestNews {
+    margin-top: 180px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #readTheLatestNews {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #readTheLatestNews .tittle .high-3 {
+    font-size: 25px;
+  }
+}
+#readTheLatestNews .tittle a {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #352878;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 425px) {
+  #readTheLatestNews .tittle a {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #readTheLatestNews .tittle a {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews .tittle a {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #readTheLatestNews .tittle a {
+    font-size: 31px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #readTheLatestNews .tittle a {
+    font-size: 34px;
+  }
+}
+#readTheLatestNews .card_wrap {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 576px) {
+  #readTheLatestNews .card_wrap {
+    margin-top: 35px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #readTheLatestNews .card_wrap {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #readTheLatestNews .card_wrap {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #readTheLatestNews .card_wrap {
+    margin-bottom: 125px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #readTheLatestNews .card_wrap {
+    margin-bottom: 160px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #readTheLatestNews .card_wrap {
+    margin-bottom: 200px;
+  }
+}
 #readTheLatestNews .card_wrap .card-square {
   display: block;
   margin-bottom: 25px;
@@ -4548,6 +4722,17 @@ main #mainContainer .card__element:nth-child(4) {
 @media only screen and (min-width: 1400px) {
   .ourNorthFriendlyFolksBackgroundWrapper {
     padding-bottom: 150px;
+  }
+}
+
+.founderLatestNewsSection {
+  background: url("../img/about-us/background/bio-to-brand-bg.png") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 992px) {
+  .founderLatestNewsSection {
+    background-size: 100%;
+    background-position: left center;
   }
 }
 

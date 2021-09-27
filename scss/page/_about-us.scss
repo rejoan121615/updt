@@ -2,13 +2,13 @@
 .about-us {
     // main section style
     main {
-        @include resp ($xl) {
+        @include resp($xl) {
             margin-bottom: 35px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             margin-bottom: 65px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             margin-bottom: 80px;
         }
         // container
@@ -162,8 +162,28 @@
 // why work with us secction
 #whyWorkWithUs {
     .container {
+        padding-top: 75px;
+        @include resp($sm) {
+            padding-top: 100px;
+        }
+        @include resp($md) {
+            padding-top: 130px;
+        }
+        @include resp($lg) {
+            padding-top: 160px;
+        }
+        @include resp($xl) {
+            padding-top: 180px;
+        }
+        @include resp($xxl) {
+            padding-top: 200px;
+        }
         // card wrapper section
         .card-wrapper-list {
+            margin-top: 35px;
+            @include resp ($lg) {
+                margin-top: 50px;
+            }
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(9, 1fr);
@@ -271,17 +291,38 @@
 
 // proud partnership
 #proudPartnership {
+    padding-top: 75px;
+    @include resp($sm) {
+        padding-top: 100px;
+    }
+    @include resp($md) {
+        padding-top: 130px;
+    }
+    @include resp($lg) {
+        padding-top: 160px;
+    }
+    @include resp($xl) {
+        padding-top: 180px;
+    }
+    @include resp($xxl) {
+        padding-top: 200px;
+    }
     .container {
         // tittle
 
         // top company list
         .top-brand-list {
             width: 250px;
+            margin-top: 25px;
             @include resp($sm) {
                 width: 350px;
+                margin-top: 40px;
             }
             @include resp($md) {
                 width: 420px;
+            }
+            @include resp ($lg) {
+                margin-top: 55px;
             }
             @include resp($xxl) {
                 width: 460px;
@@ -339,15 +380,20 @@
         .bottom-brand-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-row-gap: 15px;
+            grid-row-gap: 25px;
+            margin-top: 25px!important;
             @include resp($sm) {
                 grid-template-columns: 1fr 1fr 1fr;
+                margin-top: 40px!important;
+                grid-row-gap: 40px;
             }
             @include resp($md) {
                 grid-row-gap: 25px;
             }
             @include resp($lg) {
                 grid-template-columns: repeat(4, 1fr);
+                margin-top: 55px!important;
+                grid-row-gap: 55px;
             }
             @include resp($xl) {
                 grid-template-columns: repeat(5, 1fr);
@@ -376,8 +422,76 @@
 
 // read the latest news section -----------------------------
 #readTheLatestNews {
+    margin-top: 70px;
+    @include resp ($md) {
+        margin-top: 110px;
+    }
+    @include resp ($lg) {
+        margin-top: 140px;
+    }
+    @include resp ($xl) {
+        margin-top: 165px;
+    }
+    @include resp ($xxl) {
+        margin-top: 180px;
+    }
+    @include resp ($mxl) {
+        margin-top: 200px;
+    }
+    // tittle 
+    .tittle {
+        .high-3 {
+            @include mxResp($sm) {
+                font-size: 25px;
+            }
+        }
+        // link 
+        a {
+            text-decoration: none;
+            display: inline-block;
+            border-bottom: 2px solid $blue;
+            padding-bottom: 5px;
+            font-size: 20px;
+            @include resp ($xs) {
+                font-size: 22px;
+            }
+            @include resp ($sm) {
+                font-size: 25px;
+            }
+            @include resp ($lg) {
+                font-size: 28px;
+            }
+            @include resp ($xxl) {
+                font-size: 31px;
+            }
+            @include resp ($mxl) {
+                font-size: 34px;
+            }
+        }
+    }
     // card section
     .card_wrap {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        @include resp ($sm) {
+            margin-top: 35px;
+        }
+        @include resp ($md) {
+            margin-bottom: 80px;
+        }
+        @include resp ($lg) {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        @include resp ($xl) {
+            margin-bottom: 125px;
+        }
+        @include resp ($xxl) {
+            margin-bottom: 160px;
+        }
+        @include resp ($mxl) {
+            margin-bottom: 200px;
+        }
         // card square
         .card-square {
             display: block;
@@ -559,53 +673,63 @@
     }
 }
 
-
-// background and padding fix 
+// background and padding fix
 .about-us {
     .headerMainBg {
-        background: url('../img/about-us/background/header-bg-lg.png') no-repeat top center;
+        background: url("../img/about-us/background/header-bg-lg.png") no-repeat
+            top center;
         background-size: 100% 100%;
     }
 }
 
-
-// our north star section 
+// our north star section
 #ourNorthStar {
     padding-top: 50px;
-    @include resp ($md) {
+    @include resp($md) {
         padding-top: 80px;
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         padding-top: 100px;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         padding-top: 125px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         padding-top: 140px;
     }
-    @include resp ($mxl) {
+    @include resp($mxl) {
         padding-top: 155px;
     }
 }
 
-// our north friendly folks background 
+// our north friendly folks background
 .ourNorthFriendlyFolksBackgroundWrapper {
-    background: url('../img/about-us/background/north-section-bg.png') no-repeat center center;
+    background: url("../img/about-us/background/north-section-bg.png") no-repeat
+        center center;
     background-size: cover;
     padding-bottom: 70px;
-    @include resp ($md) {
+    @include resp($md) {
         padding-bottom: 90px;
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         padding-bottom: 105px;
         background-size: 100% 100%;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         padding-bottom: 125px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         padding-bottom: 150px;
     }
+}
 
+// founder to read the latest news section
+.founderLatestNewsSection {
+    background: url("../img/about-us/background/bio-to-brand-bg.png") no-repeat
+        center center;
+    background-size: cover;
+    @include resp ($lg) {
+        background-size: 100%;
+        background-position: left center;
+    }
 }
