@@ -5,74 +5,70 @@
         }
     }
 
-    // main section style 
+    // main section style
 
     main {
         .container {
             padding-bottom: 50px;
-            @include resp ($xl) {
+            @include resp($xl) {
                 margin-top: 110px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 margin-top: 140px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 margin-top: 185px;
             }
-            // heading texts section 
+            // heading texts section
             .head_form {
                 .batch-mark-des-big {
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         font-size: 30px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         font-size: 34px;
                     }
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         font-size: 38px;
                     }
                 }
                 .halfDark {
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         font-size: 27px;
                         width: 451px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         width: initial;
                         font-size: 27.5px;
                     }
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         font-size: 32px;
                     }
                 }
                 .description-1 {
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         font-size: 32px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         font-size: 34px;
                     }
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         font-size: 38px;
                     }
                 }
             }
 
-
-
-
-            // card wrapper 
+            // card wrapper
             .card_wrap {
-                @include resp ($lg) {
+                @include resp($lg) {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: repeat(3, 1fr);
-                    grid-template-areas: 
+                    grid-template-areas:
                         "cheifdev seniordev"
                         "intern intern"
-                        "juniorEng cto"
-                    ;
-                    @include resp ($xl) {
+                        "juniorEng cto";
+                    @include resp($xl) {
                         grid-template-columns: repeat(3, 1fr);
                         grid-template-rows: repeat(7, 1fr);
                         grid-template-areas:
@@ -82,37 +78,36 @@
                             ". intern ."
                             "juniorEng intern cto"
                             "juniorEng intern cto"
-                            "juniorEng . cto"
-                        ;
+                            "juniorEng . cto";
                         grid-gap: 0px;
                     }
                 }
 
-                // cards 
+                // cards
                 .cheifItDev {
                     grid-area: cheifdev;
                 }
                 .seniorDev {
                     grid-area: seniordev;
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         transform: translateY(-40px);
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         transform: translateY(-55px);
                     }
                 }
                 .juniorEng {
                     grid-area: juniorEng;
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         transform: translateY(30px);
                     }
                 }
                 .cto {
                     grid-area: cto;
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         transform: translateY(45px);
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         transform: translateY(50px);
                     }
                 }
@@ -120,59 +115,59 @@
                     grid-area: intern;
                     justify-self: center;
                 }
-                // card style 
+                // card style
                 .card-square {
-                    @include resp ($mxl) {
+                    @include resp($mxl) {
                         padding: 30px 25px 40px 42px;
                     }
-                    // heading texts 
+                    // heading texts
                     .heading {
                         h6 {
                             font-family: $bold;
-                            font-size: 20px!important;
-                            @include resp ($xl) {
-                                font-size: 22px!important;
+                            font-size: 20px !important;
+                            @include resp($xl) {
+                                font-size: 22px !important;
                             }
-                            @include resp ($xxl) {
-                                font-size: 24px!important;
+                            @include resp($xxl) {
+                                font-size: 24px !important;
                             }
-                            @include resp ($mxl) {
-                                font-size: 25px!important;
+                            @include resp($mxl) {
+                                font-size: 25px !important;
                             }
                         }
                     }
-                    // paragraph 
+                    // paragraph
                     .para_wrap {
                         .para {
                             img {
                                 width: 14.5px;
-                                @include resp ($xl) {
+                                @include resp($xl) {
                                     width: 15px;
                                 }
-                                @include resp ($xxl) {
+                                @include resp($xxl) {
                                     width: 16px;
                                 }
-                                @include resp ($mxl) {
+                                @include resp($mxl) {
                                     width: 17px;
                                 }
                                 margin-right: 5px;
-                                @include resp ($xxl) {
+                                @include resp($xxl) {
                                     margin-right: 10px;
                                 }
                             }
-                            @include resp ($xl) {
+                            @include resp($xl) {
                                 font-size: 16px;
                             }
-                            @include resp ($xxl) {
+                            @include resp($xxl) {
                                 font-size: 17px;
                             }
-                            @include resp ($mxl) {
+                            @include resp($mxl) {
                                 font-size: 18px;
                             }
                         }
                         .end-text {
                             margin-left: 22px;
-                            @include resp ($xxl) {
+                            @include resp($xxl) {
                                 margin-left: 26px;
                             }
                         }
@@ -183,20 +178,259 @@
     }
 }
 
-
-// careers 
+// careers
 .careers {
     .headerMainBg {
         padding-bottom: 50px;
-        @include resp ($md) {
+        @include resp($md) {
             padding-bottom: 110px;
         }
-        @include resp ($xl) {
+        @include resp($xl) {
             padding-bottom: 65px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             padding-bottom: 10px;
         }
+    }
+}
 
+// purpose driven section
+.careers {
+    .purposeDriven {
+        // section heading
+        .section-heading {
+            h4 {
+                @include resp($mxl) {
+                    font-size: 38px;
+                }
+            }
+        }
+
+        // fix it before it breaks
+        #fixItBeforeItBreaks {
+            padding-top: 40px !important;
+            // card container
+            .container {
+                // main heading
+                .main_heading {
+                    grid-column: 1/7;
+                    h2 {
+                        &:nth-child(3) {
+                            margin-top: 0px !important;
+                        }
+                    }
+                    // section description
+                    .section_description {
+                        span {
+                            margin: 0px !important;
+                            @include resp($xl) {
+                                font-size: 31px !important;
+                            }
+                            @include resp($xxl) {
+                                font-size: 35px !important;
+                            }
+                            @include resp($mxl) {
+                                font-size: 44px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            // paragraph container
+            .para_container {
+                .des_para {
+                    color: #939393;
+                    font-family: $regular;
+                    line-height: initial;
+                    font-style: italic;
+                    @include resp($sm) {
+                        font-size: 16px !important;
+                        line-height: 130%;
+                    }
+                    @include resp($lg) {
+                        font-size: 17px !important;
+                        line-height: 150%;
+                    }
+                    @include resp($xxl) {
+                        font-size: 20px !important;
+                    }
+                    @include resp($mxl) {
+                        font-size: 21px !important;
+                    }
+                    span {
+                        font-family: $medium;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    // interested to join with us
+    #interestedJoinUs {
+        .tittle_wrap {
+            @include resp($xl) {
+                flex-basis: 40%;
+            }
+            @include resp($mxl) {
+                flex-basis: 35%;
+            }
+            .contact {
+                @include resp($xl) {
+                    padding-left: 0px !important;
+                }
+            }
+        }
+        // tittle
+        .tittle {
+            h1 {
+                display: inline;
+            }
+        }
+        // description
+        .description {
+            p {
+                display: inline;
+                @include resp($lg) {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        // text / paragraph
+        .texts {
+            p {
+                font-size: 16px;
+                @include resp($sm) {
+                    font-size: 18px;
+                }
+                @include resp($md) {
+                    font-size: 20px;
+                }
+                @include resp($lg) {
+                    font-size: 25px;
+                }
+                @include resp($xl) {
+                    font-size: 22px;
+                }
+            }
+        }
+        // contact
+        .contact {
+            // contact info wrapper
+            .cont {
+                h6 {
+                    @include resp($sm) {
+                        font-size: 20px;
+                    }
+                    @include resp($md) {
+                        font-size: 22px;
+                    }
+                    @include resp($lg) {
+                        font-size: 23px;
+                    }
+                }
+                p {
+                    @include resp($sm) {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+
+        // contact form section
+        #contact_from {
+            @include resp($xl) {
+                flex-basis: 60%;
+                padding: 80px 80px !important;
+            }
+            @include resp($xxl) {
+                padding-bottom: 100px !important;
+            }
+            @include resp($mxl) {
+                flex-basis: 65%;
+            }
+            // input group
+            .input-group {
+                // label style
+                label {
+                    font-size: 18px;
+                    @include resp($sm) {
+                        font-size: 21px;
+                    }
+                    @include resp($md) {
+                        font-size: 23px;
+                    }
+                    @include resp($lg) {
+                        font-size: 25px;
+                    }
+                }
+                // input style
+                input {
+                    @include resp($lg) {
+                        font-size: 19px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                    &::placeholder {
+                        @include resp($md) {
+                            font-size: 17px;
+                        }
+                        @include resp($lg) {
+                            font-size: 19px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                        @include resp($xl) {
+                            font-size: 17px;
+                        }
+                        @include resp($xxl) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                
+            }
+            // cover letter margin 
+            .coverLetter {
+                @include resp ($md) {
+                    margin-top: 55px!important;
+                } 
+                @include resp ($xl) {
+                    margin-top: 60px!important;
+                }
+                @include resp ($mxl) {
+                    margin-top: 85px!important;
+                }
+            }
+            // submit section
+            .submit-section {
+                .texts {
+                    .halfDark {
+                        color: #a0a0a0 !important;
+                        font-family: $regular;
+                    }
+                    .red {
+                        color: $little-red;
+                        font-family: $medium;
+                    }
+                    .red,
+                    .halfDark {
+                        font-size: 14px;
+                        @include resp($md) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                // button
+                button.cus__btn {
+                    @include resp($xl) {
+                        min-width: 210px;
+                    }
+                    @include resp ($xxl) {
+                        min-width: initial;
+                    }
+                }
+            }
+        }
     }
 }

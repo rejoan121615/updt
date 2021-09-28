@@ -4986,6 +4986,246 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
+@media only screen and (min-width: 1800px) {
+  .careers .purposeDriven .section-heading h4 {
+    font-size: 38px;
+  }
+}
+.careers .purposeDriven #fixItBeforeItBreaks {
+  padding-top: 40px !important;
+}
+.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading {
+  grid-column: 1/7;
+}
+.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading h2:nth-child(3) {
+  margin-top: 0px !important;
+}
+.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+  margin: 0px !important;
+}
+@media only screen and (min-width: 1200px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+    font-size: 31px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+    font-size: 35px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+    font-size: 44px !important;
+  }
+}
+.careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+  color: #939393;
+  font-family: ECRegular;
+  line-height: initial;
+  font-style: italic;
+}
+@media only screen and (min-width: 576px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+    font-size: 16px !important;
+    line-height: 130%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+    font-size: 17px !important;
+    line-height: 150%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+    font-size: 20px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+    font-size: 21px !important;
+  }
+}
+.careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para span {
+  font-family: ECMedium;
+  color: black;
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs .tittle_wrap {
+    flex-basis: 40%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers #interestedJoinUs .tittle_wrap {
+    flex-basis: 35%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs .tittle_wrap .contact {
+    padding-left: 0px !important;
+  }
+}
+.careers #interestedJoinUs .tittle h1 {
+  display: inline;
+}
+.careers #interestedJoinUs .description p {
+  display: inline;
+}
+@media only screen and (min-width: 992px) {
+  .careers #interestedJoinUs .description p {
+    font-size: 35px;
+  }
+}
+.careers #interestedJoinUs .texts p {
+  font-size: 16px;
+}
+@media only screen and (min-width: 576px) {
+  .careers #interestedJoinUs .texts p {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .careers #interestedJoinUs .texts p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers #interestedJoinUs .texts p {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs .texts p {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .careers #interestedJoinUs .contact .cont h6 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .careers #interestedJoinUs .contact .cont h6 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers #interestedJoinUs .contact .cont h6 {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .careers #interestedJoinUs .contact .cont p {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs #contact_from {
+    flex-basis: 60%;
+    padding: 80px 80px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers #interestedJoinUs #contact_from {
+    padding-bottom: 100px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers #interestedJoinUs #contact_from {
+    flex-basis: 65%;
+  }
+}
+.careers #interestedJoinUs #contact_from .input-group label {
+  font-size: 18px;
+}
+@media only screen and (min-width: 576px) {
+  .careers #interestedJoinUs #contact_from .input-group label {
+    font-size: 21px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .careers #interestedJoinUs #contact_from .input-group label {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers #interestedJoinUs #contact_from .input-group label {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers #interestedJoinUs #contact_from .input-group input {
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .careers #interestedJoinUs #contact_from .coverLetter {
+    margin-top: 55px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs #contact_from .coverLetter {
+    margin-top: 60px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers #interestedJoinUs #contact_from .coverLetter {
+    margin-top: 85px !important;
+  }
+}
+.careers #interestedJoinUs #contact_from .submit-section .texts .halfDark {
+  color: #a0a0a0 !important;
+  font-family: ECRegular;
+}
+.careers #interestedJoinUs #contact_from .submit-section .texts .red {
+  color: #ff0000;
+  font-family: ECMedium;
+}
+.careers #interestedJoinUs #contact_from .submit-section .texts .red,
+.careers #interestedJoinUs #contact_from .submit-section .texts .halfDark {
+  font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .careers #interestedJoinUs #contact_from .submit-section .texts .red,
+.careers #interestedJoinUs #contact_from .submit-section .texts .halfDark {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #interestedJoinUs #contact_from .submit-section button.cus__btn, .careers #interestedJoinUs #contact_from .submit-section button.cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.sm-cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.strategy_btn {
+    min-width: 210px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers #interestedJoinUs #contact_from .submit-section button.cus__btn, .careers #interestedJoinUs #contact_from .submit-section button.cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.sm-cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.strategy_btn {
+    min-width: initial;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
