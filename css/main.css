@@ -5454,6 +5454,32 @@ main #mainContainer .card__element:nth-child(4) {
     padding: 70px 75px !important;
   }
 }
+.contact-us #atYourService .container .right_side_main .info {
+  background: url("../img/contact-us/info.svg") no-repeat center center;
+  background-size: 17px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-bottom: -6px;
+  position: relative;
+  cursor: pointer;
+}
+.contact-us #atYourService .container .right_side_main .info::after {
+  display: none;
+  content: "If you are our client, you are going to get priority. If you are not, you are going to get a 60 min free consultation, where we identify the issue and attempt to solve it.";
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0.5px;
+  position: absolute;
+  left: 19px;
+  top: 7px;
+  z-index: 5000;
+  box-shadow: 1px 1px 10px #e7e6e6, -1px -1px 10px #e7e6e6;
+}
+.contact-us #atYourService .container .right_side_main .info:hover::after {
+  display: block;
+}
 @media only screen and (min-width: 992px) {
   .contact-us #atYourService .container .right_side_main .para {
     margin-bottom: 10px !important;
