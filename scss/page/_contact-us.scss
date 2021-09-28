@@ -1,0 +1,251 @@
+.contact-us {
+    @extend .about-us;
+    @extend .careers;
+
+    // header and main
+    .headerMainBg {
+        // background-image: none;
+    }
+    //    at your service
+    #atYourService {
+        .container {
+            // display: flex!important;
+            // left side section
+            .left_side_main {
+                // tittle text
+                .tittle_wrap {
+                    h1 {
+                        @include resp($lg) {
+                            line-height: 100%;
+                            font-size: 52px;
+                        }
+                        @include resp($xxl) {
+                            font-size: 70px;
+                        }
+                        @include resp($mxl) {
+                            font-size: 75px;
+                        }
+                    }
+                }
+                // description
+                .details {
+                    p {
+                        @include resp($lg) {
+                            font-size: 21px;
+                            line-height: 140%;
+                        }
+                        @include resp($xl) {
+                            font-size: 25px;
+                        }
+                        @include resp($xxl) {
+                            font-size: 28px;
+                        }
+                        @include resp($mxl) {
+                            font-size: 33px;
+                        }
+                    }
+                }
+                // contact list
+                .contact_list {
+                    .list {
+                        .text {
+                            img {
+                                width: 20px;
+                                @include resp($md) {
+                                    width: 23px;
+                                }
+                                @include resp($lg) {
+                                    width: 23px;
+                                }
+                            }
+                            font-size: 18px;
+                            @include resp($md) {
+                                font-size: 22px;
+                            }
+                            @include resp($xxl) {
+                                font-size: 23px;
+                            }
+                            @include resp($mxl) {
+                                font-size: 25px;
+                            }
+                        }
+
+                        h6 {
+                            color: $blue;
+                            font-family: $bold;
+                            font-size: 17px;
+                            @include resp($md) {
+                                font-size: 25px;
+                            }
+                            @include resp($lg) {
+                                // font-size: 0px;
+                                font-size: 22px;
+                            }
+                            @include resp($xl) {
+                                font-size: 23px;
+                            }
+                            @include resp($xxl) {
+                                font-size: 24px;
+                            }
+                            @include resp($mxl) {
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+            // right side section
+            .right_side_main {
+                background-color: #fffefb;
+                @include resp($xxl) {
+                    padding: 70px 75px !important;
+                }
+                // para section
+                .para {
+                    @include resp($lg) {
+                        margin-bottom: 10px !important;
+                        margin-top: 0px;
+                        font-size: 16px;
+                        line-height: 130%;
+                    }
+                }
+                // input group
+                .input-group {
+                    // margin-bottom: 25px;
+                    // heading
+                    h6,
+                    label {
+                        font-size: 16px;
+                        @include resp($md) {
+                            font-size: 17px;
+                        }
+                        @include resp($lg) {
+                            margin-bottom: 5px !important;
+                            font-size: 18px;
+                        }
+                        @include resp($xl) {
+                            font-size: 19px;
+                        }
+                        @include resp($xxl) {
+                            font-size: 20px;
+                        }
+                        @include resp($mxl) {
+                            font-size: 21px;
+                        }
+                    }
+
+                    // input and select
+                    input,
+                    select {
+                        @include resp($lg) {
+                            margin-bottom: 0px;
+                        }
+                    }
+                    textarea {
+                        @include resp($lg) {
+                            height: 363px;
+                        }
+                        @include resp($mxl) {
+                            height: 335px;
+                        }
+                    }
+                }
+
+                // bottom button section
+                .btn_wrap {
+                    .texts {
+                        p {
+                            line-height: 140%;
+                        }
+                    }
+                }
+                // captcha section
+                .captcha {
+                    .img_wrap {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+    // fix it beofre breaks section
+    #fixItBeforeItBreaks {
+        @include resp ($lg) {
+            padding-bottom: 65px!important;
+        }
+        // quotes
+        .quotes {
+            grid-column: 1/-1;
+        }
+        // button
+        .cus__btn {
+            width: initial;
+        }
+    }
+
+    #fixItBeforeItBreaks .visual_card_list .shaveOffSection .cus__btn {
+        @include resp($xl) {
+            margin-top: 15px !important;
+        }
+    }
+    // want us to show 
+    #wantUsToShow {
+        .container {
+        }
+    }
+    .ourNorthFriendlyFolksBackgroundWrapper {
+        padding-bottom: 0px;
+        margin-bottom: -100px;
+        @include resp ($md) {
+            margin-bottom: -150px;
+        }
+        @include resp ($lg) {
+            margin-bottom: -180px;
+        } 
+        @include resp ($xl) {
+            margin-bottom: -220px;
+        }
+    }
+    // bottom frame section
+    // .contact-us #footer .container .right_side {
+    //     background: url('../../img/contact-us/frame.png') no-repeat center center!important;
+    //     // background-size:  ;
+    // }
+    #footer {
+        .container {
+            .right_side {
+                @include resp($xl) {
+                    background: url("../img/contact-us/frame.png") no-repeat
+                        bottom center !important;
+                    background-size: 82% !important;
+                }
+                @include resp($xxl) {
+                    background-size: 80% !important;
+                }
+                @include resp($mxl) {
+                    background-size: 74% !important;
+                }
+                .frame_content {
+                    @include resp($xl) {
+                        width: 359px;
+                        margin-top: 82px;
+                        height: 276px;
+                        margin-left: 64px;
+                    }
+                    @include resp($xxl) {
+                        width: 445px;
+                        margin-top: 20px;
+                        height: 343px;
+                        margin-left: 89px;
+                    }
+                    @include resp($mxl) {
+                        width: 550px;
+                        height: 430px;
+                        margin-left: 145px;
+                    }
+                }
+            }
+        }
+    }
+}

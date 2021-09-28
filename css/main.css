@@ -150,6 +150,14 @@
   background-color: #484848 !important;
 }
 
+.fiftyDark {
+  color: #A4A4A4 !important;
+}
+
+.bg-fiftyDark {
+  background-color: #A4A4A4 !important;
+}
+
 .high-1 {
   margin: 0px;
   font-size: calc(25px + 44 * ((100vw - 310px) / 682));
@@ -3938,35 +3946,35 @@ main #mainContainer .card__element:nth-child(4) {
 }
 
 @media only screen and (min-width: 1200px) {
-  .about-us main {
+  .about-us main, .contact-us main {
     margin-bottom: 35px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .about-us main {
+  .about-us main, .contact-us main {
     margin-bottom: 65px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .about-us main {
+  .about-us main, .contact-us main {
     margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .about-us main .container {
+  .about-us main .container, .contact-us main .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
 }
 @media only screen and (min-width: 992px) {
-  .about-us main .head_form {
+  .about-us main .head_form, .contact-us main .head_form {
     grid-column: 1/5;
     grid-row: 1/2;
   }
 }
 @media only screen and (min-width: 992px) {
-  .about-us main .card_wrap {
+  .about-us main .card_wrap, .contact-us main .card_wrap {
     grid-column: -1/4;
     grid-row: 1/2;
     display: grid;
@@ -3978,19 +3986,19 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .about-us main .card_wrap {
+  .about-us main .card_wrap, .contact-us main .card_wrap {
     grid-gap: 45px 50px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .about-us main .card_wrap {
+  .about-us main .card_wrap, .contact-us main .card_wrap {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: ". card1" "card2 ." ". card3";
     grid-gap: 0;
   }
 }
-.about-us main .card_wrap .card-square:nth-child(1) {
+.about-us main .card_wrap .card-square:nth-child(1), .contact-us main .card_wrap .card-square:nth-child(1) {
   justify-self: center;
 }
 
@@ -4641,21 +4649,21 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
-.about-us #footer {
+.about-us #footer, .contact-us #footer {
   background: url("../img/about-us/bottom/footer-sm.png") no-repeat center center;
   background-size: cover;
 }
 @media only screen and (min-width: 992px) {
-  .about-us #footer {
+  .about-us #footer, .contact-us #footer {
     background: url("../img/about-us/bottom/footer-lg.png") no-repeat center center;
     background-size: 100% 100%;
   }
 }
-.about-us #footer .right_side {
+.about-us #footer .right_side, .contact-us #footer .right_side {
   background: url("../img/about-us/bottom/frame.png") no-repeat center center;
   background-size: 99%;
 }
-.about-us #footer .right_side .frame_content {
+.about-us #footer .right_side .frame_content, .contact-us #footer .right_side .frame_content {
   padding-left: 20px;
   padding-top: 20px;
   width: 289px;
@@ -4664,7 +4672,7 @@ main #mainContainer .card__element:nth-child(4) {
   margin-left: 184px;
 }
 @media only screen and (min-width: 1400px) {
-  .about-us #footer .right_side .frame_content {
+  .about-us #footer .right_side .frame_content, .contact-us #footer .right_side .frame_content {
     padding-left: 40px;
     padding-top: 40px;
     width: 367px;
@@ -4674,7 +4682,7 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 @media only screen and (min-width: 1800px) {
-  .about-us #footer .right_side .frame_content {
+  .about-us #footer .right_side .frame_content, .contact-us #footer .right_side .frame_content {
     padding-left: 70px;
     padding-top: 70px;
     width: 489px;
@@ -4683,22 +4691,22 @@ main #mainContainer .card__element:nth-child(4) {
     margin-left: 312px;
   }
 }
-.about-us #footer .right_side .frame_content h2 {
+.about-us #footer .right_side .frame_content h2, .contact-us #footer .right_side .frame_content h2 {
   margin-top: 10px;
 }
-.about-us #footer .right_side .frame_content .cus__btn, .about-us #footer .right_side .frame_content .cus-btn, .about-us #footer .right_side .frame_content .sm-cus-btn, .about-us #footer .right_side .frame_content .strategy_btn {
+.about-us #footer .right_side .frame_content .cus__btn, .contact-us #footer .right_side .frame_content .cus__btn, .about-us #footer .right_side .frame_content .cus-btn, .contact-us #footer .right_side .frame_content .cus-btn, .about-us #footer .right_side .frame_content .sm-cus-btn, .contact-us #footer .right_side .frame_content .sm-cus-btn, .about-us #footer .right_side .frame_content .strategy_btn, .contact-us #footer .right_side .frame_content .strategy_btn {
   margin-top: -1px;
 }
 @media only screen and (min-width: 1400px) {
-  .about-us #footer .right_side .frame_content .cus__btn, .about-us #footer .right_side .frame_content .cus-btn, .about-us #footer .right_side .frame_content .sm-cus-btn, .about-us #footer .right_side .frame_content .strategy_btn {
+  .about-us #footer .right_side .frame_content .cus__btn, .contact-us #footer .right_side .frame_content .cus__btn, .about-us #footer .right_side .frame_content .cus-btn, .contact-us #footer .right_side .frame_content .cus-btn, .about-us #footer .right_side .frame_content .sm-cus-btn, .contact-us #footer .right_side .frame_content .sm-cus-btn, .about-us #footer .right_side .frame_content .strategy_btn, .contact-us #footer .right_side .frame_content .strategy_btn {
     margin-top: 20px;
   }
 }
-.about-us #footer .right_side .frame_content .para {
+.about-us #footer .right_side .frame_content .para, .contact-us #footer .right_side .frame_content .para {
   margin-top: 15px;
 }
 
-.about-us .headerMainBg {
+.about-us .headerMainBg, .contact-us .headerMainBg {
   background: url("../img/about-us/background/header-bg-lg.png") no-repeat top center;
   background-size: 100% 100%;
 }
@@ -4770,76 +4778,76 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
-.careers main .description-2 {
+.careers main .description-2, .contact-us main .description-2 {
   font-family: ECRegular;
 }
-.careers main .container {
+.careers main .container, .contact-us main .container {
   padding-bottom: 50px;
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container {
+  .careers main .container, .contact-us main .container {
     margin-top: 110px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container {
+  .careers main .container, .contact-us main .container {
     margin-top: 140px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container {
+  .careers main .container, .contact-us main .container {
     margin-top: 185px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .head_form .batch-mark-des-big {
+  .careers main .container .head_form .batch-mark-des-big, .contact-us main .container .head_form .batch-mark-des-big {
     font-size: 30px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .head_form .batch-mark-des-big {
+  .careers main .container .head_form .batch-mark-des-big, .contact-us main .container .head_form .batch-mark-des-big {
     font-size: 34px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .head_form .batch-mark-des-big {
+  .careers main .container .head_form .batch-mark-des-big, .contact-us main .container .head_form .batch-mark-des-big {
     font-size: 38px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .head_form .halfDark {
+  .careers main .container .head_form .halfDark, .contact-us main .container .head_form .halfDark {
     font-size: 27px;
     width: 451px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .head_form .halfDark {
+  .careers main .container .head_form .halfDark, .contact-us main .container .head_form .halfDark {
     width: initial;
     font-size: 27.5px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .head_form .halfDark {
+  .careers main .container .head_form .halfDark, .contact-us main .container .head_form .halfDark {
     font-size: 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .head_form .description-1 {
+  .careers main .container .head_form .description-1, .contact-us main .container .head_form .description-1 {
     font-size: 32px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .head_form .description-1 {
+  .careers main .container .head_form .description-1, .contact-us main .container .head_form .description-1 {
     font-size: 34px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .head_form .description-1 {
+  .careers main .container .head_form .description-1, .contact-us main .container .head_form .description-1 {
     font-size: 38px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers main .container .card_wrap {
+  .careers main .container .card_wrap, .contact-us main .container .card_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -4847,381 +4855,387 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 @media only screen and (min-width: 992px) and (min-width: 1200px) {
-  .careers main .container .card_wrap {
+  .careers main .container .card_wrap, .contact-us main .container .card_wrap {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: "cheifdev . seniordev" "cheifdev . seniordev" "cheifdev intern seniordev" ". intern ." "juniorEng intern cto" "juniorEng intern cto" "juniorEng . cto";
     grid-gap: 0px;
   }
 }
-.careers main .container .card_wrap .cheifItDev {
+.careers main .container .card_wrap .cheifItDev, .contact-us main .container .card_wrap .cheifItDev {
   grid-area: cheifdev;
 }
-.careers main .container .card_wrap .seniorDev {
+.careers main .container .card_wrap .seniorDev, .contact-us main .container .card_wrap .seniorDev {
   grid-area: seniordev;
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .card_wrap .seniorDev {
+  .careers main .container .card_wrap .seniorDev, .contact-us main .container .card_wrap .seniorDev {
     transform: translateY(-40px);
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .seniorDev {
+  .careers main .container .card_wrap .seniorDev, .contact-us main .container .card_wrap .seniorDev {
     transform: translateY(-55px);
   }
 }
-.careers main .container .card_wrap .juniorEng {
+.careers main .container .card_wrap .juniorEng, .contact-us main .container .card_wrap .juniorEng {
   grid-area: juniorEng;
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .card_wrap .juniorEng {
+  .careers main .container .card_wrap .juniorEng, .contact-us main .container .card_wrap .juniorEng {
     transform: translateY(30px);
   }
 }
-.careers main .container .card_wrap .cto {
+.careers main .container .card_wrap .cto, .contact-us main .container .card_wrap .cto {
   grid-area: cto;
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .card_wrap .cto {
+  .careers main .container .card_wrap .cto, .contact-us main .container .card_wrap .cto {
     transform: translateY(45px);
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .cto {
+  .careers main .container .card_wrap .cto, .contact-us main .container .card_wrap .cto {
     transform: translateY(50px);
   }
 }
-.careers main .container .card_wrap .intern {
+.careers main .container .card_wrap .intern, .contact-us main .container .card_wrap .intern {
   grid-area: intern;
   justify-self: center;
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .card_wrap .card-square {
+  .careers main .container .card_wrap .card-square, .contact-us main .container .card_wrap .card-square {
     padding: 30px 25px 40px 42px;
   }
 }
-.careers main .container .card_wrap .card-square .heading h6 {
+.careers main .container .card_wrap .card-square .heading h6, .contact-us main .container .card_wrap .card-square .heading h6 {
   font-family: ECBold;
   font-size: 20px !important;
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .card_wrap .card-square .heading h6 {
+  .careers main .container .card_wrap .card-square .heading h6, .contact-us main .container .card_wrap .card-square .heading h6 {
     font-size: 22px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .card-square .heading h6 {
+  .careers main .container .card_wrap .card-square .heading h6, .contact-us main .container .card_wrap .card-square .heading h6 {
     font-size: 24px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .card_wrap .card-square .heading h6 {
+  .careers main .container .card_wrap .card-square .heading h6, .contact-us main .container .card_wrap .card-square .heading h6 {
     font-size: 25px !important;
   }
 }
-.careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+.careers main .container .card_wrap .card-square .para_wrap .para img, .contact-us main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para img {
   width: 14.5px;
   margin-right: 5px;
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .contact-us main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para img {
     width: 15px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .contact-us main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para img {
     width: 16px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .contact-us main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para img {
     width: 17px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img {
+  .careers main .container .card_wrap .card-square .para_wrap .para img, .contact-us main .container .card_wrap .card-square .para_wrap .para img, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para img, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para img, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para img {
     margin-right: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para {
+  .careers main .container .card_wrap .card-square .para_wrap .para, .contact-us main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para {
+  .careers main .container .card_wrap .card-square .para_wrap .para, .contact-us main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para {
     font-size: 17px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para {
+  .careers main .container .card_wrap .card-square .para_wrap .para, .contact-us main .container .card_wrap .card-square .para_wrap .para, .careers main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, .contact-us main .container .card_wrap .card-square .para_wrap #footer .right_side .frame_content .para, #footer .right_side .frame_content .careers main .container .card_wrap .card-square .para_wrap .para, #footer .right_side .frame_content .contact-us main .container .card_wrap .card-square .para_wrap .para {
     font-size: 18px;
   }
 }
-.careers main .container .card_wrap .card-square .para_wrap .end-text {
+.careers main .container .card_wrap .card-square .para_wrap .end-text, .contact-us main .container .card_wrap .card-square .para_wrap .end-text {
   margin-left: 22px;
 }
 @media only screen and (min-width: 1400px) {
-  .careers main .container .card_wrap .card-square .para_wrap .end-text {
+  .careers main .container .card_wrap .card-square .para_wrap .end-text, .contact-us main .container .card_wrap .card-square .para_wrap .end-text {
     margin-left: 26px;
   }
 }
 
-.careers .headerMainBg {
+.careers .headerMainBg, .contact-us .headerMainBg {
   padding-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
-  .careers .headerMainBg {
+  .careers .headerMainBg, .contact-us .headerMainBg {
     padding-bottom: 110px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers .headerMainBg {
+  .careers .headerMainBg, .contact-us .headerMainBg {
     padding-bottom: 65px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers .headerMainBg {
+  .careers .headerMainBg, .contact-us .headerMainBg {
     padding-bottom: 10px;
   }
 }
 
 @media only screen and (min-width: 1800px) {
-  .careers .purposeDriven .section-heading h4 {
+  .careers .purposeDriven .section-heading h4, .contact-us .purposeDriven .section-heading h4 {
     font-size: 38px;
   }
 }
-.careers .purposeDriven #fixItBeforeItBreaks {
+.careers .purposeDriven #fixItBeforeItBreaks, .contact-us .purposeDriven #fixItBeforeItBreaks {
   padding-top: 40px !important;
 }
-.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading {
+.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading, .contact-us .purposeDriven #fixItBeforeItBreaks .container .main_heading {
   grid-column: 1/7;
 }
-.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading h2:nth-child(3) {
+.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading h2:nth-child(3), .contact-us .purposeDriven #fixItBeforeItBreaks .container .main_heading h2:nth-child(3) {
   margin-top: 0px !important;
 }
-.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+.careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span, .contact-us .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
   margin: 0px !important;
 }
 @media only screen and (min-width: 1200px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span, .contact-us .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
     font-size: 31px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span, .contact-us .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
     font-size: 35px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
+  .careers .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span, .contact-us .purposeDriven #fixItBeforeItBreaks .container .main_heading .section_description span {
     font-size: 44px !important;
   }
 }
-.careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+.careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para, .contact-us .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
   color: #939393;
   font-family: ECRegular;
   line-height: initial;
   font-style: italic;
 }
 @media only screen and (min-width: 576px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para, .contact-us .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
     font-size: 16px !important;
     line-height: 130%;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para, .contact-us .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
     font-size: 17px !important;
     line-height: 150%;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para, .contact-us .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
     font-size: 20px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
+  .careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para, .contact-us .purposeDriven #fixItBeforeItBreaks .para_container .des_para {
     font-size: 21px !important;
   }
 }
-.careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para span {
+.careers .purposeDriven #fixItBeforeItBreaks .para_container .des_para span, .contact-us .purposeDriven #fixItBeforeItBreaks .para_container .des_para span {
   font-family: ECMedium;
   color: black;
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs .tittle_wrap {
+  #interestedJoinUs .tittle_wrap {
     flex-basis: 40%;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers #interestedJoinUs .tittle_wrap {
+  #interestedJoinUs .tittle_wrap {
     flex-basis: 35%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs .tittle_wrap .contact {
+  #interestedJoinUs .tittle_wrap .contact {
     padding-left: 0px !important;
   }
 }
-.careers #interestedJoinUs .tittle h1 {
+#interestedJoinUs .tittle h1 {
   display: inline;
 }
-.careers #interestedJoinUs .description p {
+#interestedJoinUs .description p {
   display: inline;
 }
 @media only screen and (min-width: 992px) {
-  .careers #interestedJoinUs .description p {
+  #interestedJoinUs .description p {
     font-size: 35px;
   }
 }
-.careers #interestedJoinUs .texts p {
+#interestedJoinUs .texts p {
   font-size: 16px;
 }
 @media only screen and (min-width: 576px) {
-  .careers #interestedJoinUs .texts p {
+  #interestedJoinUs .texts p {
     font-size: 18px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .careers #interestedJoinUs .texts p {
+  #interestedJoinUs .texts p {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers #interestedJoinUs .texts p {
+  #interestedJoinUs .texts p {
     font-size: 25px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs .texts p {
+  #interestedJoinUs .texts p {
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 576px) {
-  .careers #interestedJoinUs .contact .cont h6 {
+  #interestedJoinUs .contact .cont h6 {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .careers #interestedJoinUs .contact .cont h6 {
+  #interestedJoinUs .contact .cont h6 {
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers #interestedJoinUs .contact .cont h6 {
+  #interestedJoinUs .contact .cont h6 {
     font-size: 23px;
   }
 }
 @media only screen and (min-width: 576px) {
-  .careers #interestedJoinUs .contact .cont p {
+  #interestedJoinUs .contact .cont p {
     font-size: 19px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs #contact_from {
+  #interestedJoinUs #contact_from {
     flex-basis: 60%;
     padding: 80px 80px !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers #interestedJoinUs #contact_from {
+  #interestedJoinUs #contact_from {
     padding-bottom: 100px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers #interestedJoinUs #contact_from {
+  #interestedJoinUs #contact_from {
     flex-basis: 65%;
   }
 }
-.careers #interestedJoinUs #contact_from .input-group label {
+#interestedJoinUs #contact_from .input-group label {
   font-size: 18px;
 }
 @media only screen and (min-width: 576px) {
-  .careers #interestedJoinUs #contact_from .input-group label {
+  #interestedJoinUs #contact_from .input-group label {
     font-size: 21px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .careers #interestedJoinUs #contact_from .input-group label {
+  #interestedJoinUs #contact_from .input-group label {
     font-size: 23px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers #interestedJoinUs #contact_from .input-group label {
+  #interestedJoinUs #contact_from .input-group label {
     font-size: 25px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers #interestedJoinUs #contact_from .input-group input {
+  #interestedJoinUs #contact_from .input-group input {
     font-size: 19px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+  #interestedJoinUs #contact_from .input-group input::placeholder {
     font-size: 17px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+  #interestedJoinUs #contact_from .input-group input::placeholder {
     font-size: 19px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+  #interestedJoinUs #contact_from .input-group input::placeholder {
     font-size: 17px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers #interestedJoinUs #contact_from .input-group input::placeholder {
+  #interestedJoinUs #contact_from .input-group input::placeholder {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .careers #interestedJoinUs #contact_from .coverLetter {
+  #interestedJoinUs #contact_from .coverLetter {
     margin-top: 55px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs #contact_from .coverLetter {
+  #interestedJoinUs #contact_from .coverLetter {
     margin-top: 60px !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers #interestedJoinUs #contact_from .coverLetter {
+  #interestedJoinUs #contact_from .coverLetter {
     margin-top: 85px !important;
   }
 }
-.careers #interestedJoinUs #contact_from .submit-section .texts .halfDark {
+#interestedJoinUs #contact_from .submit-section .texts .halfDark {
   color: #a0a0a0 !important;
   font-family: ECRegular;
 }
-.careers #interestedJoinUs #contact_from .submit-section .texts .red {
+#interestedJoinUs #contact_from .submit-section .texts .red {
   color: #ff0000;
   font-family: ECMedium;
 }
-.careers #interestedJoinUs #contact_from .submit-section .texts .red,
-.careers #interestedJoinUs #contact_from .submit-section .texts .halfDark {
+#interestedJoinUs #contact_from .submit-section .texts .red,
+#interestedJoinUs #contact_from .submit-section .texts .halfDark {
   font-size: 14px;
 }
 @media only screen and (min-width: 768px) {
-  .careers #interestedJoinUs #contact_from .submit-section .texts .red,
-.careers #interestedJoinUs #contact_from .submit-section .texts .halfDark {
+  #interestedJoinUs #contact_from .submit-section .texts .red,
+#interestedJoinUs #contact_from .submit-section .texts .halfDark {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #interestedJoinUs #contact_from .submit-section button.cus__btn, .careers #interestedJoinUs #contact_from .submit-section button.cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.sm-cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.strategy_btn {
+  #interestedJoinUs #contact_from .submit-section .texts .red,
+#interestedJoinUs #contact_from .submit-section .texts .halfDark {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #interestedJoinUs #contact_from .submit-section button.cus__btn, #interestedJoinUs #contact_from .submit-section button.cus-btn, #interestedJoinUs #contact_from .submit-section button.sm-cus-btn, #interestedJoinUs #contact_from .submit-section button.strategy_btn {
     min-width: 210px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers #interestedJoinUs #contact_from .submit-section button.cus__btn, .careers #interestedJoinUs #contact_from .submit-section button.cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.sm-cus-btn, .careers #interestedJoinUs #contact_from .submit-section button.strategy_btn {
+  #interestedJoinUs #contact_from .submit-section button.cus__btn, #interestedJoinUs #contact_from .submit-section button.cus-btn, #interestedJoinUs #contact_from .submit-section button.sm-cus-btn, #interestedJoinUs #contact_from .submit-section button.strategy_btn {
     min-width: initial;
   }
 }
@@ -5256,42 +5270,42 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
-.careers #footer {
+.careers #footer, .contact-us #footer {
   background: url("../img/career/footer/footer-bg-sm.png") no-repeat center center !important;
   background-size: cover !important;
 }
 @media only screen and (min-width: 992px) {
-  .careers #footer {
+  .careers #footer, .contact-us #footer {
     background: url("../img/career/footer/footer-bg-lg.png") no-repeat center center !important;
     background-size: 100% 100% !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers #footer .container {
+  .careers #footer .container, .contact-us #footer .container {
     padding-top: 200px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #footer .container .right_side {
+  .careers #footer .container .right_side, .contact-us #footer .container .right_side {
     background: url("../img/career/footer/footer-frame.png") no-repeat bottom center !important;
     background-size: 72% !important;
     height: 450px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers #footer .container .right_side {
+  .careers #footer .container .right_side, .contact-us #footer .container .right_side {
     height: 475px;
     background-size: 63% !important;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers #footer .container .right_side {
+  .careers #footer .container .right_side, .contact-us #footer .container .right_side {
     height: 590px;
     background-size: 59% !important;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .careers #footer .container .right_side .frame_content {
+  .careers #footer .container .right_side .frame_content, .contact-us #footer .container .right_side .frame_content {
     width: 356px;
     margin-top: 35px;
     height: 255px;
@@ -5299,7 +5313,7 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 @media only screen and (min-width: 1400px) {
-  .careers #footer .container .right_side .frame_content {
+  .careers #footer .container .right_side .frame_content, .contact-us #footer .container .right_side .frame_content {
     width: 395px;
     margin-top: 15px;
     height: 283px;
@@ -5307,11 +5321,257 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 @media only screen and (min-width: 1800px) {
-  .careers #footer .container .right_side .frame_content {
+  .careers #footer .container .right_side .frame_content, .contact-us #footer .container .right_side .frame_content {
     width: 493px;
     margin-top: 15px;
     height: 353px;
     margin-left: 253px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .left_side_main .tittle_wrap h1 {
+    line-height: 100%;
+    font-size: 52px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .left_side_main .tittle_wrap h1 {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #atYourService .container .left_side_main .tittle_wrap h1 {
+    font-size: 75px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .left_side_main .details p {
+    font-size: 21px;
+    line-height: 140%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us #atYourService .container .left_side_main .details p {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .left_side_main .details p {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #atYourService .container .left_side_main .details p {
+    font-size: 33px;
+  }
+}
+.contact-us #atYourService .container .left_side_main .contact_list .list .text {
+  font-size: 18px;
+}
+.contact-us #atYourService .container .left_side_main .contact_list .list .text img {
+  width: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list .text img {
+    width: 23px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list .text img {
+    width: 23px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list .text {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list .text {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list .text {
+    font-size: 25px;
+  }
+}
+.contact-us #atYourService .container .left_side_main .contact_list .list h6 {
+  color: #352878;
+  font-family: ECBold;
+  font-size: 17px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list h6 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list h6 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list h6 {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list h6 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #atYourService .container .left_side_main .contact_list .list h6 {
+    font-size: 26px;
+  }
+}
+.contact-us #atYourService .container .right_side_main {
+  background-color: #fffefb;
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .right_side_main {
+    padding: 70px 75px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .right_side_main .para {
+    margin-bottom: 10px !important;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+.contact-us #atYourService .container .right_side_main .input-group h6,
+.contact-us #atYourService .container .right_side_main .input-group label {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-us #atYourService .container .right_side_main .input-group h6,
+.contact-us #atYourService .container .right_side_main .input-group label {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .right_side_main .input-group h6,
+.contact-us #atYourService .container .right_side_main .input-group label {
+    margin-bottom: 5px !important;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us #atYourService .container .right_side_main .input-group h6,
+.contact-us #atYourService .container .right_side_main .input-group label {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .right_side_main .input-group h6,
+.contact-us #atYourService .container .right_side_main .input-group label {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #atYourService .container .right_side_main .input-group h6,
+.contact-us #atYourService .container .right_side_main .input-group label {
+    font-size: 21px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .right_side_main .input-group input,
+.contact-us #atYourService .container .right_side_main .input-group select {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #atYourService .container .right_side_main .input-group textarea {
+    height: 363px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #atYourService .container .right_side_main .input-group textarea {
+    height: 335px;
+  }
+}
+.contact-us #atYourService .container .right_side_main .btn_wrap .texts p {
+  line-height: 140%;
+}
+.contact-us #atYourService .container .right_side_main .captcha .img_wrap {
+  width: 120px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-us #fixItBeforeItBreaks {
+    padding-bottom: 65px !important;
+  }
+}
+.contact-us #fixItBeforeItBreaks .quotes {
+  grid-column: 1/-1;
+}
+.contact-us #fixItBeforeItBreaks .cus__btn, .contact-us #fixItBeforeItBreaks .cus-btn, .contact-us #fixItBeforeItBreaks .sm-cus-btn, .contact-us #fixItBeforeItBreaks .strategy_btn {
+  width: initial;
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us #fixItBeforeItBreaks .visual_card_list .shaveOffSection .cus__btn, .contact-us #fixItBeforeItBreaks .visual_card_list .shaveOffSection .cus-btn, .contact-us #fixItBeforeItBreaks .visual_card_list .shaveOffSection .sm-cus-btn, .contact-us #fixItBeforeItBreaks .visual_card_list .shaveOffSection .strategy_btn {
+    margin-top: 15px !important;
+  }
+}
+.contact-us .ourNorthFriendlyFolksBackgroundWrapper {
+  padding-bottom: 0px;
+  margin-bottom: -100px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-us .ourNorthFriendlyFolksBackgroundWrapper {
+    margin-bottom: -150px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-us .ourNorthFriendlyFolksBackgroundWrapper {
+    margin-bottom: -180px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us .ourNorthFriendlyFolksBackgroundWrapper {
+    margin-bottom: -220px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us #footer .container .right_side {
+    background: url("../img/contact-us/frame.png") no-repeat bottom center !important;
+    background-size: 82% !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #footer .container .right_side {
+    background-size: 80% !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #footer .container .right_side {
+    background-size: 74% !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-us #footer .container .right_side .frame_content {
+    width: 359px;
+    margin-top: 82px;
+    height: 276px;
+    margin-left: 64px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #footer .container .right_side .frame_content {
+    width: 445px;
+    margin-top: 20px;
+    height: 343px;
+    margin-left: 89px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-us #footer .container .right_side .frame_content {
+    width: 550px;
+    height: 430px;
+    margin-left: 145px;
   }
 }
 

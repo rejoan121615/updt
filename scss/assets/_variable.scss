@@ -52,6 +52,7 @@ $color-list: (
     "lateWhite": $bgWhite,
     "goldBlack": $goldBlack,
     "halfDark": $halfDark,
+    'fiftyDark': #A4A4A4,
 );
 
 @each $name, $color in $color-list {
