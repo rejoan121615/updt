@@ -5226,6 +5226,36 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
+#readTheLatestNews .card_wrap {
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ourNorthFriendlyFolksBackgroundWrapper {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ourNorthFriendlyFolksBackgroundWrapper {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ourNorthFriendlyFolksBackgroundWrapper {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ourNorthFriendlyFolksBackgroundWrapper {
+    padding-bottom: 130px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .ourNorthFriendlyFolksBackgroundWrapper {
+    padding-bottom: 160px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
