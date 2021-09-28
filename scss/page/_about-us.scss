@@ -74,12 +74,30 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        justify-items: center;
+        // founder background 
+        .founder-bg {
+            height: 99.6%;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            background-color: white;
+            transform: rotate(-0.5deg);
+            border: 1px solid $borderColor;
+            transform: skewY(-0.8deg) translateY(3px) rotate(-0.5deg);
+            @include resp ($xs) {
+                width: 95%;
+            }
+        }
         // article section
         .founder-wrapper {
+            position: relative;
+            grid-column: 1/2;
+            grid-row: 1/2;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
             padding: 30px;
+            border: 1px solid $borderColor;
             @include resp($xs) {
                 width: 95%;
             }
@@ -106,8 +124,7 @@
         .big-para {
         }
         .founder-wrapper {
-            .f-tittle {
-            }
+            
             // image wrapper
             .img__wrap {
                 width: 100px;
