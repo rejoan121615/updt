@@ -5256,6 +5256,65 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
+.careers #footer {
+  background: url("../img/career/footer/footer-bg-sm.png") no-repeat center center !important;
+  background-size: cover !important;
+}
+@media only screen and (min-width: 992px) {
+  .careers #footer {
+    background: url("../img/career/footer/footer-bg-lg.png") no-repeat center center !important;
+    background-size: 100% 100% !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers #footer .container {
+    padding-top: 200px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #footer .container .right_side {
+    background: url("../img/career/footer/footer-frame.png") no-repeat bottom center !important;
+    background-size: 72% !important;
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers #footer .container .right_side {
+    height: 475px;
+    background-size: 63% !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers #footer .container .right_side {
+    height: 590px;
+    background-size: 59% !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .careers #footer .container .right_side .frame_content {
+    width: 356px;
+    margin-top: 35px;
+    height: 255px;
+    margin-left: 117px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .careers #footer .container .right_side .frame_content {
+    width: 395px;
+    margin-top: 15px;
+    height: 283px;
+    margin-left: 177px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .careers #footer .container .right_side .frame_content {
+    width: 493px;
+    margin-top: 15px;
+    height: 353px;
+    margin-left: 253px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

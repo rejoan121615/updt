@@ -388,18 +388,17 @@
                         }
                     }
                 }
-                
             }
-            // cover letter margin 
+            // cover letter margin
             .coverLetter {
-                @include resp ($md) {
-                    margin-top: 55px!important;
-                } 
-                @include resp ($xl) {
-                    margin-top: 60px!important;
+                @include resp($md) {
+                    margin-top: 55px !important;
                 }
-                @include resp ($mxl) {
-                    margin-top: 85px!important;
+                @include resp($xl) {
+                    margin-top: 60px !important;
+                }
+                @include resp($mxl) {
+                    margin-top: 85px !important;
                 }
             }
             // submit section
@@ -426,7 +425,7 @@
                     @include resp($xl) {
                         min-width: 210px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         min-width: initial;
                     }
                 }
@@ -434,27 +433,88 @@
         }
     }
 }
-// read the latest news 
+// read the latest news
 #readTheLatestNews {
     .card_wrap {
         margin-bottom: 0px;
     }
-} 
-// our north family folks background wrapper 
+}
+// our north family folks background wrapper
 .ourNorthFriendlyFolksBackgroundWrapper {
-    @include resp ($md) {
+    @include resp($md) {
         padding-bottom: 40px;
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         padding-bottom: 80px;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         padding-bottom: 100px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         padding-bottom: 130px;
     }
-    @include resp ($mxl) {
+    @include resp($mxl) {
         padding-bottom: 160px;
+    }
+}
+
+// footer
+.careers {
+    #footer {
+        background: url("../img/career/footer/footer-bg-sm.png") no-repeat
+            center center !important;
+        background-size: cover !important;
+        @include resp($lg) {
+            background: url("../img/career/footer/footer-bg-lg.png") no-repeat
+                center center !important;
+            background-size: 100% 100% !important;
+        }
+        // container
+        .container {
+            @include resp($xxl) {
+                // padding-top: 180px!important;
+            }
+            @include resp($mxl) {
+                padding-top: 200px !important;
+            }
+            // right side
+            .right_side {
+                @include resp($xl) {
+                    background: url("../img/career/footer/footer-frame.png")
+                        no-repeat bottom center !important;
+                    background-size: 72% !important;
+                    height: 450px;
+                }
+                @include resp($xxl) {
+                    height: 475px;
+                    background-size: 63% !important;
+                }
+                @include resp($mxl) {
+                    height: 590px;
+                    background-size: 59% !important;
+                }
+                // frame content
+                .frame_content {
+                    @include resp($xl) {
+                        width: 356px;
+                        margin-top: 35px;
+                        height: 255px;
+                        margin-left: 117px;
+                    }
+                    @include resp($xxl) {
+                        width: 395px;
+                        margin-top: 15px;
+                        height: 283px;
+                        margin-left: 177px;
+                    }
+                    @include resp($mxl) {
+                        width: 493px;
+                        margin-top: 15px;
+                        height: 353px;
+                        margin-left: 253px;
+                    }
+                }
+            }
+        }
     }
 }
