@@ -741,22 +741,29 @@
     padding-right: 100px;
   }
 }
-.sq-big-card .icon_wrap img {
+.sq-big-card .icon_wrap {
   width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 @media only screen and (min-width: 992px) {
-  .sq-big-card .icon_wrap img {
+  .sq-big-card .icon_wrap {
     width: 35px;
+    height: 35px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .sq-big-card .icon_wrap img {
+  .sq-big-card .icon_wrap {
     width: 40px;
+    height: 40px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .sq-big-card .icon_wrap img {
+  .sq-big-card .icon_wrap {
     width: 42px;
+    height: 42px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -4842,6 +4849,58 @@ main #mainContainer .card__element:nth-child(4) {
     background-size: 100%;
     background-position: left center;
   }
+}
+
+.about-us .our_promise, .contact-us .our_promise {
+  background-image: url("../img/about-us/main/our promise.svg");
+}
+.about-us .ourFounder, .contact-us .ourFounder {
+  background-image: url("../img/about-us/main/our founder.svg");
+}
+.about-us .why_work_with_us, .contact-us .why_work_with_us {
+  background-image: url("../img/about-us/main/why work with us.svg");
+}
+.about-us .respect-white, .contact-us .respect-white {
+  background-image: url("../img/about-us/trustworthy/respectful.svg");
+}
+.about-us .friendly_personable, .contact-us .friendly_personable {
+  background-image: url("../img/about-us/trustworthy/friendly.svg");
+}
+.about-us .caring_icon, .contact-us .caring_icon {
+  background-image: url("../img/about-us/trustworthy/caring.svg");
+  transform: scale(1.3);
+}
+.about-us .strategic_partners, .contact-us .strategic_partners {
+  background-image: url("../img/icon/all-system/cloud.png");
+  background-size: 70%;
+  transform: scale(1.35);
+}
+.about-us .peace_in_mind, .contact-us .peace_in_mind {
+  background-image: url("../img/about-us/workWithUs/peace-in-mind.svg");
+}
+.about-us .declutter_icon, .contact-us .declutter_icon {
+  background-image: url("../img/about-us/workWithUs/decutta.svg");
+}
+.about-us .modernize_icon, .contact-us .modernize_icon {
+  background-image: url("../img/about-us/workWithUs/modenizer.svg");
+}
+.about-us .save_time_icon, .contact-us .save_time_icon {
+  background-image: url("../img/about-us/workWithUs/save-time.svg");
+}
+.about-us .organization_icon, .contact-us .organization_icon {
+  background-image: url("../img/about-us/workWithUs/organization.svg");
+}
+.about-us .support_icon, .contact-us .support_icon {
+  background-image: url("../img/about-us/workWithUs/support.svg");
+}
+.about-us .proactive_icon, .contact-us .proactive_icon {
+  background-image: url("../img/about-us/workWithUs/proactive.svg");
+}
+.about-us .prepared_icon, .contact-us .prepared_icon {
+  background-image: url("../img/about-us/workWithUs/prepared.svg");
+}
+.about-us .speed_icon, .contact-us .speed_icon {
+  background-image: url("../img/about-us/workWithUs/speed.svg");
 }
 
 .careers main .description-2, .contact-us main .description-2 {

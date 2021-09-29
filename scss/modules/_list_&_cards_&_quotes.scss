@@ -117,15 +117,15 @@
     .heading {
         h6 {
             @extend .sm_root_card_tittle;
-            font-size: 17px!important;
-            @include resp ($xl) {
-                font-size: 18px!important;
+            font-size: 17px !important;
+            @include resp($xl) {
+                font-size: 18px !important;
             }
-            @include resp ($xxl) {
-                font-size: 19px!important;
+            @include resp($xxl) {
+                font-size: 19px !important;
             }
-            @include resp ($mxl) {
-                font-size: 20px!important;
+            @include resp($mxl) {
+                font-size: 20px !important;
             }
         }
     }
@@ -154,7 +154,7 @@
     }
 }
 
-// big card 
+// big card
 .sq-big-card {
     width: 100%;
     max-width: 375px;
@@ -163,17 +163,17 @@
     padding: 35px 20px;
     border-radius: 5px;
     flex-direction: column;
-    @include resp ($sm) {
+    @include resp($sm) {
         max-width: initial;
         border-radius: 0px;
     }
-    @include resp ($md) {
+    @include resp($md) {
         height: 275px;
         padding-top: 50px;
         padding-left: 55px;
         padding-right: 55px;
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         width: 100%;
         height: 295px;
         display: flex;
@@ -183,76 +183,81 @@
         padding-right: 60px;
         border-radius: 0px;
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         width: 100%;
         height: 355px;
         padding-left: 80px;
         padding-right: 80px;
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         width: 100%;
         height: 400px;
         padding-left: 90px;
         padding-right: 90px;
     }
-    @include resp ($mxl) {
+    @include resp($mxl) {
         width: 100%;
         height: 460px;
         padding-left: 100px;
         padding-right: 100px;
     }
-    // image 
+    // image
     .icon_wrap {
-        img {
+        width: 40px;
+        height: 40px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        @include resp($lg) {
+            width: 35px;
+            height: 35px;
+        }
+        @include resp($xl) {
             width: 40px;
-            @include resp ($lg) {
-                width: 35px;
-            }
-            @include resp ($xl) {
-                width: 40px;
-            }
-            @include resp ($xxl) {
-                width: 42px;
-            }
+            height: 40px;
+        }
+        @include resp($xxl) {
+            width: 42px;
+            height: 42px;
         }
     }
-    // heading 
+    // heading
     .heading {
-        @include resp ($sm) {
+        @include resp($sm) {
             margin-top: 15px;
         }
         h6 {
             font-size: 22px;
-            @include resp ($md) {
+            @include resp($md) {
                 font-size: 24px;
             }
-            @include resp ($lg) {
+            @include resp($lg) {
                 font-size: 26px;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 font-size: 30px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 font-size: 35px;
             }
-            @include resp ($mxl) {
+            @include resp($mxl) {
                 font-size: 45px;
             }
         }
     }
-    // paragraph 
+    // paragraph
     .para_wrap {
         p {
             font-family: $regular;
             font-size: 18px;
-            @include resp ($lg) {
+            @include resp($lg) {
                 font-size: 20px;
                 line-height: 130%;
             }
-            @include resp ($xl) {
+            @include resp($xl) {
                 font-size: 22px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 font-size: 25px;
             }
         }
@@ -262,35 +267,35 @@
 // horizontal card
 .horizontal-card {
     @extend .sm_root_card;
-    @include resp ($sm) {
-        border: none!important;
+    @include resp($sm) {
+        border: none !important;
     }
     h1.tittle {
-        font-size: 16px!important;
-        @include resp ($sm) {
-            font-size: 16px!important;
+        font-size: 16px !important;
+        @include resp($sm) {
+            font-size: 16px !important;
         }
-        @include resp ($md) {
-            font-size: 17.5px!important;
+        @include resp($md) {
+            font-size: 17.5px !important;
         }
-        @include resp ($lg) {
-            font-size: 19px!important;
+        @include resp($lg) {
+            font-size: 19px !important;
         }
-        @include resp ($xl) {
-            font-size: 20.5px!important;
+        @include resp($xl) {
+            font-size: 20.5px !important;
         }
-        @include resp ($xxl) {
-            font-size: 22px!important;
+        @include resp($xxl) {
+            font-size: 22px !important;
         }
-        @include resp ($mxl) {
-            font-size: 24px!important;
+        @include resp($mxl) {
+            font-size: 24px !important;
         }
     }
     p.para {
-        @include resp ($xxl) {
+        @include resp($xxl) {
             font-size: 16px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             font-size: 17px;
         }
     }

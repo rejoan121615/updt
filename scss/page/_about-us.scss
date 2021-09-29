@@ -750,3 +750,77 @@
         background-position: left center;
     }
 }
+
+// about us icon replace 
+.about-us {
+    // our promise 
+    .our_promise {
+        background-image: url("../img/about-us/main/our promise.svg");
+    }
+    // our founder 
+    .ourFounder {
+        background-image: url('../img/about-us/main/our founder.svg');
+    }
+    // why work with us 
+    .why_work_with_us {
+        background-image: url('../img/about-us/main/why work with us.svg');
+    }
+    // respectful 
+    .respect-white {
+        background-image: url('../img/about-us/trustworthy/respectful.svg');
+    }
+
+    // friendly and personable 
+    .friendly_personable {
+        background-image: url('../img/about-us/trustworthy/friendly.svg');
+    }
+    // caring icon 
+    .caring_icon {
+        background-image: url('../img/about-us/trustworthy/caring.svg');
+        transform: scale(1.3);
+    }
+    // strategic partners 
+    .strategic_partners {
+        background-image: url('../img/icon/all-system/cloud.png');
+        background-size: 70%;
+        transform: scale(1.35);
+    }
+
+
+    // large icon ------------------- 
+    .peace_in_mind {
+        background-image: url('../img/about-us/workWithUs/peace-in-mind.svg');
+    }
+    // declutter 
+    .declutter_icon {
+        background-image: url('../img/about-us/workWithUs/decutta.svg');
+    }
+    // modernize 
+    .modernize_icon {
+        background-image: url('../img/about-us/workWithUs/modenizer.svg');
+    }
+    // save time icon 
+    .save_time_icon {
+        background-image: url('../img/about-us/workWithUs/save-time.svg');
+    }
+    // organization icon 
+    .organization_icon {
+        background-image: url('../img/about-us/workWithUs/organization.svg');
+    }
+    // support icon 
+    .support_icon {
+        background-image: url('../img/about-us/workWithUs/support.svg');
+    }
+    // proactive icon 
+    .proactive_icon {
+        background-image: url('../img/about-us/workWithUs/proactive.svg');
+    }
+    // prepared icon 
+    .prepared_icon {
+        background-image: url('../img/about-us/workWithUs/prepared.svg');
+    }
+    // speed icon 
+    .speed_icon {
+        background-image: url('../img/about-us/workWithUs/speed.svg');
+    }
+}
