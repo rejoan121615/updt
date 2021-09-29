@@ -5395,6 +5395,22 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
+.careers .respect-white, .contact-us .respect-white {
+  background-image: url("../img/career/icon/respectful.svg");
+}
+.careers .organized, .contact-us .organized {
+  background-image: url("../img/career/icon/organize.svg");
+  transform: scale(1.35);
+}
+.careers .innovation, .contact-us .innovation {
+  background-image: url("../img/career/icon/innovation.svg");
+}
+.careers .honesty, .contact-us .honesty {
+  background-image: url("../img/career/icon/honesty.svg");
+  background-size: 55%;
+  transform: scale(1.45);
+}
+
 @media only screen and (min-width: 1200px) {
   .contact-us #atYourService .container {
     margin-top: 60px;

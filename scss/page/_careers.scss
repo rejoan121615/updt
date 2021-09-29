@@ -521,3 +521,26 @@
         }
     }
 }
+
+
+// careers icon 
+.careers {
+    .respect-white {
+        background-image: url('../img/career/icon/respectful.svg');
+    }
+    // friendly and persona 
+    .organized {
+        background-image: url('../img/career/icon/organize.svg');
+        transform: scale(1.35);
+    }
+    // innovation 
+    .innovation {
+        background-image: url('../img/career/icon/innovation.svg');
+    }
+    // honesty 
+    .honesty {
+        background-image: url('../img/career/icon/honesty.svg');
+        background-size: 55%;
+        transform: scale(1.45);
+    }
+}
