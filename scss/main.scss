@@ -3,18 +3,17 @@
 @import "./assets/variable";
 @import "./assets/mixing";
 
-// modules 
+// modules
 @import "./modules/typography";
 @import "./modules/btn_&_links";
 @import "./modules/list_&_cards_&_quotes";
 @import "./modules/sections";
 
-// pages 
+// pages
 @import "./page/landing_page";
-@import './page/about-us';
-@import './page/careers';
-@import './page/contact-us';
-
+@import "./page/about-us";
+@import "./page/careers";
+@import "./page/contact-us";
 
 * {
     margin: 0;
@@ -22,9 +21,9 @@
     box-sizing: border-box;
 }
 
-// common style for all pages 
+// common style for all pages
 main {
-    // container / wrapper section 
+    // container / wrapper section
     .container {
         @include resp($lg) {
             margin-top: 45px;
@@ -39,7 +38,7 @@ main {
         @include resp($mxl) {
             margin-top: 110px;
         }
-        // heading form 
+        // heading form
         .head_form {
             padding-top: 45px;
         }
@@ -47,39 +46,105 @@ main {
 }
 
 .email-dark {
-    background-color: #F2F2F2!important;
+    background-color: #f2f2f2 !important;
     color: lighten($color: #000000, $amount: 20);
 }
 
-
 .email__form {
-    // email input 
+    // email input
     input {
         padding-top: 10px;
         padding-bottom: 10px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-        @include resp ($md) {
+        @include resp($md) {
             padding-top: 13px;
             padding-bottom: 13px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             padding-top: 15px;
             padding-bottom: 15px;
         }
-        @include resp ($mxl) {
+        @include resp($mxl) {
             padding-top: 18px;
             padding-bottom: 18px;
         }
     }
 
-    // button 
+    // button
     button.cus__btn {
-        @include resp ($xl) {
-            width: 430px!important;
+        @include resp($xl) {
+            width: 430px !important;
         }
-        @include resp ($mxl) {
-            width: 470px!important;
+        @include resp($mxl) {
+            width: 470px !important;
         }
+    }
+}
+
+// horizontal card
+.horizontal-card {
+    // transparency icon
+    .icon_wrap.transparency {
+        background-image: url("../img/contact-us/transparency.svg");
+    }
+
+    // privacy
+    .icon_wrap.privacy {
+        background-image: url("../img/contact-us/privacy.svg");
+    }
+
+    // cloud
+    .icon_wrap.respect {
+        background-image: url("../img/contact-us/respectful.svg");
+    }
+    // respect white
+    .icon_wrap.respect-white {
+        background-image: url("../img/about-us/trustworthy/respectful.svg");
+    }
+    // friendly
+    .icon_wrap.friendly {
+        background-image: url("../img/contact-us/friendly.svg");
+    }
+    // friendly
+    .icon_wrap.friendly-black {
+    }
+}
+// icon wrapper
+.icon_wrap {
+    width: 22px;
+    height: 22px;
+    background-position: center center;
+    background-size: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    @include resp($sm) {
+        margin-left: 0px;
+        width: 24px;
+        height: 24px;
+    }
+    @include resp($lg) {
+        width: 22px;
+        height: 22px;
+    }
+    @include resp($xl) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+// square card
+.icon_wrap_sm {
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center center;
+    @include resp($lg) {
+        margin-bottom: 10px;
+    }
+    @include resp($xl) {
+        margin-bottom: 13px;
     }
 }

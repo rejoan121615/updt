@@ -118,10 +118,16 @@
                         padding: 20px;
                         border-radius: 0.5px;
                         position: absolute;
-                        left: 19px;
-                        top: 7px;
+                        // left: 19px;
+                        // top: 7px;
+                        left: -190px;
+                        top: 30px;
                         z-index: 5000;
                         box-shadow: 1px 1px 10px #e7e6e6, -1px -1px 10px #e7e6e6;
+                        @include resp ($xl) {
+                            left: 25px;
+                            top: 7px;
+                        }
                     }
                     &:hover::after {
                         display: block;
@@ -276,3 +282,33 @@
         }
     }
 }
+
+
+// footer image update 
+.contact-us {
+    #footer {
+        background: url('../img/contact-us/foooter-bg-sm.png') no-repeat center center!important;
+        background-size: cover!important;
+        @include resp  ($lg) {
+            background: url('../img/contact-us/foooter-bg-lg.png') no-repeat center center!important;
+            background-size: 100% 100%!important;
+        }
+        // frame content 
+        .frame_content {
+            @include resp ($xl) {
+                padding-left: 55px!important;
+                padding-top: 40px!important;
+            }
+            @include resp ($xxl) {
+                padding-left: 70px!important;
+                padding-top: 60px!important;
+            }
+            @include resp ($mxl) {
+                padding-left: 80px!important;
+                padding-top: 80px!important;
+            }
+        }
+    }
+}
+
+// contact us page icons 
