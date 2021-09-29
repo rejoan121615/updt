@@ -9,6 +9,9 @@
     //    at your service
     #atYourService {
         .container {
+            @include resp ($xl) {
+                margin-top: 60px;
+            }
             // display: flex!important;
             // left side section
             .left_side_main {
@@ -175,11 +178,15 @@
                         }
                     }
                     textarea {
-                        @include resp($lg) {
-                            height: 363px;
+                        @include resp($xl) {
+                            height: 340px;
                         }
+                        @include resp ($xxl) {
+                            height: 330px;
+                        }
+                        // @include resp ($)
                         @include resp($mxl) {
-                            height: 335px;
+                            height: 300px;
                         }
                     }
                 }

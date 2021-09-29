@@ -5395,6 +5395,11 @@ main #mainContainer .card__element:nth-child(4) {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .contact-us #atYourService .container {
+    margin-top: 60px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .contact-us #atYourService .container .left_side_main .tittle_wrap h1 {
     line-height: 100%;
@@ -5582,14 +5587,19 @@ main #mainContainer .card__element:nth-child(4) {
     margin-bottom: 0px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .contact-us #atYourService .container .right_side_main .input-group textarea {
-    height: 363px;
+    height: 340px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-us #atYourService .container .right_side_main .input-group textarea {
+    height: 330px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .contact-us #atYourService .container .right_side_main .input-group textarea {
-    height: 335px;
+    height: 300px;
   }
 }
 .contact-us #atYourService .container .right_side_main .btn_wrap .texts p {
