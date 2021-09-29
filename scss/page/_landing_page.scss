@@ -777,6 +777,7 @@ main {
         .card__element {
             width: 215px;
             padding: 28px 30px;
+            padding-right: 0px;
             border-radius: 1px;
             @include resp($lg) {
                 justify-self: flex-end;
@@ -784,7 +785,6 @@ main {
             @include resp($xl) {
                 width: 200px;
                 padding-top: 30px;
-                padding-right: 0px;
             }
             @include resp($xxl) {
                 padding-top: 35px;
@@ -1817,7 +1817,7 @@ main {
                                 font-size: 22px;
                             }
                             @include resp($xxl) {
-                                font-size: 26px;
+                                font-size: 24.5px;
                             }
                             @include resp($mxl) {
                                 font-size: 28px;
@@ -2501,4 +2501,62 @@ main {
         width: 26px;
     }
     // hover animation
+}
+
+
+// lading page icon replacement 
+.landing-page {
+    // buisness 
+    .buisness {
+        background-image: url('../img/icon/main/graph.png');
+    }
+    // system 
+    .system {
+        background-image: url('../img/icon/main/resize.png');
+    }
+    // custom 
+    .custom {
+        background-image: url('../img/icon/main/web-apps.png');
+    }
+    // peace of mind 
+    .peaceOf {
+        background-image: url('../img/icon/main/circle.png');
+    }
+    // analyze it spend 
+    .analyzeIt {
+        background-image: url('../img/icon/premium/trash-icon.png');
+    }
+    // rapid response 
+    .rapidResponse {
+        background-image: url('../img/icon/premium/phone-call.png');
+    }
+    // pruning the old 
+    .pruningTheOld {
+        background-image: url('../img/icon/premium/expand-icon.png');
+    }
+    // integration 
+    .integrating {
+        background-image: url('../img/icon/all-system/system.png');
+    }
+    // leveraging 
+    .leveraging {
+        background-image: url('../img/icon/all-system/import-export.png');
+    }
+    // consolidating 
+    .consolidating {
+        background-image: url('../img/icon/all-system/video.png');
+    }
+    // always ready 
+    .alwaysReady {
+        background-image: url('../img/icon/all-system/cloud.png');
+        background-size: 75%;
+        @include resp ($xxl) {
+            width: 27px;
+            height: 27px;
+        }
+        @include resp ($mxl) {
+            width: 29px;
+            height: 29px;
+        }
+    }
 }

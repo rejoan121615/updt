@@ -74,12 +74,30 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        justify-items: center;
+        // founder background 
+        .founder-bg {
+            height: 99.6%;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            background-color: white;
+            transform: rotate(-0.5deg);
+            border: 1px solid $borderColor;
+            transform: skewY(-0.8deg) translateY(3px) rotate(-0.5deg);
+            @include resp ($xs) {
+                width: 95%;
+            }
+        }
         // article section
         .founder-wrapper {
+            position: relative;
+            grid-column: 1/2;
+            grid-row: 1/2;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
             padding: 30px;
+            border: 1px solid $borderColor;
             @include resp($xs) {
                 width: 95%;
             }
@@ -106,8 +124,7 @@
         .big-para {
         }
         .founder-wrapper {
-            .f-tittle {
-            }
+            
             // image wrapper
             .img__wrap {
                 width: 100px;
@@ -731,5 +748,79 @@
     @include resp ($lg) {
         background-size: 100%;
         background-position: left center;
+    }
+}
+
+// about us icon replace 
+.about-us {
+    // our promise 
+    .our_promise {
+        background-image: url("../img/about-us/main/our promise.svg");
+    }
+    // our founder 
+    .ourFounder {
+        background-image: url('../img/about-us/main/our founder.svg');
+    }
+    // why work with us 
+    .why_work_with_us {
+        background-image: url('../img/about-us/main/why work with us.svg');
+    }
+    // respectful 
+    .respect-white {
+        background-image: url('../img/about-us/trustworthy/respectful.svg');
+    }
+
+    // friendly and personable 
+    .friendly_personable {
+        background-image: url('../img/about-us/trustworthy/friendly.svg');
+    }
+    // caring icon 
+    .caring_icon {
+        background-image: url('../img/about-us/trustworthy/caring.svg');
+        transform: scale(1.3);
+    }
+    // strategic partners 
+    .strategic_partners {
+        background-image: url('../img/icon/all-system/cloud.png');
+        background-size: 70%;
+        transform: scale(1.35);
+    }
+
+
+    // large icon ------------------- 
+    .peace_in_mind {
+        background-image: url('../img/about-us/workWithUs/peace-in-mind.svg');
+    }
+    // declutter 
+    .declutter_icon {
+        background-image: url('../img/about-us/workWithUs/decutta.svg');
+    }
+    // modernize 
+    .modernize_icon {
+        background-image: url('../img/about-us/workWithUs/modenizer.svg');
+    }
+    // save time icon 
+    .save_time_icon {
+        background-image: url('../img/about-us/workWithUs/save-time.svg');
+    }
+    // organization icon 
+    .organization_icon {
+        background-image: url('../img/about-us/workWithUs/organization.svg');
+    }
+    // support icon 
+    .support_icon {
+        background-image: url('../img/about-us/workWithUs/support.svg');
+    }
+    // proactive icon 
+    .proactive_icon {
+        background-image: url('../img/about-us/workWithUs/proactive.svg');
+    }
+    // prepared icon 
+    .prepared_icon {
+        background-image: url('../img/about-us/workWithUs/prepared.svg');
+    }
+    // speed icon 
+    .speed_icon {
+        background-image: url('../img/about-us/workWithUs/speed.svg');
     }
 }
